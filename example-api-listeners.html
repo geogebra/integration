@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <head>
+<title>Event listeners</title>
+<script src="navigation.js"></script>
+
+</head>
+</head>
+
+<body>
+<div class="contentBox" id="contentBox"><table border="0" width="600">
+
+  
+      <h1>Event listeners</h1>
+
+      <p class="text"><br>JavaScript functions can be registered as listeners to changes in a GeoGebra construction. <br>
+	  See <a class="inlineLink" href="https://www.geogebra.org/manual/en/Reference:JavaScript#Event_listeners">Event Listeners</a> for a syntax description of the used
+methods.
+      </p>
+	  <script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+	  <script type="text/javascript">
+	  var parameters = {
+	  "prerelease":false,
+	  "width":750,
+	  "height":400,
+	  "showToolBar":true,
+	  "borderColor":null,
+	  "showMenuBar":false,
+	  "showAlgebraInput":false,
+	  "showResetIcon":true,
+	  "enableLabelDrags":false,
+	  "enableShiftDragZoom":true,
+	  "enableRightClick":true,
+	  "capturingThreshold":null,
+	  "showToolBarHelp":false,
+	  "errorDialogsActive":true,
+	  "useBrowserForJS":true,
+	  "showLogging":"true",
+	  "material_id":"ba9ezduy"
+	  };
+
+
+parameters.appletOnLoad = function(api) {
+var strLength = 150;
+var textarea1 = document.getElementsByName("textarea1")[0];
+var textarea2 = document.getElementsByName("textarea2")[0];
+var consState = document.getElementsByName("consState")[0];
+    function addListener(objName) { 
+	    textarea1.value = "add: " + objName + "\n" + textarea1.value.substring(0, strLength );	
+	    printConstructionState();
+    }
+
+    function removeListener(objName) {
+	    textarea1.value = "remove: " + objName + "\n" + textarea1.value.substring(0, strLength );	
+	    printConstructionState();
+    }
+
+    function renameListener(oldObjName, newObjName) {
+	    textarea1.value = "rename: " + objName + "\n" + textarea1.value.substring(0, strLength );	
+	    printConstructionState();
+    }
+
+    function updateListener(objName) {
+	    strVal = api.getValueString(objName);
+	    textarea2.value = strVal + "\n" + textarea2.value.substring(0, strLength );
+    }
+
+    function clearListener() {
+	    textarea1.value = "";
+	    textarea2.value = "";
+	    textarea1.value = "construction cleared";
+	    consState.value = "";
+    }
+
+    function printConstructionState() {
+	    var objNumber = api.getObjectNumber();
+	    var strState = "Number of objects: " + objNumber;
+	    for (i=0; i < objNumber; i++) {
+		    strName = api.getObjectName(i);
+		    strType = api.getObjectType(strName);
+		    strCommand = api.getCommandString(strName);
+		    strState += "\n" + strType + " " + strName + ", " + strCommand;
+	    }
+	    consState.value = strState;
+  }
+	// register add, remove, rename and update listeners
+	api.registerAddListener(addListener);
+	api.registerRemoveListener(removeListener);
+	api.registerRenameListener(renameListener);
+	api.registerClearListener(clearListener);
+	api.registerUpdateListener(updateListener);
+}
+
+
+var applet = new GGBApplet('5.0', parameters);
+    //  when used with Math Apps Bundle, uncomment this:
+    //  applet.setHTML5Codebase('GeoGebra/HTML5/5.0/web/');
+
+	window.onload = function() {
+               applet.inject('applet_container');
+        }
+      </script>
+      <p></p>
+<div id="applet_container"></div>
+      
+
+        <h5>Construction State Listening</h5>
+
+        <div style="float: left;margin-right:24px" class="text">
+	  <label>Update:</label>
+			  <textarea class="inputfield" name="textarea2" cols="35" rows="5"></textarea>
+
+			<label>Add, Remove, Rename:</label>
+      	        <textarea class="inputfield" name="textarea1" cols="35" rows="5"></textarea>
+
+		  </div>
+		  <div style="float: left; padding-top:6px">
+              <label>Current Construction State:</label>
+              <textarea class="inputfield" style="height:250px" name="consState" cols="35" rows="14"></textarea>
+        </div>
+<style>label{display:block}</style>
+</table>
+
+</div>
+</body>
+</html>

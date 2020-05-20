@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html> 
+<head> 
+<title>GeoGebra and JavaScript</title> 
+<script src="navigation.js"></script>
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+
+</head> 
+ 
+<body> 
+ 
+<div class="contentBox" id="contentBox"> 
+ 
+      <td> 
+      <h1>GeoGebra Applet to Applet Communication</h1> 
+ 
+      <p class="text"><br>Using JavaScript listener functions allows
+applet to applet communication with GeoGebra. <br>
+See <a class="inlineLink" href="https://www.geogebra.org/manual/en/Reference:JavaScript">GeoGebra JavaScript API</a> for a syntax description of the used methods.
+      </p> 
+<p>Drag the sliders to change the parameters of the function. Observe how the derivative function in the bottom view changes too.</p> 
+
+
+<div id="ggbApplet"></div>
+
+<div id="ggbApplet2"></div>
+
+ 
+<script type="text/javascript"> 
+ 
+function ggbOnInit(param) {
+	if (param == "ggbApplet") {
+		// init update listeners for ggbApplet1
+		ggbApplet.registerObjectUpdateListener("a", "abcListener");
+		ggbApplet.registerObjectUpdateListener("b", "abcListener");
+		ggbApplet.registerObjectUpdateListener("c", "abcListener");
+		ggbApplet.registerObjectUpdateListener("A", "pointListener");
+	}
+}
+ 
+function abcListener(objName) {
+      // get value from applet1 and set value in applet2	
+	var changedValue = ggbApplet.getValue(objName);            
+	ggbApplet2.setValue(objName, changedValue);		
+}
+ 
+function pointListener(objName) {		
+	// get x-coord from the changed point A in applet1
+	// and set point B in applet2
+	xcoord = ggbApplet.getXcoord("A");   
+	ggbApplet2.setCoords("B", xcoord, 0);			
+}
+
+var parameters = {
+"id": "ggbApplet",
+"width":600,
+"height":250,
+"showMenuBar":false,
+"showAlgebraInput":false,
+"showToolBar":false,
+"showToolBarHelp":false,
+"showResetIcon":false,
+"enableLabelDrags":false,
+"enableShiftDragZoom":true,
+"enableRightClick":false,
+"errorDialogsActive":false,
+"useBrowserForJS":true,
+"preventFocus":false,
+"language":"en",
+// use this instead of ggbBase64 to load a material from GeoGebra Materials Platform
+// "material_id":12345,
+"material_id":"gw5xknmg"
+}
+
+var parameters2 = {
+"id": "ggbApplet2",
+"width":600,
+"height":250,
+"showMenuBar":false,
+"showAlgebraInput":false,
+"showToolBar":false,
+"showToolBarHelp":false,
+"showResetIcon":false,
+"enableLabelDrags":false,
+"enableShiftDragZoom":true,
+"enableRightClick":false,
+"errorDialogsActive":false,
+"useBrowserForJS":true,
+"preventFocus":false,
+"language":"en",
+// use this instead of ggbBase64 to load a material from GeoGebra Materials Platform
+// "material_id":12345,
+"material_id":"ghjf7p7k"
+}
+// is3D=is 3D applet using 3D view, AV=Algebra View, SV=Spreadsheet View, CV=CAS View, EV2=Graphics View 2, CP=Construction Protocol, PC=Probability Calculator, DA=Data Analysis, FI=Function Inspector, PV=Python, macro=Macro View
+var views = {'is3D': 0,'AV': 1,'SV': 0,'CV': 0,'EV2': 0,'CP': 0,'PC': 0,'DA': 0,'FI': 0,'PV': 0,'macro': 0};
+
+var applet = new GGBApplet(parameters, '5.0', views);
+              
+    //  when used with Math Apps Bundle, uncomment this:
+    //  applet.setHTML5Codebase('GeoGebra/HTML5/5.0/web/');
+var applet2 = new GGBApplet(parameters2, '5.0', views);
+              
+    //  when used with Math Apps Bundle, uncomment this:
+    //  applet2.setHTML5Codebase('GeoGebra/HTML5/5.0/web/');
+
+window.onload = function() {
+	applet.inject('ggbApplet');
+	applet2.inject('ggbApplet2');
+};
+
+</script> 
+     </div>
+</table> 
+</body> 
+</html> 

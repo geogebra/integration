@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>Buttons & Inputs using API</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="navigation.js"></script>
+</head>
+
+<body>
+<div class="contentBox" id="contentBox">
+        <h1>Buttons & Inputs using API</h1>
+        <p class="text"><br>The GeoGebra Javascript API can be triggered using Buttons and Input fields.</p>
+
+        <script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+        <script type="text/javascript">
+
+                var parameters = {
+				"prerelease":false,
+				"width":570,
+				"height":400,
+				"showToolBar":false,
+				"borderColor":null,
+				"showMenuBar":false,
+				"showAlgebraInput":false,
+				"showResetIcon":true,
+				"enableLabelDrags":false,
+				"enableShiftDragZoom":true,
+				"enableRightClick":false,
+				"capturingThreshold":null,
+				"showToolBarHelp":false,
+				"errorDialogsActive":true,
+				"useBrowserForJS":false,
+				"material_id":"fwz3d6c3"};
+
+                var applet = new GGBApplet('5.0', parameters);
+              
+                //when used with Math Apps Bundle, uncomment this:
+                //applet.setHTML5Codebase('GeoGebra/HTML5/5.0/webSimple/');
+
+                window.onload = function() {
+                        applet.inject('applet_container');
+                        }
+        </script>
+
+        <div id="applet_container"></div>
+		<div>
+		<p>
+		<a href="#" onclick="ggbApplet.setVisible('A', false)" class="appBtn noimage blue">Hide point A</a>
+		<a href="#" onclick="ggbApplet.setVisible('A', true)" class="appBtn noimage blue">Show point A</a>
+		</p>
+		</div>
+       
+		<script type="text/javascript"> 
+			function evalInput(strInput) {
+				ggbApplet.evalCommand(strInput);
+				return false;
+			}
+		</script> 
+		
+<p class="text">Use the input field as you would directly in the app. Enter ie. D=(0,0) to create a point.</p>
+<form class="text" action="" onsubmit="evalInput(inputField.value);inputField.value='';return false;"> 
+<label>Input field: </label><input type="text" class="inputfield" name="inputField" size="30"> 
+</form> 
+</div>
+</body>
+
+</html>
