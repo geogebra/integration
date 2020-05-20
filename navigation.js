@@ -4,7 +4,7 @@ var menu =
 '<a href="#" id=drawerToggle class="material-icons">menu</a>'+
 '<img alt="GeoGebra" src="logo.svg" class="headerLogo" draggable="false">'+
 '<h1 class="siteName">Integration Examples</h1>'+
-'<div id=githubLink class="githubLink"><a target="_blank" href="https://github.com/geogebra/math-apps-examples/blob/master/html/'+filename+'">View on GitHub</a></span>';
+'<div id=githubLink class="githubLink"><a target="_blank" href="https://github.com/geogebra/integration/blob/master/'+filename+'">View on GitHub</a></span>';
 var menuDiv = document.createElement('div');
 menuDiv.className = "sample-toolbar";
 menuDiv.innerHTML = menu;
