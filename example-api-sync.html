@@ -4,7 +4,7 @@
 <head> 
 <title>GeoGebra and JavaScript</title> 
 <script src="navigation.js"></script>
-<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
 
 </head> 
  
@@ -96,11 +96,11 @@ var parameters2 = {
 // is3D=is 3D applet using 3D view, AV=Algebra View, SV=Spreadsheet View, CV=CAS View, EV2=Graphics View 2, CP=Construction Protocol, PC=Probability Calculator, DA=Data Analysis, FI=Function Inspector, PV=Python, macro=Macro View
 var views = {'is3D': 0,'AV': 1,'SV': 0,'CV': 0,'EV2': 0,'CP': 0,'PC': 0,'DA': 0,'FI': 0,'PV': 0,'macro': 0};
 
-var applet = new GGBApplet(parameters, '5.0', views);
+var applet = new GGBApplet(parameters,true);
               
     //  when used with Math Apps Bundle, uncomment this:
     //  applet.setHTML5Codebase('GeoGebra/HTML5/5.0/web/');
-var applet2 = new GGBApplet(parameters2, '5.0', views);
+var applet2 = new GGBApplet(parameters2,true);
               
     //  when used with Math Apps Bundle, uncomment this:
     //  applet2.setHTML5Codebase('GeoGebra/HTML5/5.0/web/');

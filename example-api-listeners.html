@@ -18,7 +18,7 @@
 	  See <a class="inlineLink" href="https://www.geogebra.org/manual/en/Reference:JavaScript#Event_listeners">Event Listeners</a> for a syntax description of the used
 methods.
       </p>
-	  <script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+	  <script type="text/javascript" src="https://www.geogebra.org/apps/deployggb.js"></script>
 	  <script type="text/javascript">
 	  var parameters = {
 	  "prerelease":false,
@@ -93,7 +93,7 @@ var consState = document.getElementsByName("consState")[0];
 }
 
 
-var applet = new GGBApplet('5.0', parameters);
+var applet = new GGBApplet(parameters,true);
     //  when used with Math Apps Bundle, uncomment this:
     //  applet.setHTML5Codebase('GeoGebra/HTML5/5.0/web/');
 

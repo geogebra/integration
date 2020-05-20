@@ -33,11 +33,11 @@
 						"showFullscreenButton":true,
                         "useBrowserForJS":false,
                         "material_id":"zrtmrj3s"};
-                var applet = new GGBApplet(parameters, '5.0', 'applet_container');
+                var applet = new GGBApplet(parameters, true);
               //  when used with Math Apps Bundle, uncomment this:
               //  applet.setHTML5Codebase('GeoGebra/HTML5/5.0/web/');
 
-                window.onload = function() { applet.inject(); }
+                window.onload = function() { applet.inject(applet_container); }
         </script>
 
         <div id="applet_container"></div>

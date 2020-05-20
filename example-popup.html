@@ -70,7 +70,7 @@
 	   <p class="text">Choose the app you want to show in a popup:</p>
 	   
 	  
-	   <script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+	   <script type="text/javascript" src="https://www.geogebra.org/apps/deployggb.js"></script>
         <script type="text/javascript">
 				var questionmark = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTExIDE4aDJ2LTJoLTJ2MnptMS0xNkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptMCAxOGMtNC40MSAwLTgtMy41OS04LThzMy41OS04IDgtOCA4IDMuNTkgOCA4LTMuNTkgOC04IDh6bTAtMTRjLTIuMjEgMC00IDEuNzktNCA0aDJjMC0xLjEuOS0yIDItMnMyIC45IDIgMmMwIDItMyAxLjc1LTMgNWgyYzAtMi4yNSAzLTIuNSAzLTUgMC0yLjIxLTEuNzktNC00LTR6Ii8+PC9zdmc+";
 				var tutorials = {
@@ -133,7 +133,7 @@
 					//---------------------------------------
 					parameters["perspective"]=null;
 					parameters["appName"]=appname;
-					applet = new GGBApplet(parameters, '5.0', 'applet_container');
+					applet = new GGBApplet(parameters, true);
 					applet.inject('applet_container');
 					//---------------------------------
 					
@@ -172,7 +172,7 @@
                         "useBrowserForJS":true,
 						"disableAutoScale":true,
                         "perspective":"1"};
-                var applet = new GGBApplet(parameters, '5.0', 'applet_container');
+                var applet = new GGBApplet(parameters, true);
                 //  when used with Math Apps Bundle, uncomment this:
                 //  applet.setHTML5Codebase('GeoGebra/HTML5/5.0/web3d/');
                 window.onload = function() { applet.inject('applet_container'); updateHelp('1');}
