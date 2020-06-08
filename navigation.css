@@ -220,6 +220,12 @@ a.btn.active {
 	padding: 24px 0px 8px 0px;
 	margin:0px;
 }
+.contentBoxSmall{
+	top:8px;
+	left:8px;
+	padding:0;
+	margin:0;
+}
 .text{
 	color: rgba(0,0,0,.87);
 	font-size: 100%;
@@ -260,6 +266,7 @@ a.btn.active {
 }
 .appBtn.noimage{
 	padding-left: 16px;
+	margin-bottom: 8px;
 }
 .appBtn.noimage.blue{
 	background-color: #6557d2;
