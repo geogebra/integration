@@ -221,9 +221,9 @@ a.btn.active {
 	margin:0px;
 }
 .contentBoxSmall{
-	top:8px;
-	left:8px;
-	padding:0;
+	top:0px;
+	left:0px;
+	padding:16px 16px 0px 16px;
 	margin:0;
 }
 .text{
