@@ -31,7 +31,7 @@ function addDrawer(){
 	'<li> <a href="example-assess.html">LTI Integration</a></li></ul>'+
 	'<h4>Documentation</h4>'+
 	'<ul><li><a href="https://www.geogebra.org/manual/en/Reference:Math_Apps_Embedding" target="_blank">Math Apps Embedding&nbsp;&nbsp;<span class="material-icons inline">arrow_downward</span></a></li>'+
-	'<li><a href="https://wiki.geogebra.org/en/Reference:GeoGebra_Apps_API" target="_blank">GeoGebra Apps API&nbsp;&nbsp;<span class="material-icons inline">arrow_downward</span></a></li>'+
+	'<li><a href="https://wiki.geogebra.org/en/Reference:GeoGebra_Apps_API" target="_blank">GeoGebra Apps API (Plus)&nbsp;&nbsp;<span class="material-icons inline">arrow_downward</span></a></li>'+
 	'<li><a href="https://wiki.geogebra.org/en/Reference:Material_Embedding_(Iframe)" target="_blank">Iframe Embedding&nbsp;&nbsp;<span class="material-icons inline">arrow_downward</span></a></li>';
 
 
@@ -39,6 +39,10 @@ function addDrawer(){
 	var menuDiv = document.createElement('div');
 	menuDiv.id="drawer";
 	menuDiv.innerHTML = menu;
+	if(window.innerWidth > 800){
+		menuDiv.style.display="block";
+		document.getElementById("contentBox").classList.add('right');
+	}
 	document.body.insertBefore(menuDiv,document.body.children[1]);
 	
 	
