@@ -69,26 +69,11 @@ function addDrawer(){
 function loadNav(){
 	insertStyle("https://fonts.googleapis.com/icon?family=Material+Icons");
 	
-	var frameless = false;
-	var getVars = [];
-	var locvartemp = ( window.location.href.indexOf( "?" ) + 1 ) ? window.location.href.substr( window.location.href.indexOf( "?" ) + 1 ) : "";
-	locvartemp = unescape(locvartemp);
-	var lvTempVar = locvartemp.split( "=" );
-	getVars[ unescape( lvTempVar[0] ) ] = unescape( lvTempVar[1] );
-	try {
-		console.log(locvartemp);
-		eval(locvartemp);
-		}
-		catch (err) { 
-			console.log(err);
-			eval(lvTempVar[0] + "='" + lvTempVar[1] + "'");
-		} 
-
-	if(frameless == false ){
+	if (window.location.search.match(/frameless/)) {
+		document.getElementById("contentBox").classList.add('contentBoxSmall');		
+	} else {
 		addGithubLink();
 		addDrawer();
-	} else {
-		document.getElementById("contentBox").classList.add('contentBoxSmall');
 	}
 }
 
