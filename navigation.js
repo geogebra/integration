@@ -23,7 +23,7 @@ function addDrawer(){
 	'<ul><li> <a href="plus-dynamic-resources.html">Dynamic Resources</a></li>'+
 	'<li> <a href="example-graphing.html">Apps Integration</a></li>'+
 	'<li> <a href="example-popup.html">Apps in Popups</a></li></ul>'+
-	'<h4>API Integration</h4>'+
+	'<h4>API</h4>'+
     '<ul><li> <a href="example-api-save-state.html">Saving & Loading</a></li>'+
     '<li> <a href="example-api.html">Buttons & Inputs</a></li>'+
     '<li> <a href="example-api-listeners.html">Event Listeners</a></li>'+
