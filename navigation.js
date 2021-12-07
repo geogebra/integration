@@ -1,5 +1,6 @@
 function addGithubLink(){
 	var filename = window.location.pathname.split("/").slice(-1)[0];
+	if(!filename){filename="index.html";}
 var menu =
 '<a href="#" id=drawerToggle class="material-icons">menu</a>'+
 '<img alt="GeoGebra" src="logo.svg" class="headerLogo" draggable="false">'+
