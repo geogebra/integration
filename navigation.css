@@ -79,8 +79,8 @@ div.sample-toolbar {
 #drawer{	
 	display:none;
     background-color: white;
-	height: 100%;
-	width: 264px;
+	height: calc(100% - 64px);
+	width: 270px;
     position: fixed;
 	overflow: auto;
     z-index: 2000;
