@@ -16,15 +16,15 @@ document.body.insertBefore(menuDiv,document.body.children[0]);
 function addDrawer(){
 	var filename = window.location.pathname.split("/").slice(-1)[0];
 	var menu =
-	'<h4>Basic</h4>'+
+	'<h4>Interactive Visualizations</h4>'+
 	'<ul><li> <a href="index.html">Dynamic Resources</a></li>'+
 	'<li> <a href="basic-dynamic-3d-resources.html">Dynamic 3D Resources</a></li>'+
 	'<li> <a href="basic-embedding-options.html">Embedding Options</a></li></ul>'+
-	'<h4>Plus</h4>'+
+	'<h4>Calculators</h4>'+
 	'<ul><li> <a href="plus-dynamic-resources.html">Dynamic Resources</a></li>'+
 	'<li> <a href="example-graphing.html">Apps Integration</a></li>'+
 	'<li> <a href="example-popup.html">Apps in Popups</a></li></ul>'+
-	'<h4>API (Plus)</h4>'+
+	'<h4> Integrations (API)</h4>'+
     '<ul><li> <a href="example-api-save-state.html">Saving & Loading</a></li>'+
     '<li> <a href="example-api.html">Buttons & Inputs</a></li>'+
     '<li> <a href="example-api-listeners.html">Event Listeners</a></li>'+
@@ -32,7 +32,7 @@ function addDrawer(){
 	'<li> <a href="example-assess.html">Environment Integration</a></li></ul>'+
 	'<h4>Documentation</h4>'+
 	'<ul><li><a href="https://www.geogebra.org/manual/en/Reference:Math_Apps_Embedding" target="_blank">Math Apps Embedding&nbsp;&nbsp;<span class="material-icons inline">arrow_downward</span></a></li>'+
-	'<li><a href="https://wiki.geogebra.org/en/Reference:GeoGebra_Apps_API" target="_blank">GeoGebra Apps API (Plus)&nbsp;&nbsp;<span class="material-icons inline">arrow_downward</span></a></li>'+
+	'<li><a href="https://wiki.geogebra.org/en/Reference:GeoGebra_Apps_API" target="_blank">GeoGebra Apps API&nbsp;&nbsp;<span class="material-icons inline">arrow_downward</span></a></li>'+
 	'<li><a href="https://wiki.geogebra.org/en/Reference:Material_Embedding_(Iframe)" target="_blank">Iframe Embedding&nbsp;&nbsp;<span class="material-icons inline">arrow_downward</span></a></li>';
 
 
