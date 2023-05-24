@@ -259,6 +259,10 @@ a.btn.active {
 	background-position:8px 8px;
 	background-size: 20px;
 }
+
+.pressed {
+    background-color: #E2DFF8;
+}
 .appBtn.narrow{
 	margin-right: 16px;
 	padding-left: 36px;
