@@ -52,26 +52,26 @@ function toggleButton(value, isReset) {
 
     switch (value) {
         case "validate":
-            btnLabelOn = "Hide validation";
-            btnLabelOff = "Show validation";
+            btnLabelOn = "Hide Validation";
+            btnLabelOff = "Show Validation";
             btnID = "validateBtn";
             break;
 		 
 	case "showanswer":
-            btnLabelOn = "Hide answer";
-            btnLabelOff = "Show answer";
+            btnLabelOn = "Hide Answer";
+            btnLabelOff = "Show Answer";
             btnID = "showanswerBtn";
             break;
         
         case "showsolution":
-            btnLabelOn = "Hide solution";
-            btnLabelOff = "Show solution";
+            btnLabelOn = "Hide Solution";
+            btnLabelOff = "Show Solution";
             btnID = "showsolutionBtn";
             break;
     }
     var btn = document.getElementById(btnID);
     ggbApplet.getValue(value) ? btn.innerHTML = btnLabelOn : btn.innerHTML = btnLabelOff;
-    ggbApplet.getValue(value) ? btn.className = "appBtn pressed" : btn.className = "appBtn";
+    ggbApplet.getValue(value) ? btn.className = "appBtn noimage fixedSize pressed" : btn.className = "appBtn noimage fixedSize";
 }
 
 
