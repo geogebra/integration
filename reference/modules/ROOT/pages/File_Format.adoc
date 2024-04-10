@@ -1,0 +1,73 @@
+= Reference:File Format
+
+:toc:
+
+== [#Accessing_GeoGebra_files]#Accessing GeoGebra files#
+
+A GeoGebra file is ending with `++.ggb++` (GeoGebra worksheet) or `++.ggt++` (GeoGebra tool), which are both just
+renamed `++.zip++` files. You can easily open them with a ZIP program of your choice by renaming them to .zip and open
+them as you would open any `++.zip++` file.
+
+== [#Contents]#Contents#
+
+=== [#.ggb_-_GeoGebra_Worksheet]#.ggb - GeoGebra Worksheet#
+
+The `++.ggb++` file is the standard way to save GeoGebra worksheets. As stated above this file is just a renamed
+`++.zip++` file. If you rename your `++.ggb++` to `++.zip++` you will find the following files after unzipping:
+
+==== [#geogebra.xml]#geogebra.xml#
+
+This is the file in which all the information about the construction is stored, the information is stored in
+http://en.wikipedia.org/wiki/Xml[XML]. For more information about the contents and structure of this file see the
+/Reference:Xml.adoc[XML reference].
+
+==== [#geogebra_thumbnail.png]#geogebra_thumbnail.png#
+
+This image contains a small preview image of the construction saved in the `++geogebra.xml++`. GeoGebra itself uses this
+image for the preview of GeoGebra files in the "Open.." and "Save As.." Dialog. This thumbnail could also be used to
+display previews of GeoGebra files within the operating systems file explorer or could be used by online systems or any
+other kind of software to display previews of uploaded GeoGebra files.
+
+=== [#geogebra.js]#geogebra.js#
+
+This file contains global JavaScript definitions used in the file. See xref:/Scripting.adoc[Scripting] for details.
+
+==== [#images]#images#
+
+Images used in the construction (included using the GeoGebra
+/File:Tool_Insert_Image_gif.adoc[image:Tool_Insert_Image.gif[Tool Insert
+Image.gif,width=32,height=32]]xref:/Image_Tool.adoc[Image Tool]) or as icons of custom tools are not stored with
+human-readable filenames, but can easily copied and renamed to be extracted out of GeoGebra files. If there are no
+images or custom tools in the `++.ggb++` there will be just the `++geogebra.xml++` and `++geogebra_thumbnail.png++` in
+the `++.ggb++`.
+
+=== [#.ggt_-_GeoGebra_Tool]#.ggt - GeoGebra Tool#
+
+The `++.ggt++` files use the same technique for storage as the `++.ggb++` files, so renaming and unzipping will reveal
+the following files:
+
+==== [#geogebra_macro.xml]#geogebra_macro.xml#
+
+This http://en.wikipedia.org/wiki/Xml[XML] stores the main information about the tool. As custom tools are also stored
+in the normal `++.ggb++` files the structure of the entries in this files are also explained in the
+/Reference:Xml.adoc[XML reference].
+
+==== [#images_2]#images#
+
+If there is any special icon assigned to this tool this icon is stored in a sub-folder. Be aware that both the icon and
+the sub-folder have names not intended to be read by humans, so don't try to make some sense out of it.
+
+== [#Modifying_the_files]#Modifying the files#
+
+Modifying `++.ggb++` or `++.ggt++` files (namely the `++.xml++` files within them) is clearly a task for the most
+tech-savvy users of GeoGebra. Whether you want to touch the `++.xml++` because you want to modify something which can't
+be modified by GeoGebra at the moment, like the definition of a custom tool, or you want to trick GeoGebra or just
+experiment you should take some tips for your journey:
+
+. Backup your files. It's almost certain that you will break your files sometime if you're modifying the XML definition.
+. Read the /Reference:Xml.adoc[XML reference] to understand what you are doing.
+. Be aware that the changes you've made may be lost if you re-save your file within GeoGebra. While it might be possible
+that GeoGebra understands something unusual while loading it might not save it at all or save it somehow anormal which
+corrupts the file.
+. ZIP all required files at the end using the most standard ZIP options (no encryption etc.) and rename your files back
+to `++.ggb++`.

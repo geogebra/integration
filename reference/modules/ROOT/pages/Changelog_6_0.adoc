@@ -1,0 +1,1445 @@
+= Reference:Changelog 6.0
+
+All releases will include the latest minor bugfixes and translation updates.
+
+*Releases are not simultaneous on all platforms* and not all platforms will get all versions (online and Classic 5 will
+_often_ get an earlier release)
+
+== [#6.0.836.0_.2826th_March_2024_build.29]#6.0.836.0 (26th March 2024 build)#
+
+* fix loading some .ggb files
+* fix SolveODE() freezing problem
+* improvement for eg `++Solve(BinomialDist(n, 0.25, 0…14)=0.05)++`
+* LaTeX fix for `++\underbrace++`
+* macOS: fix for pasting into spreadsheet
+* fix for `++--++` in text Input Boxes
+* fix for translated commands in spreadsheet
+
+== [#6.0.832.0_.2812th_March_2024_build.2C_unreleased.29]#6.0.832.0 (12th March 2024 build, unreleased)#
+
+* Scripting: re-enable support for case-insensitive command names
+* Classic 5: fix for fonts in Thai, Kannada languages
+
+== [#6.0.830.0_.285th_March_2024_build.29]#6.0.830.0 (5th March 2024 build)#
+
+* new API method `++ggbApplet.getFileLoadingError()++`
+* `++Ordinal()++` command improved in various languages
+* Mixed numbers now allowed with no integer part
+* make sure applets don't scroll on click
+
+== [#6.0.829.0_.2828th_February_2024_build.29]#6.0.829.0 (28th February 2024 build)#
+
+* fix for eg `++IFactor(x^4-x^2+1)++`
+* fix for `++Sequence(inequality)++`
+* fix for layer changing when parent object becomes undefined
+* CAS: fix nonsense result for `++X=(1,2,3)+r(1,2,3)++`
+* CAS: fix for editing slider
+* CAS: fix for integral showing `++dd++` not `++dx++`
+* updated CAS engine (Giac) - includes improvement for `++Integral(x^n*ln(x))++`
+* Screen reader: improvement for reading out (esp. negative) numbers
+
+== [#6.0.827.0_.2820th_February_2024_build.29]#6.0.827.0 (20th February 2024 build)#
+
+* fix `++IsInRegion()++` for 3D conics
+
+== [#6.0.826.0_.2813th_February_2024_build.29]#6.0.826.0 (13th February 2024 build)#
+
+* fix scripting problem eg in French with `++Inter(l1,l2)++`
+* make sure brackets kept for editing vectors ie `++a*(b*c)++`
+
+== [#6.0.825.0_.287th_February_2024_build.29]#6.0.825.0 (7th February 2024 build)#
+
+* new syntax `++Polynomial( f(x,y) )++`
+* fix Rotate Around Point by Angle Tool when you drag to select 2 points
+* macOS: fix pasting into spreadsheet with <Cmd>V
+
+== [#6.0.823.0_.2830th_January_2024_build.29]#6.0.823.0 (30th January 2024 build)#
+
+* *Breaking Change:* `++Solutions()++` now behaves like `++Solve()++` in all cases (still without `++x =++`) fixes eg
+`++Solutions(x/sqrt(x))++`
+* dragging with the mouse/keyboard should be more consistent
+* Algebra View slider speedup
+* fix for offline saving in Linux/Chrome
+* CAS: make sure eg `++x+x++` is simplified automatically again
+* speedup for pen strokes
+* Update to GWT 2.11
+* Update CAS Engine (Giac) fixes eg
+`++Solve({(m^2 + 2 m - 1 >= 0),(m^2 - 2 m - 1 <= 0),(m^2 + 2 m - 1)*(m^2 - 2 m - 1)=0},m)++`
+* fix Text Tool -> Advanced on touch screens
+* fix for circle filling when zoomed etc
+
+== [#6.0.820.0_.289th_January_2024_build.29]#6.0.820.0 (9th January 2024 build)#
+
+* Fix for (?)!
+* `++?examMode=++` options for eg Safe Exam Browser
+* more accurate answers for eg `++490/0.035++`
+* Classic 5: support for some newer JavaScript syntaxes
+
+== [#6.0.819.0_.283rd_January_2024_build.29]#6.0.819.0 (3rd January 2024 build)#
+
+* Classic 5: new SVG renderer, supports eg CSS styling
+* fix for `++TableText()++` with empty lists
+* improved asymptote plotting for `++log(a,x)++`
+* improve redefining (so construction protocol order retained)
+* make sure Special Points aren't shown for eg Show/Hide Tool
+* CAS: eg `++f=x+1++` creates proper function `++f(x)++`
+* CAS: `++Asymptote()++` command enabled
+* fix slow plotting for eg `++A2 sin(ω2 x + a)++`
+
+== [#6.0.817.0_.286th_December_2023_build.29]#6.0.817.0 (6th December 2023 build)#
+
+* Classic 5: fix for disappearing caret
+* Table View: fix for reappearing numbers
+* new syntax `++RandomBetween( <Minimum Integer>, <Maximum Integer>, <Number of Samples> )++`
+* CAS: fix for eg `++SolveCubic(2x^3-k x^2+4x-5)++`
+* CAS: fix for eg `++NSolve(-4 a(2)=16)++`
+* CAS: make sure the exact value is always sent to Giac even if shown rounded
+* Improve intersect tool when there are overlapping objects eg identical segments
+* fix autocomplete bug in Danish
+
+== [#6.0.814.0_.2821st_November_2023_build.29]#6.0.814.0 (21st November 2023 build)#
+
+* more accurate roots for eg `++x⁶ - 2x⁵ - 4x⁴ + 8x³++`
+* fix for applet scrolling on clicking
+* Web: make sure api.geogebra.org not called unnecessarily on startup
+
+== [#6.0.813.0_.2814th_November_2023_build.29]#6.0.813.0 (14th November 2023 build)#
+
+* Classic 5: fix bug with loading trace files with double-click
+* Classic 5: fix bug with changing line opacity
+* fix for eg `++Sequence(PieChart({1, 2, 3}, (i, 3), 1), i, 1, 2)++`
+* command autocomplete now matches on any part of the name, eg `++Line++` matches `++FitLine++`
+* make sure autocomplete closes on `++^++` and `++_++`
+* fix for eg `++Solve(x^(4/7)=15)++`
+* fix for eg `++((x^(rho)+y^(rho)))^(((1)/(rho)))=U++`
+* Web: fix for trace bug
+* fix for missing label for piecewise functions
+
+== [#6.0.811.0_.2831st_October_2023_build.29]#6.0.811.0 (31st October 2023 build)#
+
+* CAS: new syntax `++Extremum( <Function>, <Start x-Value>, <End x-Value> )++`
+* fix bug with slow segment drawing (with decorations)
+* Classic 5: fix for tooltip language
+* Classic 6: make sure keyboard showing in search dialog in Safari
+
+== [#6.0.810.0_.2825th_October_2023_build.29]#6.0.810.0 (25th October 2023 build)#
+
+* optimise Extremum() / Root() for eg `++x^100++`
+* Calculator Suite: last chosen sub-app remembered
+* fix for `++ggbApplet.getScreenshotBase64()++` on Safari
+* Classic 5.2: small fixes
+
+== [#6.0.807.0_.2817th_October_2023_build.29]#6.0.807.0 (17th October 2023 build)#
+
+* CAS: fix for `++≈++` and `++=++` for `++Solve()++`
+* CAS: fix for `++Solve({x*y^2=10,x*y^10=20})++` and `++Solve(cosh(x)=15/10)++`
+* make sure autocomplete opens after 3 characters again
+* make sure the Manual / Help links work again
+* make sure dropdowns work if their length changes dynamically
+* 3D: show axes labels by default
+* Classic 5.2: Universal Binary for Intel and Apple Silicon architectures
+
+== [#6.0.806.0_.2811th_October_2023_build.29]#6.0.806.0 (11th October 2023 build)#
+
+* Classic 5: fix for Input Box labels
+* bugfix for selection of infinite-radius circles
+* fix for artifacts at the edge of applets
+
+== [#6.0.805.0_.284th_October_2023_build.29]#6.0.805.0 (4th October 2023 build)#
+
+* support for embedding as ES6 module
+* bugfix: make sure `++{Polygon(A,B,n)}++` doesn't generate "ghost" object
+* new applet parameter `++borderRadius++`
+* fix for `++Intersect(3D curve, 3D curve, a, b)++`
+* CAS: fix for `++Solve((1-0.0064)^(n)≤0.03,n)++`
+* CAS engine updated with various bugfixes / improvements eg
+`++floor(((-1725033 * pi) + 5419351) / ((16885417 * pi) - 53047102))++`,
+`++Solve(x^2+(-√11+√2-√5)*x-2*√11*√2+2*√11*√5-2*√2*√5-12)++`
+
+== [#6.0.804.0_.2826th_September_2023_build.29]#6.0.804.0 (26th September 2023 build)#
+
+* Classic 5: updated to 64-bit Java 11 and JOGL 2.5 & version now eg `++5.2.0.804++`. Also Apple Silicon build
+* CAS: now supports the new mixed numbers
+* Dropdowns: improved styling
+* fix for dynamic absolute positions
+
+== [#6.0.803.0_.2819th_September_2023_build.29]#6.0.803.0 (19th September 2023 build)#
+
+* Exam mode shown in header
+* fix for dynamic absolute position
+* fix randomization in files with unlabeled polygons
+
+== [#6.0.802.0_.2812th_September_2023_build.29]#6.0.802.0 (12th September 2023 build)#
+
+* new exam mode for Vlaanderen region
+* updated colors for buttons
+* fix for "zoomed in keyboard" on iPhone
+
+== [#6.0.801.0_.287th_September_2023_build.29]#6.0.801.0 (7th September 2023 build)#
+
+* bug fix for `++Sequence(Text(RotateText(Element(listofnames...++`
+* GeoGebra 6: fix for saving with Unicode characters
+* bugfix for plotting `++0^x++`
+
+== [#6.0.799.0_.2826th_August_2023_build.29]#6.0.799.0 (26th August 2023 build)#
+
+* fix memory leak with Polygons in `++Sequence()++`
+* Make sure Ctrl-Z doesn't work in applets
+* CAS: fix for `++x(A)++`
+
+== [#6.0.794.0_.281st_August_2023_build.29]#6.0.794.0 (1st August 2023 build)#
+
+* new method `++ggbApplet.isInteractive()++`
+
+== [#6.0.793.0_.2825th_July_2023_build.29]#6.0.793.0 (25th July 2023 build)#
+
+* bugfixes
+
+== [#6.0.791.0_.2811th_July_2023_build.29]#6.0.791.0 (11th July 2023 build)#
+
+* Better cleanup on `++ggbApplet.remove()++`
+
+== [#6.0.790.0_.286th_July_2023_build.29]#6.0.790.0 (6th July 2023 build)#
+
+* fix for saving in offline apps
+* Scientific: Table View added
+
+== [#6.0.787.2F788.0_.2827th_June_2023_build.29]#6.0.787/788.0 (27th June 2023 build)#
+
+* `++<Ctrl>O++` in Algebra View / Input Boxes to enter recurring decimals
+* bugfix: make sure π is exact in CAS
+
+== [#6.0.785.0_.2820th_June_2023_build.29]#6.0.785.0 (20th June 2023 build)#
+
+* *new "Save online" and "Save to your computer" menu options* (uses the new File System Access API if available)
+* CAS: fix for `++l1(1)++` syntax
+
+== [#6.0.783.0_.2813th_June_2023_build.29]#6.0.783.0 (13th June 2023 build)#
+
+* New command syntax `++ApplyMatrix(3D matrix, quadric)++`
+* `++Heaviside()++` and `++Dirac()++` functions added for CAS results eg `++InverseLaplace(exp(-p)/p+1/p,p,t)++`
+* Fix `++CopyFreeObject()++` for list of functions
+
+== [#6.0.782.0_.286th_June_2023_build.29]#6.0.782.0 (6th June 2023 build)#
+
+* parentheses now available on the ABC keyboard tab
+
+== [#6.0.781.0_.2830th_May_2023_build.29]#6.0.781.0 (30th May 2023 build)#
+
+* Classic 5: line numbers restored in editor
+* fix for wrong horizontal alignment in
+`++Text( <Object>, <Point>, <Boolean for Substitution of Variables>, <Boolean for LaTeX formula>, <Horizontal alignment [-1|0|1]>, <Vertical alignment [-1|0|1]> ) ++`
+* CAS: Product() works better eg `++f(x)=Product(sin((π*x)/(n)),n,2,floor(sqrt(x)))++`
+
+== [#6.0.779.0_.2816th_May_2023_build.2C_not_released.29]#6.0.779.0 (16th May 2023 build, not released)#
+
+* fix "Selection allowed" checkbox for multiple objects
+* CAS: fix for `++¬a++`
+
+== [#6.0.778.0_.2810th_May_2023_build.29]#6.0.778.0 (10th May 2023 build)#
+
+* Fix problems with Finnish / Filipino language confusion
+* New command `++InverseBinomialMinimumTrials(Cumulative Probability, Probability of Success, Number of Successes)++`
+* CAS: new commands `++ExtendedGCD( <Integer>,<Integer> )++`, `++ExtendedGCD( <Polynomial>, <Polynomial> )++`,
+`++ModularExponent( <Number>, <Number>, <Number>)++`, `++CharacteristicPolynomial( <Matrix> )++`,
+`++MinimalPolynomial( <Matrix> )++`, `++LUDecomposition( <Matrix> )++`, `++QRDecomposition( <Matrix> )++`
+
+== [#6.0.776.0_.282nd_May_2023_build.29]#6.0.776.0 (2nd May 2023 build)#
+
+* improvement for eg `++6048 * (1/3)++`
+* `++||++` as shortcut for Logical OR (`++∨++`) now works in web apps
+
+== [#6.0.775.0_.2825th_April_2023_build.29]#6.0.775.0 (25th April 2023 build)#
+
+* new scripting tab "On Drag-end"
+* new scripting tab "On Change" for Input Boxes only
+
+== [#6.0.774.0_.2818th_April_2023_build.29]#6.0.774.0 (18th April 2023 build)#
+
+* CAS: fixes for eg `++Solve(sin(x)=-0.5, 0 <x < 2pi)++` and `++Integral(sgn(x),x,-1,1)++`
+* bugfix with absolute position objects
+* Editor: fix SVG export on retina screens
+
+== [#6.0.772.0_.284th_April_2023_build.29]#6.0.772.0 (4th April 2023 build)#
+
+* bugfix: make sure fixed lists can't be moved with the keyboard eg `++{(1,2)}++`
+
+== [#6.0.770.0_.2829th_March_2023_build.29]#6.0.770.0 (29th March 2023 build)#
+
+* fix for `++SolveODE(y'=9.82-0.002*y^(2))++` and `++Integral(sgn(x),-1,1)++`
+* fix for old Input Boxes on iOS (also axis distance settings)
+* app "chooser icon" removed
+* fix for `++<++` in screenreader
+* iOS Classic: fix for Text Tool
+* Classic 5: new vector style option added here too
+* fix for drawing lists of LaTeX text
+* Classic 6: fix for spreadsheet after <Alt><Tab>
+* fix for "Copy to Graphics View" for Probability Calculator
+* CAS: Improvement for eg `++SolveODE(2 x sqrt(y),(0,1))++`
+
+== [#6.0.766.0_.2814th_March_build.29]#6.0.766.0 (14th March build)#
+
+* Fix for `++Zip()++`
+
+== [#6.0.764.0_.2810th_March_build.29]#6.0.764.0 (10th March build)#
+
+* {blank}
+
+== [#6.0.762.0_.2828th_February_2023_build.2C_ChromeOS_only.29]#6.0.762.0 (28th February 2023 build, ChromeOS only)#
+
+* Input Boxes: show nice placeholders rather than `++?++`
+* Checkboxes: new style
+* web: fix for Locus problem on loading
+* new syntaxes `++TableText( <List>, <List>, ..., <Alignment of Text>, <Minimum Cell Width> )++` and
+`++TableText( <List>, <List>, ..., <Alignment of Text>, <Minimum Cell Width>, <Minimum Cell Height> )++`
+* Chrome Web Store: fix crashing bug
+* Input Box border color now set according the background color
+
+== [#6.0.760.0_.287th_February_2023_build.29]#6.0.760.0 (7th February 2023 build)#
+
+* iOS Classic: fix for textfields in Settings
+* make sure "speed" and "step" properties are preserved on redefine
+* more options added to available predefined icons for buttons
+
+== [#6.0.759.0_.2831st_January_2023_build.29]#6.0.759.0 (31st January 2023 build)#
+
+* Optimise plotting for eg `++sin(x^x)++`
+* Option to change the style of vector arrows
+* fix bug with eg `++h SetValue(list,{{a},{a}})++`
+
+== [#6.0.755.2F756.0_.2817th_January_2023_build.29]#6.0.755/756.0 (17th January 2023 build)#
+
+* new syntax `++FractionText( <Number>, <Single fraction> )++`
+* bugfix for `++Sum()++` with empty lists
+* CAS: fix for `++Solve(2^x-(1/25)*5^x,x)++` without the =0
+
+== [#6.0.754.0_.2810th_January_2023_build.29]#6.0.754.0 (10th January 2023 build)#
+
+* fix for dragging `++Point(list)++`
+* fix for on-screen keyboard in Table view
+
+== [#6.0.753.0_.283rd_January_2023_build.29]#6.0.753.0 (3rd January 2023 build)#
+
+* Editor: mixed number button added
+* iOS Classic: fix for textfields in Settings
+* fix for spreadsheet "keyboard trap"
+* CAS fix for `++f(matrix)++`
+* fix for opacity and linestyle in PDF export
+* Classic 6: <Alt> shortcuts now work in spreadsheet
+
+== [#6.0.752.0_.2820th_December_2022_build.29]#6.0.752.0 (20th December 2022 build)#
+
+* Classic 6: fix problem with copy/paste in spreadsheet
+* add "y-increment" for points
+
+== [#6.0.751.0_.2813th_December_2022_build.29]#6.0.751.0 (13th December 2022 build)#
+
+* CAS: Distance() command added
+* New default Button style
+
+== [#6.0.748.2F749.0_.286th.2F7th_December_2022_build.29]#6.0.748/749.0 (6th/7th December 2022 build)#
+
+* *new command `++SetImage( <Object>, <Image> )++`*
+* new applet parameter `++"ScreenReaderMode":"Unicode"++` or `++"ScreenReaderMode":"ASCII"++`
+* text/images highlighted on <Tab> only, not mouse click
+* new icons to switch between exact/approx answers
+* Classic 6: "Open Tool" added
+* Absolute Position can now take variables
+* fix for eg `++Slope(Element(NormalQuantilePlot[ {2,3,4}],4))++`
+* fix for AV sliders on touch
+
+== [#6.0.745.0_.2816th_November_2022_build.29]#6.0.745.0 (16th November 2022 build)#
+
+* fix plotting glitch for eg `++-1 / tan²(x) - 1++`
+
+== [#6.0.744.0_.2814th_November_2022_build.29]#6.0.744.0 (14th November 2022 build)#
+
+* fix for saving regression line
+* fix for plotting eg `++f(x)=Normal(n,s,x,false)++`, `++f(x)=x+sqrt(2*3)++`
+* CAS: fix for `++Limit((sin(pi/6)-sin(t))/(pi/6-t),t,pi/6)++` and eg `++f({1,2,3})++`
+* fix for editing eg `++(1;20deg)++`
+
+== [#6.0.742.0_.282nd_November_2022_build.29]#6.0.742.0 (2nd November 2022 build)#
+
+* fix problem with `++FitPoly(l1, 1)++`
+* new default axes colour
+
+== [#6.0.741.0_.2828th_October_2022_build.29]#6.0.741.0 (28th October 2022 build)#
+
+* fix for plotting problems eg `++Derivative(2^x)++`
+* fix for saving one-var analysis with frequency table
+* new CAS: more consistent Solve() / NSolve() behaviour
+* more objects can have "absolute position" set in settings
+
+== [#6.0.739.0_.2823rd_October_2022_build.29]#6.0.739.0 (23rd October 2022 build)#
+
+* eg `++Spline(list1,3)++` is now draggable
+* fix clicking for drop-downs
+* fix `++enableFileFeatures++`
+* new plotter improvements
+* fix bug with custom tools
+
+== [#6.0.736.0_.2811th_October_2022_build.29]#6.0.736.0 (11th October 2022 build)#
+
+* clean up unused WebGL contexts
+* fix update of dependencies when dragging >code>\{Polygon(...)}
+
+== [#6.0.735.0_.284th_October_2022_build.29]#6.0.735.0 (4th October 2022 build)#
+
+* Suite: *Probability Calculator sub-app added for iOS and Android*
+
+== [#6.0.734.0_.2829th_September_2022_build.29]#6.0.734.0 (29th September 2022 build)#
+
+* Classic 6: fix for spreadsheet editing on iOS
+
+== [#6.0.732.0_.2820th_September_2022_build.29]#6.0.732.0 (20th September 2022 build)#
+
+* fix for Shading for `++Integral(f, a, b, false)++`
+
+== [#6.0.731.0_.2813th_September_2022_build.29]#6.0.731.0 (13th September 2022 build)#
+
+* small fixes
+
+== [#6.0.730.0_.2830th_August_2022_build.29]#6.0.730.0 (30th August 2022 build)#
+
+* more SVG icons added to default button images
+
+== [#6.0.729.0_.2825th_August_2022_build.29]#6.0.729.0 (25th August 2022 build)#
+
+* CAS: better syntax errors when number of arguments is wrong
+* bugfix for saving table of values
+* bugfix for polar grid with point fixed to grid
+* `++"transparent":true++` also for 3D View
+* Notes: images and equations can be dragged in from outside the applet
+* Plot piecewise `++If()++` better
+
+== [#6.0.726.0_.289th_August_2022_build.29]#6.0.726.0 (9th August 2022 build)#
+
+* new style for selected Points
+* Old Input Boxes now have "keyboard" icon for the full keyboard rather then the old "*α*" icon
+
+== [#6.0.724.2F725.0_.282nd_August_2022_build.29]#6.0.724/725.0 (2nd August 2022 build)#
+
+* CAS: fix for eg `++Sequence(j,j,0,pi/2,pi/10)++` and
+`++NSolve({(N)/(((a)(exp((-30)(k))))+(1))=(11)/(50), (N)/(((a)(exp((-40)(k))))+(1))=(11)/(25), (N)/((a)+(1))=(3)/(200)},{N=1, a=1, k=1})++`
+* fix label position when x:y is not 1:1
+* update to GWT 2.10.0
+* fix `++ShowGrid()++` scripting problem
+
+== [#6.0.723.0_.2826th_July_2022_build.29]#6.0.723.0 (26th July 2022 build)#
+
+* 3D: fix Show/Hide grid button
+
+== [#6.0.722.0_.2819th_July_2022_build.29]#6.0.722.0 (19th July 2022 build)#
+
+* HTML5: fix for extra spurious digits when rounding
+
+== [#6.0.721.0_.2812th_July_2022_build.29]#6.0.721.0 (12th July 2022 build)#
+
+* CAS: fix for `++Solve({a k=1,a ℯ^(3 k)=3 ℯ},{a,k})++`
+* Data Table improvements
+* fix for full-screen icon on touch
+
+== [#6.0.720.0_.285th_July_2022_build.29]#6.0.720.0 (5th July 2022 build)#
+
+* New command `++NIntegral(function, start x, start y, end x)++` to calculate and plot a numerical integral
+
+== [#6.0.718.0_.2822nd_June_2022_build.29]#6.0.718.0 (22nd June 2022 build)#
+
+* improvements for `++ClosestPoint(point, function)++`
+* bugfix for `++Derivative(f,0)++`
+* bugfix for `++Sample({2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14}, RandomBetween(2,3), false)++`
+* Freehand Function tool now available in the "Customize Toolbar" dialog
+* bugfix for `++IntersectPath(line, triangle)++` when dependent points are used
+* bugfix for positions of "Play" / "Reset" / "full-screen" icons
+
+== [#6.0.715.0_.2814th_June_2022_build.29]#6.0.715.0 (14th June 2022 build)#
+
+* fix for SetFilling()
+
+== [#6.0.713.0_.288th_June_2022_build.29]#6.0.713.0 (8th June 2022 build)#
+
+* new command `++Type(Conic/Quadric)++`
+* fix zooming jitter with 2 Views
+
+== [#6.0.709.0_.2824th_May_2022_build.29]#6.0.709.0 (24th May 2022 build)#
+
+* new option `++"transparentGraphics":true,++`
+* fix hyperbola filling
+* fix for `++Integral(exp(x^2)+3x,x,0,4)++`
+* fix problem with On Update scripts
+
+== [#6.0.707.0_.2817th_May_2022_build.29]#6.0.707.0 (17th May 2022 build)#
+
+* allow line thickness for 2D "surfaces"
+* bugfix for LaTeX style in 3D View
+
+== [#6.0.706.0_.2811th_May_2022_build.29]#6.0.706.0 (11th May 2022 build)#
+
+* CAS: fix for `++Extremum(40 sqrt(x) ℯ^(-0.5 x))++`
+* fix for macros getting duplicated
+* fix for slider's "play" button on touch
+
+== [#6.0.704.0_.283rd_May_2022_build.29]#6.0.704.0 (3rd May 2022 build)#
+
+* fix problem with value of `++c_1++` when saving SolveODE()
+
+== [#6.0.703.0_.2826th_April_2022_build.29]#6.0.703.0 (26th April 2022 build)#
+
+* fix problem with saving/loading value of `++c_1++` from SolveODE()
+* CAS: fix crashing problem on Windows with Classic 5
+
+== [#6.0.702.0_.2821st_April_2022_build.29]#6.0.702.0 (21st April 2022 build)#
+
+* fix problem with script running twice eg https://www.geogebra.org/m/m3aruswr
+* fix `++Intersect(line, spline)++`
+
+== [#6.0.701.0_.2812th_April_2022_build.29]#6.0.701.0 (12th April 2022 build)#
+
+* Android: Image Tool added
+* fix for "minutes" and "seconds" in editor
+* make sure ShortestDistance() works with dynamic points
+* fix OsculatingCircle() eg for hyperbolas
+
+== [#6.0.700.0_.286th_April_2022_build.29]#6.0.700.0 (6th April 2022 build)#
+
+* new syntax to set the decoration at the ends of segments `++SetDecoration( <Segment>, <Number>, <Number> )++`
+* Support for simple surds eg √8
+* fix for `++Surface(If(...++`
+* CAS: fix for `++x(x)^2++`
+* 3D: fix for "Use text as Caption"
+
+== [#6.0.696.2F697.0_.2829th_March_2022_build.29]#6.0.696/697.0 (29th March 2022 build)#
+
+* fix plotting of eg `++4x³ - 12x² > 0++`
+* Classic 6: fix problem with transparent burger menu
+
+== [#6.0.695.0_.2822th_March_2022_build.29]#6.0.695.0 (22th March 2022 build)#
+
+* Classic 5: sign-in removed
+
+== [#6.0.694.0_.2815th_March_2022_build.29]#6.0.694.0 (15th March 2022 build)#
+
+* fix crashing with pen strokes
+
+== [#6.0.693.0_.288th_March_2022_build.29]#6.0.693.0 (8th March 2022 build)#
+
+* make sure Cube tool doesn't label the "extra" points
+* fix `++f==-g++` for functions
+* Classic 6: fix for spreadsheet scrolling
+* fix for problem saving randomized lists of images
+
+== [#6.0.691.0_.2823rd_February_2022_build.29]#6.0.691.0 (23rd February 2022 build)#
+
+* fixes for drawing quadrics
+* fix for dilating circles
+
+== [#6.0.689.0_.2815th_February_2022_build.29]#6.0.689.0 (15th February 2022 build)#
+
+* Notes: Isometric and Polar grids
+
+== [#6.0.688.0_.288th_February_2022_build.29]#6.0.688.0 (8th February 2022 build)#
+
+* bug fixes
+
+== [#6.0.687.0_.281st_February_2022_build.29]#6.0.687.0 (1st February 2022 build)#
+
+* iOS: Image Tool added
+* CAS: PerpendicularVector(plane) syntax added
+
+== [#6.0.686.0_.2825th_January_2022_build.29]#6.0.686.0 (25th January 2022 build)#
+
+* New special syntax for just 2 points `++FitSin( {A, B} )++`
+* fix for `++Translate(circumcircular arc)++`
+* more function plotting improvements (especially asymptotes)
+
+== [#6.0.683.0_.287th_January_2022_build.29]#6.0.683.0 (7th January 2022 build)#
+
+* web: fix bold gridlines checkbox
+* fix plotting of eg `++nroot(x,3)++`
+* fix for Pen in 3D view
+* new dynamic syntaxes `++ParseToFunction("u+v",{"u", "v"})++`, `++ParseToFunction("x^2")++`, `++ParseToNumber("1+2")++`
+
+== [#6.0.680.0_.288th_December_2021_build.29]#6.0.680.0 (8th December 2021 build)#
+
+* Notes: fix problem with images
+* CAS: make sure functions updated on zooming
+* filling updated when redefining eg `++y=x++` to `++y<x++`
+* fix SVG aspect ratio on buttons
+
+== [#6.0.678.0_.2830th_November_2021.29]#6.0.678.0 (30th November 2021)#
+
+* Better plotting for asymptotes
+* `++ClosestPoint()++` working better for implicit curves
+* Symbolic Input Boxes working for (free) lists of numbers
+* Web: fix for exporting SVGs containing images
+
+== [#6.0.677.0_.2823rd_November_2021_build.29]#6.0.677.0 (23rd November 2021 build)#
+
+* fix for `++Integral(x^-101/100)++`
+* new syntax for Points / Vectors `++P(1,2)++`
+* make sure moving a point with arrow keys works with "fixed to grid" setting
+
+== [#6.0.676.0_.2816th_November_2021_build.29]#6.0.676.0 (16th November 2021 build)#
+
+* Fix for Translate(If(0 < x < k, 2 + x, 1 < x < 2, -1), vector)
+* Fix for `++If()++` not working in scripts sometimes
+* make sure `++Sequence(IntegralBetween(...++` updates with slider
+
+== [#6.0.675.0_.289th_November_2021_build.29]#6.0.675.0 (9th November 2021 build)#
+
+* fix for drawing cylinders
+* CAS: better support for conics `++y=...++`
+* bugfix: auxiliary setting doesn't "stick" for segments of 3D polygon
+* fix for `++Tangent(implicit, A)++`
+* fix for wrong scale for some filling styles when exporting
+* Classic 5: make sure JavaScript objects are always returned from API calls
+
+== [#6.0.674.0_.282nd_November_2021_build.29]#6.0.674.0 (2nd November 2021 build)#
+
+* fix for `++Solve({x * y = 1,3*x^2 = y^2},{x,y})++`
+* Classic 5: fix for some CAS Calculations eg Numeric(), FitPoly() (Windows)
+
+== [#6.0.672.0_.2819th_October_2021_build.29]#6.0.672.0 (19th October 2021 build)#
+
+* Classic: fix for NSolve Tool
+* Classic CAS: fix for Substitute with Keep Input (missing brackets)
+* Classic 5: fix for hyperbola drawing
+* Notes: fix for missing Mindmap Tool
+* CAS App: make sure redefining a function updates the graph
+* make sure screen reader output works in iframe
+
+== [#6.0.671.0_.2812th_October_2021_build.29]#6.0.671.0 (12th October 2021 build)#
+
+* CAS: fixes for eg `++Solve(3*sqrt(x+4)<=5-2abs(x+2))++` and `++Solve(sqrt(2x + 7) + sqrt(-x + 1) - 3<=0)++`
+* Notes: New tools *Ruler* and *Protractor*
+* fix for `++ggbApplet.showToolBar()++`
+* fix for Tools with Surfaces
+
+== [#6.0.670.0_.287th_October_2021_build.29]#6.0.670.0 (7th October 2021 build)#
+
+* Better drawing of angles when axis ratio is not 1:1
+* fix for plotting eg `++ln(x)^(1+1/3+1/3+1/3)++`
+* fix problem with Input Boxes and 3D/Spreadsheet View
+
+== [#6.0.668.0_.2829th_September_2021_build.29]#6.0.668.0 (29th September 2021 build)#
+
+* fix for missing Labelling menu
+* fix problem plotting paraboloids etc
+* Technical change: use Pointer Events
+* Classic: fix bug where "Keep Input" button gives `++null:=++`
+* Make sure PgUp, PgDown don't change layer
+* fix problem on iOS where Input Boxes scroll the applet
+* CAS: make sure Solve() doesn't call NSolve() for inequalities
+* fix for IntersectPath(P, a) with Zip()
+* fix bug for 3D angles in lists
+* fix bug with full-screen button
+
+== [#6.0.666.0_.2821st_September_2021_build.29]#6.0.666.0 (21st September 2021 build)#
+
+* fix for Condition to Show Object not copied correctly in spreadsheet when it's just a single variable
+* fix for opening .ggb files from Google Drive
+
+== [#6.0.665.0_.2814th_September_2021_build.29]#6.0.665.0 (14th September 2021 build)#
+
+* CAS: make sure "random" commands work again
+* fixes for `++ggbApplet.remove()++`
+
+== [#6.0.664.0_.287th_September_2021_build.29]#6.0.664.0 (7th September 2021 build)#
+
+* fix problem with Box Plot label position
+
+== [#6.0.662.0_.2826th_August_2021_build.29]#6.0.662.0 (26th August 2021 build)#
+
+* Classic 6: fix for Ctrl-C/V/A in scripting dialogs
+* new command `++IsFactored( <Polynomial> )++`
+* small Probability Calculator fixes
+
+== [#6.0.659.0_.2810th_August_2021_build.29]#6.0.659.0 (10th August 2021 build)#
+
+* atan(), acos(), asin() now work for complex numbers
+* new parameter `++"detachKeyboard":true++`
+* Classic 5: fix for disappearing objects when Input Box has the focus
+* Suite: Probability Calculator sub-app added (web only)
+* 3D: fix for labelling eg Cube segments
+* fix alignment for new "Text as caption" Captions
+* CAS: make sure `++Invert()++` is exact
+
+== [#6.0.657.0_.2827th_July_2021_build.29]#6.0.657.0 (27th July 2021 build)#
+
+* CAS: Make sure Invert(matrix) is exact
+* Notes: New Spotlight Tool
+* Classic 6: missing style bar added to Probability Calculator (for discrete)
+
+== [#6.0.656.0_.2820th_July_2021_build.29]#6.0.656.0 (20th July 2021 build)#
+
+* "Use text as caption" option now available for all objects
+* Notes: buttons for "atomic formulas" added
+* CAS: Cursive `++l++` killed
+* make sure Symbolic Input Boxes stay the same width and scroll nicely
+
+== [#6.0.654.0_.2815th_July_2021_build.29]#6.0.654.0 (15th July 2021 build)#
+
+* fix order of Arabic digits eg on axes
+* Tabbing order can be customized by making a special list like `++tabOrder = {A, B, E, D}++`
+* fix problem with truncating calculations on `++%++`
+
+== [#6.0.652.0_.286th_July_2021_build.29]#6.0.652.0 (6th July 2021 build)#
+
+* CAS: fix eg `++2/1E-12++` in Keep Input mode
+* CAS: slightly simplified answer from `++Substitute()++`
+* CAS: new option to "save" (in a secure area) in exam mode
+* Probability Calculator: fix problem saving intervals
+
+== [#6.0.650.2F651.0_.2829th.2F30th_June_2021_build.29]#6.0.650/651.0 (29th/30th June 2021 build)#
+
+* CAS: fixes for
+`++Solve( { (k-s)/k * (105-(k-s))/(300-k) = 0.125, (k-w)/k * (105-(k-s))/(300 - k) = 0.375, (k-s)/k * (195-(k-w))/(300-k) + (k-w)/k * (195 - (k-w)) / (300-k) = 0.5 } , {k,s,w} )++`
+, `++NSolve(Integral(sqrt(sin(x)),0,b)=0.64,b)++` and `++Derivative(f(sec(x)))++`, `++TaylorPolynomial(cbrt(2x-3))++`
+* New two-tailed *][* option for probability calculator
+* CAS: fix problem with `++n!++`
+* Notes: fix for embedded applets
+* improved spreadsheet previews from `++ggbApplet.getScreenshotBase64()++`
+* ChromeOS: Exam mode starts automatically in Kiosk mode
+
+== [#6.0.649.0_.2822nd_June_2021_build.29]#6.0.649.0 (22nd June 2021 build)#
+
+* Notes: new Mindmaps Tool and Charts improvements
+* improvement for eg `++FormulaText(sin(1x + 1x - 1x))++`
+* CAS: fix for eg `++mod(3^5431843, 2)++`
+
+== [#6.0.648.0_.2815th_June_2021_build.29]#6.0.648.0 (15th June 2021 build)#
+
+* Fix Rigid Polygon Tool/Command when making a copy of a regular polygon
+* Fix for eg `++Roots(2.00011sin(x/2)-x)++`
+* Fix clicking in Input Boxes on retina screens (especially matrices/vectors)
+
+== [#6.0.647.0_.288th_June_2021_build.29]#6.0.647.0 (8th June 2021 build)#
+
+* Classic 6: fix for scrollwheel in spreadsheet
+
+== [#6.0.645.2F646.0_.284th_June_2021_build.29]#6.0.645/646.0 (4th June 2021 build)#
+
+* fix `++ggbApplet.getScreenshotBase64()++` for webSimple
+* CAS: make sure eg `++SolveODE((y')²+5y'+6=0)++` returns both solutions
+* Symbolic Input boxes are now the default
+
+== [#6.0.643.2F644.0_.2825th.2F26th_May_2021_build.29]#6.0.643/644.0 (25th/26th May 2021 build)#
+
+* CAS: fix for `++Solve(tan(pi/18)=-sqrt(x),x)++` and `++Integral((1/4-3/10*sin(19/10*x-41/10))^2, 0, 15/10)++`
+* SlopeField(): fix arrow directions
+* Classic 5: fix for missing Virtual Keyboard
+* Graphing, Geometry, CAS: *New Algebra View layout and full screen option*
+* *`++ggbApplet.SVG()++` changing to `++ggbApplet.exportSVG(callback)++`*
+* fix vertical alignment of LaTeX captions on buttons
+* Classic 6: improved spreadsheet scrolling with mouse
+* Editor: avoid "jumping" when caret moved
+
+== [#6.0.640.0_.2827th_April_2021_build.29]#6.0.640.0 (27th April 2021 build)#
+
+* fix style bar in Safari
+
+== [#6.0.638.2F639.0_.2820th_April_2021_build.29]#6.0.638/639.0 (20th April 2021 build)#
+
+* fix for tracing functions
+* switch from pako.js to fflate.js
+* built-in buttons icons switched to SVGs
+* CAS: fix for eg `++Rationalize(1/(sqrt(3+ί)))++` in web (& smaller)
+* CAS: fix for acosd and atand
+* CAS: make sure `++Eigenvectors({{1,2},{3,4}})++` is exact
+
+== [#6.0.637.0_.2813th_April_2021_build.29]#6.0.637.0 (13th April 2021 build)#
+
+* Geometry: fix Rigid Polygon Tool/command
+* fix for plotting `++arcosh(x)++`
+
+== [#6.0.636.0_.286th_April_2021_build.29]#6.0.636.0 (6th April 2021 build)#
+
+* fix problem drawing linear functions (especially in Regression panel)
+
+== [#6.0.635.0]#6.0.635.0#
+
+* CAS: fixes for `++Solve({a*log(b)=1, a=-1},{a,b})++` and
+`++Solve({x*cos(35deg)-y*cos(50deg)=0,x*sin(35deg)+y*sin(50deg)=784.8} , {y,x})++`
+* CAS: improvement for
+`++Simplify((sqrt((4*(cos((1/2*(acos((61/1040*sqrt(130)))-atan(11/3)))))^(2))+21)-(2*cos((1/2*(acos((61/1040*sqrt(130)))-atan(11/3))))))^(2))++`
+* `++Root()++` command more accurate
+* CAS: fix translations on iOS & Android
+
+== [#6.0.634.0]#6.0.634.0#
+
+* CAS: make sure this works both ways round `++Intersect(x+y=0, x^2+y^2=5)++`
+* Notes (and Pen Tool): always show "mouse" cursor while writing
+* Improved plotting algorithm
+
+== [#6.0.632.0]#6.0.632.0#
+
+* new command `++PieChart()++`
+* Classic 5: "Open from GeoGebra" removed
+* Improved clipping
+* Classic 5: fix slider speed on fast machines
+* 3D: fix for loading Surfaces
+* switch help links to https://www.reddit.com/r/geogebra/
+* Fix for Algebra View opening too wide when editing eg `++DotPlot(Sequence(1000))++`
+* Bugfix: make sure `++Point(Sequence(Sequence(...++` is reloaded in the same place
+* fix for 3D View zooming problem
+
+== [#6.0.631.0]#6.0.631.0#
+
+* `++cbrt(++` switched to nice form
+
+== [#6.0.630.0]#6.0.630.0#
+
+* fix for missing brackets in Cross()
+* fix for some special cases of `++Intersect(conic, conic)++`
+
+== [#6.0.628.2F629.0]#6.0.628/629.0#
+
+* Make sure `++arcsen()++` works in Spanish Input Boxes
+* fix for `++Max(list)++`. Also affects statistics view.
+* Input Boxes are now restricted to only simple variables like `++a++`, `++a_{1}++`
+
+== [#6.0.627.0]#6.0.627.0#
+
+* Improvements for `++SurdText()++` for negative numbers
+* Classic 5: fix Ctrl-ShiftM/B
+* iOS: make sure sign-in works in Classic 6
+* improvements for `++ggbApplet.getScreenshotBase64()++`
+* Improvements for inequalities with Input Boxes
+* `++Max()++` and `++Min()++` work better for inequalities
+
+== [#6.0.626.0]#6.0.626.0#
+
+* 3D View: dynamic bounds now supported
+* CAS: Eigenvectors() and matrix functions now exact
+* fix for plotting `++x^(-(1/3))++`
+* display `++ln|x|++` as `++ln|x|++`
+* fix accuracy of z^2 for complex
+* fixes for typing Korean on physical keyboards
+* fixes for next text syntax in Sequence() command `++<Horizontal alignment [-1|0|1]>, <Vertical alignment [-1|0|1]>++`
+
+== [#6.0.625.0]#6.0.625.0#
+
+* Windows: Printing working from GeoGebra 6 offline
+* CAS: fixes for `++Integral(sqrt(((-x) / sqrt(r² - x²))² + 1))++`,
+`++Integral((exp((-((x-9/10)^(2)))/2))/(sqrt(2*pi)),x,1,2)++`, `++Solve(abs(b + x) = sqrt(b^2 - c), x) ++`,
+`++Solve(exp(100x)+exp(-100x)=12)++`, `++Integral(sqrt(1-x^2)*(sqrt(1+(-x/(sqrt(1-x^2)))^2)),0,1)++`,
+`++Solve(x^3+2x^2+15x+2>0)++`
+* CAS: fix for `++Solve(sqrt(abs(x^2-25)+25)=abs(x+4)+4)++`
+* Classic 5: add workaround for Big Sur
+
+== [#6.0.622.2F624.0]#6.0.622/624.0#
+
+* Suite: CAS, 3D, Geometry added
+* CAS: Improvement for eg `++TrigExpand(sin(x)sin(x/3))++`
+* CAS: `++Assume()++` command implemented
+* Slopefield() - option for arrows added
+* Symbolic Input Boxes: keyboard adapts to object type
+* Symbolic Input Boxes: type names of Greek letters directly
+* fix for Numerator/Denominator so `++Denominator()++` will always be positive
+* Classic 6: bugfix for rearranging views
+* `++x^(-(1 / 3))++` plotted correctly
+
+== [#6.0.620.0]#6.0.620.0#
+
+* new commands `++ReplaceAll( <Text>, <Text to Match>, <Text to Replace> )++` and
+`++Split( <Text>, <List of Texts to split on>)++`
+* fix for PlaySound()
+
+== [#6.0.619.0]#6.0.619.0#
+
+* fix for `++FormulaText("\Omega")++`
+* fix for dialogs in Safari
+* fix for `++FormulaText(vector)++`
+* fix for Google Drive integration
+
+== [#6.0.616.0]#6.0.616.0#
+
+* fixes for Probability Calculator (including using new editor)
+
+== [#6.0.614.0]#6.0.614.0#
+
+* show placeholders for empty superscripts / subscripts / fractions / vectors / matrices / etc
+* fix for Korean "doubled" characters
+* Classic 5: fix for scroll-wheel / touchpad on certain devices
+* fix for missing brackets in Algebra View for Translate(function)
+* Classic 5: fix for missing < in Algebra View
+* Classic 5: fix for IntegralSymbolic()
+* Classic 6: fix dot-plot resizing
+* Classic 6: fix for double letters on iOS
+* fix for Pen Tool in Graphics View 2
+
+== [#6.0.613.0]#6.0.613.0#
+
+* ignore empty super/subscripts (rather than syntax error)
+* new command `++IsVertexForm( <Function> )++`
+* allow `++[ ]++` instead of `++( )++` in Input Boxes
+
+== [#6.0.611.2F612.0]#6.0.611/612.0#
+
+* new command `++LineGraph(<List of x-coordinates>, <List of y-coordinates>)++`
+* fix for default display style for lines
+* CAS: fix for eg `++Solve((sqrt(x² - x - 24) - 3x + 26) / (x - 10)+2<0)++` and `++Solve((x^2-6x+5)/(x^2-3x+2)>=0)++`
+* fix for `++ggbApplet.getLabelVisible()++`
+* CAS: fix for `++Sum(BinomialDist(300, 0.05, i, 0),i,0,10)++`
+* Classic 5: fix for loading files with Unicode names (full re-install needed)
+* Classic 5: JavaScript listeners now take a function or string as argument
+
+== [#6.0.609.0]#6.0.609.0#
+
+* fixes for external keyboards on iOS
+
+== [#6.0.608.0]#6.0.608.0#
+
+* fix for Input Box linked to slider not respecting slider bounds (old Input Boxes only)
+* CAS: `++Numeric()++` works for more than 15 d.p.
+* Classic 6: fix white background in Customize Tools dialog
+* fix for language translation of built-in functions
+
+== [#6.0.606.0]#6.0.606.0#
+
+* Symbolic Input Boxes: add option for Serif
+* Symbolic Input Boxes: `++asin(x)++` is now `++a*sin(x)++`
+* Mobile: make sure keyboard _always_ opens for tool dialogs
+* fix for Input Boxes without labels
+
+== [#6.0.605.0]#6.0.605.0#
+
+* CAS: Min() and Max() implemented
+
+== [#6.0.604.0]#6.0.604.0#
+
+* Classic 5: fix for `++ggbApplet.getValueString()++`
+* Graphing: "Statistics" summary for Min / Q1 / Median / Q3 / Max
+* CAS: new command `++IntegralSymbolic()++`
+* Complex functions implemented (including `++Expand(f)++` and `++f==g++`)
+
+== [#6.0.603.0]#6.0.603.0#
+
+* fix `++beta()++` for negative inputs
+
+== [#6.0.602.0]#6.0.602.0#
+
+* Fix Input Box -> Position
+* Spreadsheet: fix Paste from context menu
+* Classic 5: double-clicking on .ggb files with Unicode filenames (eg Greek, Chinese) works (*full re-install needed*)
+
+== [#6.0.601.0]#6.0.601.0#
+
+* new syntax for aligning text
+`++Text( <Object>, <Point>, <Boolean for Substitution of Variables>, <Boolean for LaTeX formula>, <Horizontal alignment [-1|0|1]>, <Vertical alignment [-1|0|1]> )++`
+* CAS: fix for `++Solve({tan(58°)=s/(50-t), tan(47°)=s/t},{s,t})++` (crashing bug)
+* CAS: fix for `++Integral((exp((-(x^2))/((sqrt((1-1/10)))^2))),x,-1,1.7)++` (internal fix for approx answer)
+* CAS: fixes for `++Integral(sqrt(tanh(x)))++`, `++LimitBelow(floor(x),1)++`,
+`++Solve({x^2+2*x*y-y^2=-32,-3*x^2-2*x*y+3y^2=32},{x,y})++`, `++Length({(1,2,3),(4,5,6)})++`,
+`++Solve(22044=6000+264*((x+1)^(60)-1)/(x)*(1)/((x+1)^(60))+7000*(1)/((x+1)^(60)))++`, `++Limit(sin²(x)+cos²(x),x,∞)++`,
+`++|x|^0.8==|x|^(4/5)++`
+* Improvement for `++Simplify(Inequality)++`
+* fix for memory leak
+
+== [#6.0.600.0]#6.0.600.0#
+
+* fix `++RandomPointIn( <Conic/Circle> )++`
+* `++Intersect( <Curve 1>, <Curve 2>, <Parameter 1>, <Parameter 2> )++` working for 3D Curves
+* "Use text as Caption" to allow dynamic captions for Input Boxes
+
+== [#6.0.599.0]#6.0.599.0#
+
+* CAS: `++RemoveUndefined()++` and `++IsInteger()++` implemented
+
+== [#6.0.598.0]#6.0.598.0#
+
+* fix for `++ggbApplet.reset()++`
+
+== [#6.0.596.0]#6.0.596.0#
+
+* fix for dropdowns not closing on click
+* Improvements for pasting LaTeX into the Algebra Input and Input Boxes
+* new command `++RemovableDiscontinuity()++` for rational functions (also for previews)
+* Notes: new *Table* Tool
+* Editor: SVG export, `++evalLaTeX()++` added, event for <Enter> / focus lost added
+* Chrome: copy image to clipboard working
+
+== [#6.0.593.0]#6.0.593.0#
+
+* fix for Inverse polygons
+* fix for `++\left\langle++`
+
+== [#6.0.592.0]#6.0.592.0#
+
+* fix for plotting eg `++f(x)=ln(44)++`
+* 3D: fix for rotating the view on touch
+
+== [#6.0.591.0]#6.0.591.0#
+
+* log(x) now gives log_10(x) not ln(x)
+* fix for eg `++sin(x)^cos(x)++`
+* extra parameter added to`++ggbApplet.getValueString("f", false)++` to make sure output isn't localized
+* fix for sliders with 1° increment
+
+== [#6.0.590.0]#6.0.590.0#
+
+* 3D: new tool _Surface of Revolution_
+* Graphing: make sure complex * complex works again
+* fix for `++\\n++` in Input Boxes
+* fix for `++Polygon(A,B,3,plane)++` when A and B are 2D points
+* Notes: new *Equation* tool
+* Complex *i* displayed better in Input Boxes and LaTeX texts
+
+== [#6.0.588.0]#6.0.588.0#
+
+* Delete Tool won't now delete fixed objects in Activities
+
+== [#6.0.587.0]#6.0.587.0#
+
+* better parsing of expressions without explicit multiply eg `++f(p,q)=sin(pq)++`
+* fix for Input Boxes sometimes disappearing on <Tab>
+* new parameter to set button's border colors eg `++"buttonBorderColor":"#ff00ff"++`
+* Graphing: `++Length(list)++` working again
+* Graphing: Equation shown for `++Line(A, B)++` again
+* Symbolic Input Boxes working for conics, implicit curves and quadrics
+* Now built with GWT 2.9
+* Android: fix bug with undo (R8 compiler bug)
+
+== [#6.0.583.0]#6.0.583.0#
+
+* Classic 6: fix for re-opening settings (mostly iOS)
+* Classic 6: make sure random numbers aren't updated when CAS is loaded
+* fix for angle not being shown when it's from `++Element(list,1)++`
+
+== [#6.0.581.0]#6.0.581.0#
+
+* Suite (beta): now on www.geogebra.org/calculator
+* remove unnecessary API calls
+
+== [#6.0.580.0]#6.0.580.0#
+
+* Classic 5: "Apply Template" will also apply default styles to _existing_ objects
+* fix for symbolic Input Boxes disappearing on touch
+* fix for `++FormulaText("\Rho")++`
+* JavaScript listeners preserved over a redefine
+* GeoGebra 6: fix installer where username contains a space
+* fix for Input Box cleared on full-screen button
+* improved plotting for eg `++ln(x)++`
+* bugfix for drawing grid with "positive only" axis
+* better parsing of expressions without brackets eg `++sinsinsinx++`
+* Classic 6: brackets added when <Space> typed after function name
+* `++pi++` replaced by `++π++` in Input Boxes
+* 3D Calculator: Snapshot button in AR Mode
+* Android 10: offline saving fix
+
+== [#6.0.579.0]#6.0.579.0#
+
+* fix bug with numbers being turned into sliders
+* Classic 5: fix bug with dragging drop-down lists
+
+== [#6.0.578.0]#6.0.578.0#
+
+* Classic 5: Symbolic Input Boxes working
+* Scientific calculator moved to https://www.geogebra.org/scientific
+
+== [#6.0.577.0]#6.0.577.0#
+
+* Classic: fix for native keyboard appearing on iOS 13.3.1
+* CAS App: sliders and vectors working
+* Classic: fix for eg `++ggbApplet.evalCommand("$1:f(x)≔x^2")++`
+* make sure `++InputBox1+""++` and `++FormulaText(InputBox1)++` work properly
+* fix for undo/redo with symbolic Input Boxes
+* (non-symbolic) Input Boxes linked to numbers now show numeric-only keyboard on Android / iOS
+
+== [#6.0.574.0]#6.0.574.0#
+
+* make sure output line shown for FitLine() etc again
+* Web: fix for #&¬ key
+* Android: fix keyboard closing problem on HTC phones
+
+== [#6.0.573.0]#6.0.573.0#
+
+* Graphing: same in exam and non-exam (construction features removed)
+* More Symbolic Input Box improvements (including Vectors and the type can't be changed by typing "bad" syntax)
+* Bugfix: ggbApplet.setFixed() no longer triggers OnUpdate scripts
+* `++RandomElement({1/2,1/3,1/4})++` works better
+
+== [#6.0.570.0]#6.0.570.0#
+
+* fix position for LaTeX captions on Checkboxes
+* More Symbolic Input Box improvements (including editing column vectors, fix for resizing problems and syntax errors
+kept)
+* fix bug with objects getting "stuck" as undefined
+* fix bug with background not being redrawn at the correct size
+* fix bug with Input Boxes grabbing an answer from another Input Box
+
+== [#6.0.569.0]#6.0.569.0#
+
+* HTML5: fix bug with trace
+
+== [#6.0.567.2F568.0]#6.0.567/568.0#
+
+* Graphing Calculator: Measurement, Transformation and Construction Commands and Tools disabled
+https://www.geogebra.org/m/shfwqcpr
+* More Symbolic Input Box improvements (including editing matrices, lines & planes)
+* Classic 6: fix "double name" problem in spreadsheet
+* Editor: `++"preventFocus": false++` option added
+* fix for IsInRegion() in webSimple
+
+== [#6.0.564.0]#6.0.564.0#
+
+* new command `++CASLoaded()++`
+* Improvement for random numbers being updated on redefinition (eg when Input Box contents changed) - random numbers
+should be defined in their "own object" to take advantage of this
+
+== [#6.0.562.0]#6.0.562.0#
+
+* Classic 5: fix for `++ggbApplet.registerAddListener()++`
+* Classic 6: fix for eg `++SetPerspective("S")++`
+* Symbolic Input Boxes working for eg `++f(x,y)++`
+
+== [#6.0.560.0]#6.0.560.0#
+
+* Input Boxes are empty rather than showing `++?++` for undefined linked geo
+* iOS 3D: fix for crashes on small screens (eg type `++x++`)
+* Alignment option for Input Boxes
+* CAS Calculator: more commands added: Invert(), NSolutions(), Sequence(), ReducedRowEchelonForm(), Substitute(), Sum(),
+Transpose(), RemoveUndefined(), Tangent()
+
+== [#6.0.559.0]#6.0.559.0#
+
+* download xx.cache.js files in parallel
+* option for caching with service worker
+* "Selection Allowed" working for Input Boxes, Dropdowns and Buttons
+* Screenreader works for reading LaTeX Captions
+* fix for ReadText() when run from button by pressing <Space>
+
+== [#6.0.558.0_.28iOS_only.29]#6.0.558.0 (iOS only)#
+
+* CAS Calculator: fixes for eg f(x)=
+
+== [#6.0.556.2F7.0]#6.0.556/7.0#
+
+* CAS App: first official release
+* <Tab> Selects Input Box contents
+* "Symbolic" option for Input Boxes
+* fix rounding in Input Boxes
+
+== [#6.0.553.0]#6.0.553.0#
+
+* GeoGebra 6: <Alt>/ for backslash (for eg Dutch keyboards)
+* fix for NaN in Input Boxes instead of ?
+
+== [#6.0.552.0]#6.0.552.0#
+
+* PDF Export fix for background image / traces
+* fix for `++Point(function, slider)++` when the function is undefined
+* fix for problem with Input Boxes not updating in Graphics View 2
+
+== [#6.0.551.0_.28not_released_yet.29]#6.0.551.0 (not released yet)#
+
+* make sure Complex numbers with zero imaginary part are reloaded correctly
+* Editor: improvement for eg `++sin²(x)++`
+
+== [#6.0.550.0]#6.0.550.0#
+
+* Limit max polynomial degree to 1000 (affects eg `++Coefficients()++` command)
+* Android: support 64-bit devices
+* Android: better sign-in method (for Google)
+* Graphing: make sure dy/dx button uses `++NDerivative()++` not `++Derivative()++`
+* Classic 6: Settings -> Algebra -> Increment missing
+* Classic 6: Support for Raspberry Pi 4 (with working 3D View!)
+
+== [#6.0.549.0]#6.0.549.0#
+
+* fix for function variable changing in `++Sequence(Integral(f, a, b)...++`
+* Android: fix Google login (from v547)
+* GeoGebra 6: Simplified Chinese: commands can be typed in Chinese or English
+
+== [#6.0.547.0]#6.0.547.0#
+
+* fix `++AttachCopyToView()++` for Rays
+* CAS: fix eg `++Simplify((x^2+2*x+1)/((x+1)^8))++`
+* 3D: fix for Surface()
+* ChromeOS: GeoGebra Classic now a packaged app
+
+== [#6.0.546.0]#6.0.546.0#
+
+* Classic 5: fix for JavaScript error ("java.lang.String")
+
+== [#6.0.545.0]#6.0.545.0#
+
+* 3D: fix extrude from polygon
+* CAS: fix for `++Solutions(x^2=a)++`
+* fix for horizontal panning glitch
+
+== [#6.0.544.0]#6.0.544.0#
+
+* CAS View: fix for `++Solve(8/(p^(-4000*x))=6,x)++` and `++Integral(sqrt(x+sqrt(x)))++`
+* fix for GeoGebra Scripts on Android/iOS
+* `++ZoomIn()++` working for 3D View (non-dynamic)
+
+== [#6.0.543.0]#6.0.543.0#
+
+* add dummy `++ggbApplet.isExercise()++` which returns false
+* LaTeX: stretch tables with eg `++\renewcommand{\arraystretch}{1.2}++` and `++\renewcommand{\tabcolsep}{3pt}++`
+
+== [#6.0.542.0]#6.0.542.0#
+
+* AR: create and move points
+* 3D View: `++SetViewDirection()++` now works when axes ratio is not 1:1:1
+* CAS View: fix for `++Sum(Sum(n*m*(1/2)^(n+m),n,0,∞),m,0,∞)++`
+* CAS View: add `++Sort()++` and `++IsDefined()++`
+
+== [#6.0.541.0]#6.0.541.0#
+
+* CAS View: fix for `++SolveODE(y'=sqrt(x),(1,1))++`
+
+== [#6.0.540.0]#6.0.540.0#
+
+* CAS App: support for undefined variables
+* Classic 5: fix for `++alert()++` in JavaScript
+
+== [#6.0.539.0]#6.0.539.0#
+
+* fix for eg `++5*10^(-2)++`
+* fix for <Tab>ing to zoom buttons
+* 3D View: fix for "ghost" objects
+* Graphing / Geometry: new API call `++ggbApplet.setPerspective()++` and also notifications from
+`++registerClientListener()++` when the user changes the views
+* Android: improvement for function plotting
+
+== [#6.0.538.0]#6.0.538.0#
+
+* Scientific: fix for reciprocal button immediately after a fraction
+* fix for eg `++ π8++`
+* Better highlighting for buttons
+* fix for `++∞*(-∞)++`
+* CAS View: fixes for `++Solve({ exp(x^2 + y^2) =8, exp(x^2 + y^2)=8*y^2},{x,y})++` and
+`++{{-1, -2, -2}, {-ί, 1-2ί, -1-ί}, {ί, -1+ί, 1+2ί}}*(1,0,0)++`
+* Android / iOS: "Trace" and "Point Capturing" options added
+
+== [#6.0.536.0]#6.0.536.0#
+
+* Classic 5: fix for large tool icons
+* `++Corner(-1,13)++` returns scales for x, y, z axes
+* improvement for `++f(x)=(3/2)^x++`, `++f(-1)++`
+* GeoGebra 6: make sure more decimal places (minimum 5) are used when editing an expression
+* Editor: fix for ÷ immediately after `++log₁₀(x)++` and for eg `++3|x|++`
+* LaTeX: fixes for eg `++v_{1}'^{2}++` and `++@{\hspace{3.7 mm}}++`
+* Geometry: "Fit to Zoom" preserves aspect ratio
+* new default labels for equations `++eq1++`, `++eg2++`, ...
+* CAS View: fix for eg `++Vector[(x,y,z)] = Vector[(1,2,3)]++`
+
+== [#6.0.535.0]#6.0.535.0#
+
+* fix `++SlowPlot()++`
+* GeoGebra 6: fix problem when text is re-edited (text dialog stuck open)
+* missing 180° solution for eg `++NSolutions(4 sin³(x) cos(x) -6cos²(x) sin(x))++`
+
+== [#6.0.534.0]#6.0.534.0#
+
+* bug fixes
+
+== [#6.0.533.0]#6.0.533.0#
+
+* 3D View: Corner(-1, 12) gives screen left-to-right direction in 3D view coords
+* Statistics Calculator: fix for problems entering eg 0.01, 1/60
+* Consistent Greek font added for keyboard
+* fix for auto-sliders eg `++y=mx+c++`
+* fix bug with `++a((?,?))++` for quadratic inequalities
+* Graphing: "Table of Values" working for conics eg `++y=x^2++`
+
+== [#6.0.532.0]#6.0.532.0#
+
+* fix for missing letter M on Portuguese keyboard
+* Function Inspector: fix for min/max
+
+== [#6.0.531.0]#6.0.531.0#
+
+* 3D View: fix for saving/loading fixed grid distances
+* fix for `++Reflect(penstroke, object)++`
+
+== [#6.0.530.0]#6.0.530.0#
+
+* bugfix: Table View works when embedded
+* CAS View: fix for `++Solve(x^3+2x^2+15x+2>0)++` (offline only) and
+`++Numeric((exp(-LambertW((-1) / 2 ln(2),-1))),15)++`
+* Classic 6: adjust font size in the CAS View properly
+* Graphing / Geometry: `++Invert(matrix)++` working again
+
+== [#6.0.528.2F9.0]#6.0.528/9.0#
+
+* CAS View: fix for `++Numeric(0.99999874^16500)++`
+* CAS View: fix for `++Solve({d,e},{x,y})++` and `++ Solve({d,e,f},{x,y,z})++` where d, e, f are Conics /Quadrics
+defined in the Algebra View
+* Keyboard: accents added to Portuguese keyboard
+* Classic 6 Image Tool: webcam option working on iOS, and uses the rear camera (where available)
+
+== [#6.0.527.0]#6.0.527.0#
+
+* fix for font style for axes labels
+* Editor: make sure `++log_10++` is displayed properly
+* 3D: improvements for creating solids (create regular polygons in 3D View, create cube from square, tetrahedron from
+equilateral polygon, etc)
+* 3D: STL Export dialog
+* Chrome: update Image Tool for new API
+* Exam: make sure output from eg FitGrowth() is shown
+
+== [#6.0.526.0]#6.0.526.0#
+
+* Chrome: fix problem in full-screen mode
+
+== [#6.0.525.0]#6.0.525.0#
+
+* *Graphing / Geometry: Table View*
+* Safari: fix problem loading multiple activities
+* Safari: make sure full-screen is native screen resolution
+* Graphing / Geometry: fix for eg `++Length(sqrt(x),1,4)++`
+* CAS View: fix bug with Quadrics & `++Coefficients(conic / quadric)++` works
+* Editor: fix for eg <AltGr>a
+* new algorithm for ConvexHull()
+
+== [#6.0.524.0]#6.0.524.0#
+
+* Parallel and Perpendicular Line Tools working for linear functions
+* Better highlighting for checkboxes when they have the focus
+* CAS View: fixes for `++Solve({A=a+b*c/(b+c) , B=b+a*c/(a+c) , C=c+a*b/(a+b)} , {a,b,c} )++`,
+`++Product(list of matrices)++` and `++Zip(Mod(k, 2), k,{0, -2, -5, 1, -2, -4, 0, 4, 12})++`
+* Input Boxes: use `++$\math{x}$++` in Caption for "proper" math x
+* Android 4.4: fix for Universal Links
+* iOS: fix for eg `++FitExp()++` in exam mode
+* Graphing / Geometry: make sure Asymptote( <Function> ) returns `++undefined++` not `++{}++`
+* Point on curve `++a++` defined as `++a(slider)++` is draggable
+
+== [#6.0.523.0]#6.0.523.0#
+
+* Checkboxes: use `++$\math{x}$++` in Caption for "proper" math x
+
+== [#6.0.522.0]#6.0.522.0#
+
+* New language "Kannada"
+* GeoGebra 6: make sure `++εv = (1, 2)++` makes a Vector not a Point
+* CAS View: fix for `++N(t) := 0.5^t, t>=0++` then `++N'(1.5)++` in Numeric Mode in eg German
+* bugfix: make sure `++Sequence((t,t),t,1,5)++` works as a drop-down list
+* fix for `++ComplexRoot(x^6 + 7x^3 - 8)++`
+* new API method to insert an image eg
+`++   ggbApplet.insertImage("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAulBMVEX////9/f2Zmf/6+vrc3Nybm5yXl/uUlPfw8PDm5ubg4ODOztHExMS9vb+vr6+oqKibm6WWlqJeXpVwcIx5eYtVVXRJSWFaWmD39/f09PTz8/OSkvPt7e2Dg9vV1dXS0tTHx8e+vsW7u8G5ubmsrLOcnKlra6lqaqdnZ56KipqYmJiHh5hnZ5d/f5CEhI1XV4mGhoZlZYRgYIRcXH59fX1sbHxnZ3p2dnZzc3NtbW1mZmhSUmVDQ2VfX2RGNsRyAAAAjElEQVQY02PABWSYUfmCOqLcjEh8FjEmWXFLVkkYn9+EV1ibkZHHnAXM5WLVgqq2FhIBkioa+pwQvoQakzGQEmFj54ZqFbARBOkQ04SZz2wBpgykYIbz8kHs4AFTjKq6VhxgFoe4oTDQnYrSbKZQlWZM7HpyyrZC6gJQASUjUVY+BU4WebjLGRkZcAMATdkIjACf5/kAAAAASUVORK5CYII=","(0,0)","(1,0)","(1,2)");++`
+* "Special Points" Button moved to 3 dots menu
+* Classic 6: fix for missing keyboard row on iPad Pro 2018
+
+== [#6.0.521.0]#6.0.521.0#
+
+* CAS View: fix for eg `++abs((-1/2)^(-1/2))++`
+* Editor: fix for eg `++(2/3)^2++`
+* Fix for `++arcsen(x)++` in eg Spanish
+* Graphing / Geometry: Tool names shown
+* Algebra View: fix for blank lines
+* Android / iOS: Universal links to open the apps eg https://www.geogebra.org/graphing/Ufd5ZUEs
+https://www.geogebra.org/geometry/Ufd5ZUEs
+
+== [#6.0.518.0]#6.0.518.0#
+
+* fix for `++stdev()++` / `++stdevp()++` problem
+
+== [#6.0.517.0]#6.0.517.0#
+
+* Support for Lambert's W function `++LambertW(x, [0|-1])++` eg `++Solve(2^x=3*x)++`
+
+== [#6.0.516.0]#6.0.516.0#
+
+* fix for Tangent(Point, 3D curve)
+* new command `++ReadText( <Text> )++`
+
+== [#6.0.515.0]#6.0.515.0#
+
+* choose correct particular solution for `++SolveODE(f, A)++`
+* Scientific: make sure `++pi/3++` is displayed as a decimal
+
+== [#6.0.514.0]#6.0.514.0#
+
+* CAS: fix for `++Integral(1/(tan²(x) sec(x))++`
+
+== [#6.0.513.0]#6.0.513.0#
+
+* fix trace for filled Curves
+* fix for eg `++Sequence(k°, k, 0, 360, 30)++` `++Sequence(cos( Element( l1, k )), k, 1, 5 )++`
+* make sure setting labels works for eg `++a = RigidPolygon(poly1)++`
+* Exam mode: don't allow fix/unfix for functions, conics
+
+== [#6.0.512.0]#6.0.512.0#
+
+* fix for touchscreens with Chrome 70+
+* fix for eg `++((x + 1) / 41 + 0z = y / -16,(x + 1) / 41 = (z - 3) / a)++` becoming undefined after `++a = 0++`
+* fix for `++Asymptote(x^(-2n))++` and `++Asymptote(log(f(x))++`
+* LaTeX: fix for `++\Epsilon++`
+* Splines: fix export to PSTricks / PGF and fix problem with closed splines
+* Graphing/Geometry: fix "Clockwise" button on iOS
+
+== [#6.0.511.0]#6.0.511.0#
+
+* fix for `++clickToLoad++` parameter
+
+== [#6.0.510.0]#6.0.510.0#
+
+* LaTeX: fix for `++\orange{\longrightarrow} B++`
+* fix for `++scaleContainer++` parameter
+
+== [#6.0.509.0]#6.0.509.0#
+
+* fix for plotting eg `++f(x) = x^3++`
+
+== [#6.0.508.0]#6.0.508.0#
+
+* fix for eg `++π(7)++`
+* LaTeX: fix for `++\lim++` in italic
+* Improvements for `++zeta(x)++` (speed and accuracy)
+* bugfix: stop slider animation when it's dragged
+* New syntaxes for `++SetPerspective()++` to open and close individual views eg `++SetPerspective("+D")++`,
+`++SetPerspective("-D")++`
+* CAS: fix for `++Factor(Factor(x^2-2))++`
+* 3D: STL export has correct thickness for infinite cylinders and cones
+
+== [#6.0.507.0]#6.0.507.0#
+
+* Improvement for `++Limit()++` eg `++Limit(If(x<-1,x+2,-1<=x<=1, 1,1<x<2,x^2,4),-1)++`
+* Graphing: FitLine tool outputs in form `++y = mx + b++`
+* new App Parameter `++"preloadModules":""++` to load certain parts of GeoGebra as needed
+* macOS: Fix for crash when setting spherical coords
+* LaTeX: fix for `++/text{}++` with multiple spaces at the start of a line after `++\cr++`
+* Graphing / Geometry: Universal links working for Android and iOS eg https://www.geogebra.org/geometry?id=Ufd5ZUEs
+https://www.geogebra.org/graphing?id=Ufd5ZUEs
+
+== [#6.0.506.0]#6.0.506.0#
+
+* 3D Android: small fixes for ARCore
+
+== [#6.0.505.0]#6.0.505.0#
+
+* 3D Android: AR enabled (https://play.google.com/store/apps/details?id=com.google.ar.core[ARCore]
+https://developers.google.com/ar/discover/supported-devices[devices] only)
+
+== [#6.0.504.0]#6.0.504.0#
+
+* more LaTeX commands added:
+`++\unicode \xleftrightarrows, \xrightleftarrows, \xleftharpoondown, \xleftharpoonup, \xleftrightharpoons, \xleftrightarrow, \xrightharpoondown, \xrightharpoonup, \xrightleftharpoons, \xhookleftarrow, \xhookrightarrow, \xmapsto, \xlongequal++`
+* LaTeX: https://mhchem.github.io/MathJax-mhchem/[MHChem syntax] supported via
+`++\ce, \mathchoice, \mskip, \lower, \raise, \mkern++`
+* CAS View: make sure result from `++Unique()++` is sorted
+* Editor: fix for typing eg `++f'(x)/2++`, `++cos⁻¹(x)/2++`
+* Graphing / Geometry: allow display form of lines and conics to be changed (dependent only)
+* Graphing / Geometry: fix for Intersection Tool with functions
+* fix for `++\text{big space ->              <-}++`
+
+== [#6.0.503.0]#6.0.503.0#
+
+* label outlines removed for exporting
+* Spreadsheet: fix for pasting in applets
+* CAS View: fix for `++Append(3, {4, 5, 6})++`
+* Editor: fix for `++f′′++` and `++f'/2++`
+
+== [#6.0.502.0]#6.0.502.0#
+
+* LaTeX fix for `++ç++` and `++\c++`
+
+== [#6.0.501.0_.28not_released_yet.29]#6.0.501.0 (not released yet)#
+
+* LaTeX: fix for `++ \begin{cases}...\end{cases} ++` and ogonek (\k a)
+* CAS: fix for `++Integral(nroot(x^3,5))++`
+* `++Q1++` and `++Q3++` commands renamed to `++Quartile1++` and `++Quartile3++`

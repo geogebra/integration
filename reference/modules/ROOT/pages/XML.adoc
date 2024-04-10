@@ -1,0 +1,13 @@
+= Reference:XML
+
+The GeoGebra XML format has two variants: one for xref:File_Format.adoc[Geogebra Worksheet (.ggb)] files and other
+for xref:File_Format.adoc[GeoGebra Tool (.ggt)] files. These are defined by XML Schema http://geogebra.org/ggb.xsd
+and http://geogebra.org/ggt.xsd respectively. Also .ggs files are used by GeoGebra Notes which may contain several
+slides (included as individual .ggb files)
+
+Root elements in both geogebra.xml and geogebra_macro.xml are called `geogebra`. More
+details about XML tags used by both formats is contained in following three articles:
+
+* xref:XML_tags_in_geogebra_xml.adoc[XML tags in geogebra.xml]
+* xref:XML_tags_in_geogebra_macro_xml.adoc[XML tags in geogebra_macro.xml]
+* xref:Common_XML_tags_and_types.adoc[Common XML tags and types]
