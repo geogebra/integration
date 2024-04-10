@@ -139,7 +139,7 @@ settings are enabled. This argument is ignored when menubar is not showing.*Defa
 |enableUndoRedo |`++true++` or `++false++` |Determines whether Undo and Redo icons are shown. This argument is ignored
 when toolbar is not showing.*Default:* true |6.0
 
-|perspective |string |For values see xref:/SetPerspective_Command.adoc[SetPerspective_Command]. Just for a blank start
+|perspective |string |For values see xref:en@manual::/commands/SetPerspective_Command.adoc[SetPerspective_Command]. Just for a blank start
 ie shouldn't be used with _material_id_, _filename_ or _ggbBase64_ parameters |5.0
 
 |enable3d |`++true++` or `++false++` or none |Whether 3D should be enabled (for exam mode). When neither true nor false

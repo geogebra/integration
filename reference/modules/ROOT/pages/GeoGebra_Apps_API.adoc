@@ -94,7 +94,7 @@ rename was successful
 
 |void setPointStyle(String objName, int style) |3.2 |Sets the style of points (-1 default, 0 filled circle, 1 cross, 2
 circle, 3 plus, 4 filled diamond, 5 unfilled diamond, 6 triangle (north), 7 triangle (south), 8 triangle (east), 9
-triangle (west)) - see https://wiki.geogebra.org/en/SetPointStyle_Command for the full list
+triangle (west)) - see xref:en@manual::/commands/SetPointStyle_Command.adoc[] for the full list
 
 |void setPointSize(String objName, int size) |3.2 |Sets the size of a point (from 1 to 9)
 
@@ -369,7 +369,7 @@ reference] for details
 |enable3D(boolean enable) |5.0 |Enables or disables the 3D view
 
 |void setPerspective(string perspective) |5.0 |Changes the open views, see
-xref:/SetPerspective_Command.adoc[SetPerspective Command] for the string interpretation.
+xref:en@manual::/commands/SetPerspective_Command.adoc[SetPerspective Command] for the string interpretation.
 
 |setWidth(int width) |5.0 (HTML5) |Change width of the applet (in pixels)
 
