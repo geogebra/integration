@@ -74,8 +74,8 @@ in the applet. Default: false |2.5
 shown in the applet |3.0
 
 |customToolBar |e.g. `++0  1 2  3 , 4  5 6 7++` |Sets the toolbar according to a custom toolbar string where the int
-values are xref:Toolbar.adoc[Toolbar Mode Values], `++,++` adds a separator within a menu, `++|++` starts a new
-menu and `++||++` adds a separator in the toolbar before starting a new menu. This will override the saved toolbar from
+values are xref:Toolbar.adoc[Toolbar Mode Values], `++,++` adds a separator within a menu, `\|` starts a new
+menu and `\|\|` adds a separator in the toolbar before starting a new menu. This will override the saved toolbar from
 the .ggb file / base64 string. Custom tools are numbered 100 001, 100 002, etc |2.5
 
 |showAlgebraInput |`++true++` or `++false++` |States whether the algebra input line (with input field, greek letters and
