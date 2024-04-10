@@ -47,30 +47,30 @@ Default: gray |3.0
 |borderRadius |number |Size of applet's https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius[border radius] in
 pixels. |6.0
 
-|enableRightClick |`++true++` or `++false++` |States whether right clicks should be handled by the applet. Setting this
+|enableRightClick |`true` or `false` |States whether right clicks should be handled by the applet. Setting this
 parameter to "false" disables context menus, properties dialogs and right-click-zooming. Default: true. NB also
 enables/disables some keyboard shortcuts eg [.kcode]#Delete# and [.kcode]#Ctrl# + [.kcode]#R# (recompute all objects).
 Default: true |3.0
 
-|enableLabelDrags |`++true++` or `++false++` |States whether labels can be dragged. Default: true |3.2
+|enableLabelDrags |`true` or `false` |States whether labels can be dragged. Default: true |3.2
 
-|enableShiftDragZoom |`++true++` or `++false++` |States whether the Graphics View(s) should be moveable using Shift +
+|enableShiftDragZoom |`true` or `false` |States whether the Graphics View(s) should be moveable using Shift +
 mouse drag (or. Ctrl + mouse drag) or zoomable using Shift + mouse wheel (or Ctrl + mouse wheel). Setting this parameter
 to "false" disables moving and zooming of the drawing pad. Default: true |3.0
 
-|showZoomButtons |`++true++` or `++false++` |States whether the zoom in / zoom out / home buttons should be shown in the
+|showZoomButtons |`true` or `false` |States whether the zoom in / zoom out / home buttons should be shown in the
 Graphics View or not. Default: false |6.0
 
-|errorDialogsActive |`++true++` or `++false++` |States whether error dialogs will be shown if an invalid input is
+|errorDialogsActive |`true` or `false` |States whether error dialogs will be shown if an invalid input is
 entered (using the Input Bar or JavaScript) Default: true |3.2
 
-|showMenuBar |`++true++` or `++false++` |States whether the menubar of GeoGebra should be shown in the applet. Default:
+|showMenuBar |`true` or `false` |States whether the menubar of GeoGebra should be shown in the applet. Default:
 false |2.5
 
-|showToolBar |`++true++` or `++false++` |States whether the toolbar with the construction mode buttons should be shown
+|showToolBar |`true` or `false` |States whether the toolbar with the construction mode buttons should be shown
 in the applet. Default: false |2.5
 
-|showToolBarHelp |`++true++` or `++false++` |States whether the toolbar help text right to the toolbar buttons should be
+|showToolBarHelp |`true` or `false` |States whether the toolbar help text right to the toolbar buttons should be
 shown in the applet |3.0
 
 |customToolBar |e.g. `++0  1 2  3 , 4  5 6 7++` |Sets the toolbar according to a custom toolbar string where the int
@@ -78,10 +78,10 @@ values are xref:Toolbar.adoc[Toolbar Mode Values], `++,++` adds a separator with
 menu and `\|\|` adds a separator in the toolbar before starting a new menu. This will override the saved toolbar from
 the .ggb file / base64 string. Custom tools are numbered 100 001, 100 002, etc |2.5
 
-|showAlgebraInput |`++true++` or `++false++` |States whether the algebra input line (with input field, greek letters and
+|showAlgebraInput |`true` or `false` |States whether the algebra input line (with input field, greek letters and
 command list) should be shown in the applet. Default: false |2.5
 
-|showResetIcon |`++true++` or `++false++` |States whether a small icon (GeoGebra ellipse) should be shown in the upper
+|showResetIcon |`true` or `false` |States whether a small icon (GeoGebra ellipse) should be shown in the upper
 right corner of the applet. Clicking on this icon resets the applet (i.e. it reloads the file given in the filename
 parameter). Default: false |2.5
 
@@ -96,10 +96,10 @@ language parameter. |2.5
 which is called once the applet is fully initialised. This is useful when you have multiple applets on a page - see
 http://dev.geogebra.org/examples/html/example-api-sync.html[this example] (will have no effect in earlier versions) |3.2
 
-|allowStyleBar |`++true++` or `++false++` |Determines whether the Style Bar can be shown (or will be shown if just
+|allowStyleBar |`true` or `false` |Determines whether the Style Bar can be shown (or will be shown if just
 Graphics View 1 is showing)*Default:* false |4.0
 
-|randomize |`++true++` or `++false++` |Determines whether random numbers should be randomized on file load. Useful when
+|randomize |`true` or `false` |Determines whether random numbers should be randomized on file load. Useful when
 you want the app to reload in exactly the same state it was saved.*Default:* true |6.0
 
 |randomSeed |eg `++"randomSeed":33++` |Specify seed for random numbers. Note that if you save a state of the app after
@@ -109,7 +109,7 @@ user interacted with it and try to reload that state with the same randomSeed, y
 |appletOnLoad |eg `++function(api){ api.evalCommand('Segment((1,2),(3,4))'); }++` |JavaScript method to run when the
 activity is initialized (and file loaded if applicable) |5.0
 
-|useBrowserForJS |`++true++` or `++false++` a|
+|useBrowserForJS |`true` or `false` a|
 When true, GeoGebra
 
 * runs ggbOnInit from HTML
@@ -126,62 +126,62 @@ When false, GeoGebra:
 
 |4.0
 
-|showLogging |`++true++` or `++false++` |Determines whether logging is shown in the Browser's console**Default:** false
+|showLogging |`true` or `false` |Determines whether logging is shown in the Browser's console**Default:** false
 |4.2
 
 |capturingThreshold |integer |Determines the sensitivity of object selection. The default value of 3 is usually fine to
 select and drag objects both with the mouse and touch. Use larger values (e.g. 4 or 5) to make it easier to select and
 drag objects.*Default:* 3 |4.4
 
-|enableFileFeatures |`++true++` or `++false++` |Determines whether file saving, file loading, sign in and Options > Save
+|enableFileFeatures |`true` or `false` |Determines whether file saving, file loading, sign in and Options > Save
 settings are enabled. This argument is ignored when menubar is not showing.*Default:* true |5.0
 
-|enableUndoRedo |`++true++` or `++false++` |Determines whether Undo and Redo icons are shown. This argument is ignored
+|enableUndoRedo |`true` or `false` |Determines whether Undo and Redo icons are shown. This argument is ignored
 when toolbar is not showing.*Default:* true |6.0
 
 |perspective |string |For values see xref:en@manual::/commands/SetPerspective_Command.adoc[SetPerspective_Command]. Just for a blank start
 ie shouldn't be used with _material_id_, _filename_ or _ggbBase64_ parameters |5.0
 
-|enable3d |`++true++` or `++false++` or none |Whether 3D should be enabled (for exam mode). When neither true nor false
+|enable3d |`true` or `false` or none |Whether 3D should be enabled (for exam mode). When neither true nor false
 are entered, user can decide in a dialog. |5.0
 
-|enableCAS |`++true++` or `++false++` or none |Whether CAS should be enabled (for exam mode). When neither true nor
+|enableCAS |`true` or `false` or none |Whether CAS should be enabled (for exam mode). When neither true nor
 false are entered, user can decide in a dialog. |5.0
 
 |algebraInputPosition |`++algebra++`, `++top++` or `++bottom++` |Determines whether input bar should be shown in
 algebra, on top of the applet or under the applet. When left empty (default), the position depends on file. |5.0
 
-|preventFocus |`++true++` or `++false++` |When set to true, this prevents the applet from getting focus automatically at
+|preventFocus |`true` or `false` |When set to true, this prevents the applet from getting focus automatically at
 the start.*Default:* false |5.0
 
 |scaleContainerClass |String |Name of CSS class that is used as container; applet will scale to fit into the container.
 |5.0
 
-|autoHeight |boolean |• `++true++` to restrict the width of the applet and compute height automatically, add
-`++autoHeight:true++`• `++false++`if you want the applet to be restricted by both width and height of the container |5.0
+|autoHeight |boolean |• `true` to restrict the width of the applet and compute height automatically, add
+`++autoHeight:true++`• `false`if you want the applet to be restricted by both width and height of the container |5.0
 
-|allowUpscale |`++true++` or `++false++` |Determines whether automatic scaling may scale the applet up**Default:** false
+|allowUpscale |`true` or `false` |Determines whether automatic scaling may scale the applet up**Default:** false
 |5.0
 
-|playButton |`++true++` or `++false++` |Determines whether a preview image and a play button should be rendered in place
+|playButton |`true` or `false` |Determines whether a preview image and a play button should be rendered in place
 of the applet. Pushing the play button initializes the applet.*Default:* false |5.0
 
 |scale |number |Ratio by which the applet should be scaled (eg. 2 makes the applet 2 times bigger, including all texts
 and UI elements). *Default:* 1 |5.0
 
-|showAnimationButton |`++true++` or `++false++` |Whether animation button should be visible |5.0
+|showAnimationButton |`true` or `false` |Whether animation button should be visible |5.0
 
-|showFullscreenButton |`++true++` or `++false++` |Whether fullscreen button should be visible |6.0
+|showFullscreenButton |`true` or `false` |Whether fullscreen button should be visible |6.0
 
-|showSuggestionButtons |`++true++` or `++false++` |Whether suggestion buttons (special points, solve) in Algebra View
+|showSuggestionButtons |`true` or `false` |Whether suggestion buttons (special points, solve) in Algebra View
 should be visible |6.0
 
-|showStartTooltip |`++true++` or `++false++` |Whether "Welcome" tooltip should be shown |5.0
+|showStartTooltip |`true` or `false` |Whether "Welcome" tooltip should be shown |5.0
 
 |rounding |string |String composed of number of decimal places and flags -- valid flags are "s" for significant digits
 and "r" for rational numbers. Hence "10" means 10 decimal places, "10s" stands for 10 significant digits. |6.0
 
-|buttonShadows |`++true++` or `++false++` |Whether buttons should have shadow |6.0
+|buttonShadows |`true` or `false` |Whether buttons should have shadow |6.0
 
 |buttonRounding |Number (0 - 0.9) |Relative radius of button's rounded border. The border radius in pixels is
 `++buttonRounding * height /2++`, where `++height++` is the height of the button. Default 0.2. |6.0
@@ -194,20 +194,20 @@ color |6.0
 
 |editorForegroundColor |Hex color |Foreground (text) color of the equation editor (appname = "evaluator") |6.0
 
-|textmode |`++true++` or `++false++` |Whether editor is in text mode or not (appname = "evaluator")*Default:*
-`++false++` |6.0
+|textmode |`true` or `false` |Whether editor is in text mode or not (appname = "evaluator")*Default:*
+`false` |6.0
 
-|showKeyboardOnFocus |`++"false"|"true"|"auto"++` |Whether to show keyboard when input is focused. When set to
-`++true++`, keyboard is always shown, for `++false++` it never appears, for `++auto++` it's shown unless closed by user.
-*Default:* `++true++` in evaluator app, `++auto++` in other apps |6.0
+|showKeyboardOnFocus |`false`, `true` or `auto` |Whether to show keyboard when input is focused. When set to
+`true`, keyboard is always shown, for `false` it never appears, for `++auto++` it's shown unless closed by user.
+*Default:* `true` in evaluator app, `++auto++` in other apps |6.0
 
-|keyboardType |`++"scientific"|"normal"|"notes"++` |Which keyboard is shown for equation editor (appname = "evaluator")
+|keyboardType | `scientific`, `normal`, `notes` |Which keyboard is shown for equation editor (appname = "evaluator")
 |6.0
 
-|transparentGraphics |`++true++` or `++false++` |Whether the Graphics View and Graphics View 2 should be transparent
+|transparentGraphics |`true` or `false` |Whether the Graphics View and Graphics View 2 should be transparent
 |6.0
 
-|disableJavaScript |`++true++` or `++false++` |Whether running JavaScript from material files is disabled or not. |6.0
+|disableJavaScript |`true` or `false` |Whether running JavaScript from material files is disabled or not. |6.0
 
 |detachedKeyboardParent |String |When set, keyboard should be attached to the first element in DOM that fits the
 selector. |6.0
