@@ -15,7 +15,7 @@ _often_ get an earlier release)
 * fix for `++--++` in text Input Boxes
 * fix for translated commands in spreadsheet
 
-== 6.0.832.0 (12th March 2024 build, unreleased)
+== 6.0.832.0 (12th March 2024 build)
 
 * Scripting: re-enable support for case-insensitive command names
 * Classic 5: fix for fonts in Thai, Kannada languages
