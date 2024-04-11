@@ -231,7 +231,7 @@ _often_ get an earlier release)
 `++Text( <Object>, <Point>, <Boolean for Substitution of Variables>, <Boolean for LaTeX formula>, <Horizontal alignment [-1|0|1]>, <Vertical alignment [-1|0|1]> ) ++`
 * CAS: Product() works better eg `++f(x)=Product(sin((π*x)/(n)),n,2,floor(sqrt(x)))++`
 
-== 6.0.779.0 (16th May 2023 build, not released)
+== 6.0.779.0 (16th May 2023 build)
 
 * fix "Selection allowed" checkbox for multiple objects
 * CAS: fix for `++¬a++`
@@ -1132,7 +1132,7 @@ Transpose(), RemoveUndefined(), Tangent()
 * fix for `++Point(function, slider)++` when the function is undefined
 * fix for problem with Input Boxes not updating in Graphics View 2
 
-== 6.0.551.0 (not released yet)
+== 6.0.551.0
 
 * make sure Complex numbers with zero imaginary part are reloaded correctly
 * Editor: improvement for eg `++sin²(x)++`
@@ -1438,7 +1438,7 @@ https://developers.google.com/ar/discover/supported-devices[devices] only)
 
 * LaTeX fix for `++ç++` and `++\c++`
 
-== 6.0.501.0 (not released yet)
+== 6.0.501.0
 
 * LaTeX: fix for `++ \begin{cases}...\end{cases} ++` and ogonek (\k a)
 * CAS: fix for `++Integral(nroot(x^3,5))++`
