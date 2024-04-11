@@ -1,3 +1,14 @@
+=== Online Apps
 * xref:GeoGebra_Apps_Embedding.adoc[Apps Embedding]
 * xref:GeoGebra_App_Parameters.adoc[Apps Parameters]
 * xref:GeoGebra_Apps_API.adoc[Apps API]
+
+=== Desktop Apps
+* xref:GeoGebra_Installation.adoc[Installation]
+* xref:GeoGebra_Mass_Installation.adoc[Mass Installation]
+* xref:Command_Line_Arguments.adoc[CLI arguments (Classic 5)]
+
+=== File Format
+* xref:File_Format.adoc[About .ggb, .ggt, .ggs]
+* xref:XML.adoc[XML format]
+

@@ -656,7 +656,7 @@ dimensions changed by zooming or panning
 
 == GeoGebra's File format
 
-With these methods you can set everything in a construction (see xref:Xml.adoc[XML Reference] ).
+With these methods you can set everything in a construction (see xref:XML.adoc[XML Reference] ).
 
 [cols=",^,",options="header",]
 |===

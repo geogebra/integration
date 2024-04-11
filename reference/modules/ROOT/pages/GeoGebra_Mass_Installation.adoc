@@ -1,0 +1,49 @@
+= GeoGebra Mass Installation
+
+This page describes how a system administrator can install GeoGebra on many devices at once. For installations on a
+single machine, see xref:GeoGebra_Installation.adoc[GeoGebra Installation]. Please note that all our installers
+are subject to the http://www.geogebra.org/license[GeoGebra non-commercial license].
+
+== Chrome OS
+
+If you are in one of the countries supported by Google Play for Education, you should be able to install our app via
+https://play.google.com/edu/landing[Google Play for Education].
+
+In other countries you may need to install the
+https://chrome.google.com/webstore/detail/geogebra/bnbaboaihhkjoaolfnfoablhllahjnee?hl=en[Chrome App] manually.
+
+== GeoGebra Desktop Software
+
+=== Windows
+
+To install GeoGebra Desktop on many Windows computers in a network:
+
+* download the .msi installer of https://download.geogebra.org/package/win-msi6[GeoGebra Classic 6] or
+https://download.geogebra.org/package/win-msi[GeoGebra Classic 5] to a network folder being accessible from all
+workstations, e.g. `\\INSTALL\GeoGebra\`.
+* install GeoGebra silently on each workstation: `msiexec /i \\INSTALL\GeoGebra\GeoGebra-Windows-Installer-6-0-389-0.msi
+ALLUSERS=2 /qn`. You may want to put this command into a batch file to save time for typing. It may also be convenient
+to use remote command execution by using the https://technet.microsoft.com/en-us/sysinternals/bb897553.aspx[PsExec
+utility] to install GeoGebra on all devices.
+
+Note that GeoGebra Classic will be automatically updating minor new versions (e.g. 5.0.3 to 5.0.4) by downloading the
+new version into the user’s *Application Data* folder and then using it after the next restart of the software. So, you
+will only need to do a new installation when you want to switch to a new major version (e.g. from 5.0 to 5.2).
+
+Mass installations of GeoGebra Classic 6 will not update automatically.
+
+== GeoGebra Tablet and Phone Apps
+
+Please see instructions below for individual platforms.
+
+iOS::
+  you should be able to install the https://itunes.apple.com/us/app/geogebra/id687678494?mt=8[iPad app] on mutliple
+  devices using https://itunes.apple.com/en/app/apple-configurator/id434433123?mt=12[Apple Configurator] or similar
+  mobile device management tools.
+Android::
+  Please download one of the APKs from xref:GeoGebra_Installation.adoc[]
+
+== Contact
+
+In case you need any help with the mass installation, please contact us at
+mailto:office@geogebra_org.adoc[office@geogebra.org].

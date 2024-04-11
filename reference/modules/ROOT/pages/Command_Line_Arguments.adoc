@@ -1,0 +1,106 @@
+= Reference:Command Line Arguments
+
+In order to start GeoGebra from the command line you have to first install *GeoGebra Classic 5* using the
+http://www.geogebra.org/download[offline installers]
+
+If you want to download your own Java rather than the included version then this is the one that we recommend:
+https://www.azul.com/downloads/zulu-community/ (download the 64bit Java 11 JRE)
+
+== Usage
+
+When using *.jar files directly (to ensure enough memory is allocated: don't double-click)
+
+`++.\jre\bin\java -Xms32m -Xmx1024m -Dsun.jnu.encoding=UTF-8 -jar geogebra.jar [OPTIONS] [FILES]++`
+
+or you can try this to disable hardware graphics acceleration if you get glitches
+
+`++.\jre\bin\java -Xms32m -Xmx1024m -Dsun.jnu.encoding=UTF-8 -Dsun.java2d.d3d=false -jar geogebra.jar [OPTIONS] [FILES]++`
+
+For example to show Help:
+
+`++.\jre\bin\java -jar geogebra.jar --help++`
+
+To load a file:
+
+`++.\jre\bin\java -Xms32m -Xmx1024m -Dsun.jnu.encoding=UTF-8 -jar geogebra.jar myfile.ggb++`
+
+To start GeoGebra in a different language:
+
+`++.\jre\bin\java -Xms32m -Xmx1024m -Dsun.jnu.encoding=UTF-8 -jar geogebra.jar --language=de_AT++`
+
+Usage on Windows (if installed via off-line installer)
+
+`++geogebra.exe [OPTIONS] [FILES]++`
+
+Usage on Linux (if installed via deb or rpm packages)
+
+`++geogebra [OPTIONS] [FILES]++`
+
+Starts GeoGebra with the specified OPTIONS and opens the given FILES.
+
+== Options
+
+Please note that there may be other options available which are not listed here. For a full list use the `++--help++`
+option.
+
+[width="100%",cols="50%,50%",]
+|===
+|`++--help++` |print help message
+
+|`++--v++` |print version information, e.g. _GeoGebra 4.0.0.0 20 August 2011 Java 1.6.0_26_
+
+|`++--language=ISO_CODE++` |set language using http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes[locale code], e.g.
+en, de_AT
+
+|`++--showAlgebraInput=[true|false]++` |show/hide algebra xref:en@manual::/Input_Bar.adoc[Input Bar]
+
+|`++--showAlgebraInputTop=[true|false]++` |Show algebra input field at top/bottom
+
+|`++--showAlgebraWindow=[true|false]++` |show/hide xref:en@manual::/Algebra_View.adoc[Algebra View]
+
+|`++--showSpreadsheet=[true|false]++` |show/hide xref:en@manual::/Spreadsheet_View.adoc[Spreadsheet View]
+
+|`++--showCAS=[true|false]++` |show/hide xref:en@manual::/CAS_View.adoc[CAS View]
+
+|`++--showSplash=[true|false]++` |show splash screen on startup
+
+|`++--enableUndo=[true|false]++` |enable/disable Undo
+
+|`++--fontSize=[number]++` |set default font size
+
+|`++--showAxes=[true|false]++` |show/hide coordinate axes
+
+|`++--showGrid=[true|false]++` |show/hide coordinate grid
+
+|`++--settingsFile=FILENAME++` |load/save settings from/in a local file (used by the portable version)
+
+|`++--resetSettings++` |resets settings to defaults
+
+|`++--antiAliasing=[true|false]++` |turn antialiasing on (true) or off (false)
+
+|`++--export=<File>++` |Exports the Graphics View to SVG/PNG/PDF/EMF/EPS as determined by the extension**You can specify
+the resolution with `++--dpi++`**
+
+|`++--exportAnimation=<File>++` |Exports the Graphics View to mutiple SVG/PNG/PDF/EMF/EPS files (or one animated GIF) as
+determined by the extension and specified slider**You must specify the slider with `++--slider++` and you can specify
+the resolution with `++--dpi++`**
+
+|`++--dpi=<Integer>++` |dots per inch, eg 300 (only used in conjunction with `++--export++`)
+
+|`++--loop=[true|false]>++` |whether the animated GIF should repeat (only used in conjunction with
+`++--exportAnimation++`)
+
+|`++--delay=<Integer>++` |delay in ms between frames for the animated GIF (only used in conjunction with
+`++--exportAnimation++`)
+
+|`++--laf=<system|crossplatform>++` |Change the "Look and Feel" of the GUI
+
+|`++--versionCheckAllow++` a|
+allow version check (on/off or true/false for single launch). Note: if this option is not used, then it will check for
+new version, unless system preferences are set to disable it. This preference has to be created on "geogebra" key, with
+name "version_check_allow" (e.g. HKEY_LOCAL_MACHINE/Software/JavaSoft/Prefs/geogebra/version_check_allow in Windows
+registry ; edit the file /Library/Preferences/com.apple.java.util.prefs.plist in mac osx and add string key
+"version_check_allow" in Root > / > geogebra/), and value "false" if, on the computer, no check for new version is
+allowed.
+
+|===

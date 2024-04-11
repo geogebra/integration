@@ -1,0 +1,129 @@
+= GeoGebra Installation
+
+[NOTE]
+====
+|Please note that all our installers are subject to the https://www.geogebra.org/license[GeoGebra non-commercial
+license]. If you plan to install GeoGebra on multiple devices you may be interested in
+xref:GeoGebra_Mass_Installation.adoc[GeoGebra Mass Installation]
+====
+
+== GeoGebra Portable Versions (Windows)
+
+Download https://download.geogebra.org/package/win-port6[Windows Portable] and after unzipping run
+
+* `++GeoGebraCalculator.exe++` for GeoGebra Calculator Suite
+* `++GeoGebraCAS.exe++` for GeoGebra CAS Calculator
+* `++GeoGebraGeometry.exe++` for GeoGebra Geometry Calculator
+* `++GeoGebraGraphing.exe++` for GeoGebra Graphing Calculator
+* `++GeoGebra.exe++` for GeoGebra Classic 6
+
+== GeoGebra Scientific Calculator
+
+* Android Phones & Tablets: https://play.google.com/store/apps/details?id=org.geogebra.android.scicalc[GeoGebra
+Scientific Calculator on Google Play Store] (recommended), https://download.geogebra.org/package/android-scientific[APK]
+* iPhone & iPad: https://itunes.apple.com/us/app/geogebra-scientific-calculator/id1412748754[GeoGebra Scientific
+Calculator on App Store]
+
+== GeoGebra Calculator Suite
+
+* Android Phones & Tablets: https://play.google.com/store/apps/details?id=org.geogebra.android.calculator.suite[GeoGebra
+Calculator Suite on Google Play Store] (recommended), https://download.geogebra.org/package/android-suite[APK]
+* iPhone & iPad: https://apps.apple.com/us/app/geogebra-calculator-suite/id1504416652[GeoGebra Calculator Suite on App
+Store]
+* Windows desktop: https://download.geogebra.org/package/win-suite[GeoGebra Calculator Suite Offline Installer] –
+updates automatically
+* Mac Portable: https://download.geogebra.org/package/mac-suite-portable[GeoGebra Calculator Suite for OSX 10.9 or
+later]
+
+== GeoGebra Graphing Calculator
+
+* Android Phones & Tablets: https://play.google.com/store/apps/details?id=org.geogebra.android[GeoGebra Graphing
+Calculator on Google Play Store] (recommended), https://download.geogebra.org/package/android-graphing[APK]
+* iPhone & iPad: https://itunes.apple.com/us/app/geogebra-graphing-calculator/id1146717204[GeoGebra Graphing Calculator
+on App Store]
+* Windows desktop: https://download.geogebra.org/package/windows-graphing[GeoGebra Calculator Suite Offline Installer] –
+updates automatically
+* Mac Store: https://itunes.apple.com/app/geogebra-graphing-calculator/id1294018688[GeoGebra Graphing Calculator in the
+Mac App Store] (recommended, updates automatically)
+* Mac Portable: https://download.geogebra.org/package/mac-graphing[GeoGebra Graphing Calculator for OSX 10.9 or later]
+* Chromebooks:
+https://chrome.google.com/webstore/detail/geogebra-graphing-calcula/ajijpokmmljpgdacmnejdjkbjjpjjekj[GeoGebra Graphing
+Calculator for Chrome]
+
+== GeoGebra Geometry
+
+* Android Phones & Tablets: https://play.google.com/store/apps/details?id=org.geogebra.android.geometry[GeoGebra
+Geometry on Google Play Store] (recommended), https://download.geogebra.org/package/android-geometry[APK]
+* iPhone & iPad: https://itunes.apple.com/us/app/geogebra-geometry-calculator/id1232591335[GeoGebra Geometry on App
+Store]
+* Windows desktop: https://download.geogebra.org/package/windows-geometry[GeoGebra Geometry Offline Installer] – updates
+automatically
+* Mac Store: https://itunes.apple.com/app/geogebra-graphing-calculator/id1294020062[GeoGebra Geometry in the Mac App
+Store] (recommended, updates automatically)
+* Mac Portable: https://download.geogebra.org/package/mac-geometry[GeoGebra Geometry for OSX 10.9 or later]
+
+== GeoGebra CAS Calculator
+
+* Android Phones & Tablets: https://play.google.com/store/apps/details?id=org.geogebra.android.cascalc[GeoGebra CAS
+Calculator on Google Play Store] (recommended), https://download.geogebra.org/package/android-cas[APK]
+* iPhone & iPad: https://itunes.apple.com/us/app/geogebra-cas-calculator/id1436278267[GeoGebra CAS Calculator on App
+Store]
+* Windows desktop: https://download.geogebra.org/package/windows-cas[GeoGebra CAS Calculator Offline Installer] –
+updates automatically
+* Mac Store: https://itunes.apple.com/app/geogebra-cas-calculator/id1489962804[GeoGebra CAS Calculator in the Mac App
+Store] (recommended, updates automatically)
+* Mac Portable: https://download.geogebra.org/package/mac-cas[GeoGebra CAS Calculator for OSX 10.9 or later]
+
+== GeoGebra 3D Graphing Calculator
+
+* Android Phones & Tablets: https://play.google.com/store/apps/details?id=org.geogebra.android.g3d[GeoGebra 3D Grapher
+on Google Play Store] (recommended), https://download.geogebra.org/package/android-3dgrapher[APK] 
+* iPhone & iPad: https://itunes.apple.com/us/app/geogebra-3d-graphing-calc/id1445871976[GeoGebra 3D Graphing Calculator
+on App Store]
+
+== GeoGebra Classic 6
+
+The following offline versions of GeoGebra Classic 6 are available for tablets, laptops and desktops and include the
+same user interface as https://www.geogebra.org/classic[www.geogebra.org/classic]. This version includes: Graphing, CAS,
+Geometry, 3D Graphing, Spreadsheet, Probability Calculator and Exam mode.
+
+=== Windows
+
+* *https://download.geogebra.org/package/win-autoupdate[GeoGebra Classic 6 Installer for Windows]* (offline installer
+file, recommended for all Windows versions, updates automatically)
+* https://download.geogebra.org/package/win-port6[GeoGebra Classic 6 Portable for Windows] (runs from USB memory sticks
+for example, does NOT update automatically)
+
+=== Mac
+
+* *https://itunes.apple.com/us/app/geogebra-math-apps/id1182481622[GeoGebra Classic 6 in the Mac App Store]*
+* https://download.geogebra.org/package/mac-port[GeoGebra Classic 6 Portable for Mac] (runs from USB memory sticks for
+example, does NOT update automatically)
+
+=== Other GeoGebra Classic 6 versions
+
+* iPad: https://itunes.apple.com/gb/app/geogebra/id687678494?mt=8[GeoGebra Classic in the App Store]
+* Chrome Store: https://chrome.google.com/webstore/detail/geogebra/bnbaboaihhkjoaolfnfoablhllahjnee[GeoGebra Classic
+(with Exam Mode) in the Chrome Web Store]
+
+== GeoGebra in Exams
+
+We believe that students benefit from using the exact same GeoGebra app in class, for homework and during tests. This
+way, they will get the most practice with the app and therefore be able to make the best use of our technology in all
+situations. That's why we have created our https://www.geogebra.org/m/y3aufmy8[GeoGebra Exam Mode] and added it within
+each one of our apps. The exam mode locks down mobile devices so students cannot communicate or use any other apps than
+GeoGebra during a test. This approach has already been field-tested and approved by several ministries of education in
+several regions. Read more about how to use https://www.geogebra.org/m/exam[GeoGebra in exams].
+
+== GeoGebra Classic 5 for Desktop
+
+The good old GeoGebra 5 desktop application with its classic user interface.
+
+* Windows Installer: https://download.geogebra.org/package/win[GeoGebra Classic 5 Installer for Windows] (recommended,
+updates automatically)
+* Windows Portable: https://download.geogebra.org/package/win-port[GeoGebra Classic 5 Portable for Windows] (runs from
+USB memory sticks for example)
+* Mac Portable: https://download.geogebra.org/package/mac[GeoGebra Classic 5 Portable for OSX 10.12 or later] (*doesn't
+automatically update*)
+* Linux Portable: https://download.geogebra.org/package/linux-port[Portable Linux] bundle for 64-bit Linux systems
+(*unsupported*)
