@@ -30,7 +30,7 @@ other kind of software to display previews of uploaded GeoGebra files.
 
 === geogebra.js
 
-This file contains global JavaScript definitions used in the file. See xref:en@maual::/Scripting.adoc[Scripting] for details.
+This file contains global JavaScript definitions used in the file. See xref:en@manual::/Scripting.adoc[Scripting] for details.
 
 ==== images
 
