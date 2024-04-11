@@ -5,4 +5,5 @@ The reference guide provides technical information about GeoGebra for developers
 xref:GeoGebra_Apps_API.adoc[Apps API])
 and administrators (xref:GeoGebra_Installation.adoc[Installation], xref:GeoGebra_Mass_Installation.adoc[Mass Installation]).
 
-For user-level help see xref:en@manual::index.adoc[the manual] or []
+For user-level help see xref:en@manual::index.adoc[the manual] or https://help.geogebra.org/hc/en-us[the help center].
+In case you have any questions feel free to ask at https://www.reddit.com/r/geogebra/[r/geogebra].
