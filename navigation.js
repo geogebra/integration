@@ -70,7 +70,7 @@ function addDrawer(){
 }
 
 function loadNav(){
-	insertStyle("https://fonts.googleapis.com/icon?family=Material+Icons");
+	insertHeaderLink("https://fonts.googleapis.com/icon?family=Material+Icons","text/css","stylesheet" );
 	
 	if (window.location.search.match(/frameless/)) {
 		document.getElementById("contentBox").classList.add('contentBoxSmall');		
