@@ -2,193 +2,194 @@
 
 [cols=",,,",]
 |===
-|MOVE |0 |/File:Mode_move_svg.adoc[image:32px-Mode_move.svg.png[Mode move.svg,width=32,height=32]] |
+|Name |ID |Icon |
+|MOVE |0 |image:32px-Mode_move.svg.png[Mode move.svg,width=32,height=32] |
 
-|POINT |1 |/File:Mode_point_svg.adoc[image:32px-Mode_point.svg.png[Mode point.svg,width=32,height=32]] |
+|POINT |1 |image:32px-Mode_point.svg.png[Mode point.svg,width=32,height=32] |
 
-|JOIN |2 |/File:Mode_join_svg.adoc[image:32px-Mode_join.svg.png[Mode join.svg,width=32,height=32]] |
+|JOIN |2 |image:32px-Mode_join.svg.png[Mode join.svg,width=32,height=32] |
 
-|PARALLEL |3 |/File:Mode_parallel_svg.adoc[image:32px-Mode_parallel.svg.png[Mode parallel.svg,width=32,height=32]] |
+|PARALLEL |3 |image:32px-Mode_parallel.svg.png[Mode parallel.svg,width=32,height=32] |
 
-|ORTHOGONAL |4 |/File:Mode_orthogonal_svg.adoc[image:32px-Mode_orthogonal.svg.png[Mode
-orthogonal.svg,width=32,height=32]] |
+|ORTHOGONAL |4 |image:32px-Mode_orthogonal.svg.png[Mode
+orthogonal.svg,width=32,height=32] |
 
-|INTERSECT |5 |/File:Mode_intersect_svg.adoc[image:32px-Mode_intersect.svg.png[Mode intersect.svg,width=32,height=32]] |
+|INTERSECT |5 |image:32px-Mode_intersect.svg.png[Mode intersect.svg,width=32,height=32] |
 
-|DELETE |6 |/File:Mode_delete_svg.adoc[image:32px-Mode_delete.svg.png[Mode delete.svg,width=32,height=32]] |
+|DELETE |6 |image:32px-Mode_delete.svg.png[Mode delete.svg,width=32,height=32] |
 
-|VECTOR |7 |/File:Mode_vector_svg.adoc[image:32px-Mode_vector.svg.png[Mode vector.svg,width=32,height=32]] |
+|VECTOR |7 |image:32px-Mode_vector.svg.png[Mode vector.svg,width=32,height=32] |
 
-|LINE_BISECTOR |8 |/File:Mode_linebisector_svg.adoc[image:32px-Mode_linebisector.svg.png[Mode
-linebisector.svg,width=32,height=32]] |
+|LINE_BISECTOR |8 |image:32px-Mode_linebisector.svg.png[Mode
+linebisector.svg,width=32,height=32] |
 
-|ANGULAR_BISECTOR |9 |/File:Mode_angularbisector_svg.adoc[image:32px-Mode_angularbisector.svg.png[Mode
-angularbisector.svg,width=32,height=32]] |
+|ANGULAR_BISECTOR |9 |image:32px-Mode_angularbisector.svg.png[Mode
+angularbisector.svg,width=32,height=32] |
 
-|CIRCLE_TWO_POINTS |10 |/File:Mode_circle2_svg.adoc[image:32px-Mode_circle2.svg.png[Mode
-circle2.svg,width=32,height=32]] |
+|CIRCLE_TWO_POINTS |10 |image:32px-Mode_circle2.svg.png[Mode
+circle2.svg,width=32,height=32] |
 
-|CIRCLE_THREE_POINTS |11 |/File:Mode_circle3_svg.adoc[image:32px-Mode_circle3.svg.png[Mode
-circle3.svg,width=32,height=32]] |
+|CIRCLE_THREE_POINTS |11 |image:32px-Mode_circle3.svg.png[Mode
+circle3.svg,width=32,height=32] |
 
-|CONIC_FIVE_POINTS |12 |/File:Mode_conic5_svg.adoc[image:32px-Mode_conic5.svg.png[Mode conic5.svg,width=32,height=32]] |
+|CONIC_FIVE_POINTS |12 |image:32px-Mode_conic5.svg.png[Mode conic5.svg,width=32,height=32] |
 
-|TANGENTS |13 |/File:Mode_tangent_svg.adoc[image:32px-Mode_tangent.svg.png[Mode tangent.svg,width=32,height=32]] |
+|TANGENTS |13 |image:32px-Mode_tangent.svg.png[Mode tangent.svg,width=32,height=32] |
 
-|RELATION |14 |/File:Mode_relation_svg.adoc[image:32px-Mode_relation.svg.png[Mode relation.svg,width=32,height=32]] |
+|RELATION |14 |image:32px-Mode_relation.svg.png[Mode relation.svg,width=32,height=32] |
 
-|SEGMENT |15 |/File:Mode_segment_svg.adoc[image:32px-Mode_segment.svg.png[Mode segment.svg,width=32,height=32]] |
+|SEGMENT |15 |image:32px-Mode_segment.svg.png[Mode segment.svg,width=32,height=32] |
 
-|POLYGON |16 |/File:Mode_polygon_svg.adoc[image:32px-Mode_polygon.svg.png[Mode polygon.svg,width=32,height=32]] |
+|POLYGON |16 |image:32px-Mode_polygon.svg.png[Mode polygon.svg,width=32,height=32] |
 
-|TEXT |17 |/File:Mode_text_svg.adoc[image:32px-Mode_text.svg.png[Mode text.svg,width=32,height=32]] |
+|TEXT |17 |image:32px-Mode_text.svg.png[Mode text.svg,width=32,height=32] |
 
-|RAY |18 |/File:Mode_ray_svg.adoc[image:32px-Mode_ray.svg.png[Mode ray.svg,width=32,height=32]] |
+|RAY |18 |image:32px-Mode_ray.svg.png[Mode ray.svg,width=32,height=32] |
 
-|MIDPOINT |19 |/File:Mode_midpoint_svg.adoc[image:32px-Mode_midpoint.svg.png[Mode midpoint.svg,width=32,height=32]] |
+|MIDPOINT |19 |image:32px-Mode_midpoint.svg.png[Mode midpoint.svg,width=32,height=32] |
 
-|CIRCLE_ARC_THREE_POINTS |20 |/File:Mode_circlearc3_svg.adoc[image:32px-Mode_circlearc3.svg.png[Mode
-circlearc3.svg,width=32,height=32]] |
+|CIRCLE_ARC_THREE_POINTS |20 |image:32px-Mode_circlearc3.svg.png[Mode
+circlearc3.svg,width=32,height=32] |
 
-|CIRCLE_SECTOR_THREE_POINTS |21 |/File:Mode_circlesector3_svg.adoc[image:32px-Mode_circlesector3.svg.png[Mode
-circlesector3.svg,width=32,height=32]] |
+|CIRCLE_SECTOR_THREE_POINTS |21 |image:32px-Mode_circlesector3.svg.png[Mode
+circlesector3.svg,width=32,height=32] |
 
-|CIRCUMCIRCLE_ARC_THREE_POINTS |22 |/File:Mode_circumcirclearc3_svg.adoc[image:32px-Mode_circumcirclearc3.svg.png[Mode
-circumcirclearc3.svg,width=32,height=32]] |
+|CIRCUMCIRCLE_ARC_THREE_POINTS |22 |image:32px-Mode_circumcirclearc3.svg.png[Mode
+circumcirclearc3.svg,width=32,height=32] |
 
 |CIRCUMCIRCLE_SECTOR_THREE_POINTS |23
-|/File:Mode_circumcirclesector3_svg.adoc[image:32px-Mode_circumcirclesector3.svg.png[Mode
-circumcirclesector3.svg,width=32,height=32]] |
+|image:32px-Mode_circumcirclesector3.svg.png[Mode
+circumcirclesector3.svg,width=32,height=32] |
 
-|SEMICIRCLE |24 |/File:Mode_semicircle_svg.adoc[image:32px-Mode_semicircle.svg.png[Mode
-semicircle.svg,width=32,height=32]] |
+|SEMICIRCLE |24 |image:32px-Mode_semicircle.svg.png[Mode
+semicircle.svg,width=32,height=32] |
 
-|SLIDER |25 |/File:Mode_slider_svg.adoc[image:32px-Mode_slider.svg.png[Mode slider.svg,width=32,height=32]] |
+|SLIDER |25 |image:32px-Mode_slider.svg.png[Mode slider.svg,width=32,height=32] |
 
-|IMAGE |26 |/File:Mode_image_svg.adoc[image:32px-Mode_image.svg.png[Mode image.svg,width=32,height=32]] |
+|IMAGE |26 |image:32px-Mode_image.svg.png[Mode image.svg,width=32,height=32] |
 
-|SHOW_HIDE_OBJECT |27 |/File:Mode_showhideobject_svg.adoc[image:32px-Mode_showhideobject.svg.png[Mode
-showhideobject.svg,width=32,height=32]] |
+|SHOW_HIDE_OBJECT |27 |image:32px-Mode_showhideobject.svg.png[Mode
+showhideobject.svg,width=32,height=32] |
 
-|SHOW_HIDE_LABEL |28 |/File:Mode_showhidelabel_svg.adoc[image:32px-Mode_showhidelabel.svg.png[Mode
-showhidelabel.svg,width=32,height=32]] |
+|SHOW_HIDE_LABEL |28 |image:32px-Mode_showhidelabel.svg.png[Mode
+showhidelabel.svg,width=32,height=32] |
 
-|MIRROR_AT_POINT |29 |/File:Mode_mirroratpoint_svg.adoc[image:32px-Mode_mirroratpoint.svg.png[Mode
-mirroratpoint.svg,width=32,height=32]] |
+|MIRROR_AT_POINT |29 |image:32px-Mode_mirroratpoint.svg.png[Mode
+mirroratpoint.svg,width=32,height=32] |
 
-|MIRROR_AT_LINE |30 |/File:Mode_mirroratline_svg.adoc[image:32px-Mode_mirroratline.svg.png[Mode
-mirroratline.svg,width=32,height=32]] |
+|MIRROR_AT_LINE |30 |image:32px-Mode_mirroratline.svg.png[Mode
+mirroratline.svg,width=32,height=32] |
 
-|TRANSLATE_BY_VECTOR |31 |/File:Mode_translatebyvector_svg.adoc[image:32px-Mode_translatebyvector.svg.png[Mode
-translatebyvector.svg,width=32,height=32]] |
+|TRANSLATE_BY_VECTOR |31 |image:32px-Mode_translatebyvector.svg.png[Mode
+translatebyvector.svg,width=32,height=32] |
 
-|ROTATE_BY_ANGLE |32 |/File:Mode_rotatebyangle_svg.adoc[image:32px-Mode_rotatebyangle.svg.png[Mode
-rotatebyangle.svg,width=32,height=32]] |
+|ROTATE_BY_ANGLE |32 |image:32px-Mode_rotatebyangle.svg.png[Mode
+rotatebyangle.svg,width=32,height=32] |
 
-|DILATE_FROM_POINT |33 |/File:Mode_dilatefrompoint_svg.adoc[image:32px-Mode_dilatefrompoint.svg.png[Mode
-dilatefrompoint.svg,width=32,height=32]] |
+|DILATE_FROM_POINT |33 |image:32px-Mode_dilatefrompoint.svg.png[Mode
+dilatefrompoint.svg,width=32,height=32] |
 
-|CIRCLE_POINT_RADIUS |34 |/File:Mode_circlepointradius_svg.adoc[image:32px-Mode_circlepointradius.svg.png[Mode
-circlepointradius.svg,width=32,height=32]] |
+|CIRCLE_POINT_RADIUS |34 |image:32px-Mode_circlepointradius.svg.png[Mode
+circlepointradius.svg,width=32,height=32] |
 
-|COPY_VISUAL_STYLE |35 |/File:Mode_copyvisualstyle_svg.adoc[image:32px-Mode_copyvisualstyle.svg.png[Mode
-copyvisualstyle.svg,width=32,height=32]] |
+|COPY_VISUAL_STYLE |35 |image:32px-Mode_copyvisualstyle.svg.png[Mode
+copyvisualstyle.svg,width=32,height=32] |
 
-|ANGLE |36 |/File:Mode_angle_svg.adoc[image:32px-Mode_angle.svg.png[Mode angle.svg,width=32,height=32]] |
+|ANGLE |36 |image:32px-Mode_angle.svg.png[Mode angle.svg,width=32,height=32] |
 
-|VECTOR_FROM_POINT |37 |/File:Mode_vectorfrompoint_svg.adoc[image:32px-Mode_vectorfrompoint.svg.png[Mode
-vectorfrompoint.svg,width=32,height=32]] |
+|VECTOR_FROM_POINT |37 |image:32px-Mode_vectorfrompoint.svg.png[Mode
+vectorfrompoint.svg,width=32,height=32] |
 
-|DISTANCE |38 |/File:Mode_distance_svg.adoc[image:32px-Mode_distance.svg.png[Mode distance.svg,width=32,height=32]] |
+|DISTANCE |38 |image:32px-Mode_distance.svg.png[Mode distance.svg,width=32,height=32] |
 
-|MOVE_ROTATE |39 |/File:Mode_moverotate_svg.adoc[image:32px-Mode_moverotate.svg.png[Mode
-moverotate.svg,width=32,height=32]] |
+|MOVE_ROTATE |39 |image:32px-Mode_moverotate.svg.png[Mode
+moverotate.svg,width=32,height=32] |
 
-|TRANSLATEVIEW |40 |/File:Mode_translateview_svg.adoc[image:32px-Mode_translateview.svg.png[Mode
-translateview.svg,width=32,height=32]] |
+|TRANSLATEVIEW |40 |image:32px-Mode_translateview.svg.png[Mode
+translateview.svg,width=32,height=32] |
 
-|ZOOM_IN |41 |/File:Mode_zoomin_svg.adoc[image:32px-Mode_zoomin.svg.png[Mode zoomin.svg,width=32,height=32]] |
+|ZOOM_IN |41 |image:32px-Mode_zoomin.svg.png[Mode zoomin.svg,width=32,height=32] |
 
-|ZOOM_OUT |42 |/File:Mode_zoomout_svg.adoc[image:32px-Mode_zoomout.svg.png[Mode zoomout.svg,width=32,height=32]] |
+|ZOOM_OUT |42 |image:32px-Mode_zoomout.svg.png[Mode zoomout.svg,width=32,height=32] |
 
-|POLAR_DIAMETER |44 |/File:Mode_polardiameter_svg.adoc[image:32px-Mode_polardiameter.svg.png[Mode
-polardiameter.svg,width=32,height=32]] |
+|POLAR_DIAMETER |44 |image:32px-Mode_polardiameter.svg.png[Mode
+polardiameter.svg,width=32,height=32] |
 
-|SEGMENT_FIXED |45 |/File:Mode_segmentfixed_svg.adoc[image:32px-Mode_segmentfixed.svg.png[Mode
-segmentfixed.svg,width=32,height=32]] |
+|SEGMENT_FIXED |45 |image:32px-Mode_segmentfixed.svg.png[Mode
+segmentfixed.svg,width=32,height=32] |
 
-|ANGLE_FIXED |46 |/File:Mode_anglefixed_svg.adoc[image:32px-Mode_anglefixed.svg.png[Mode
-anglefixed.svg,width=32,height=32]] |
+|ANGLE_FIXED |46 |image:32px-Mode_anglefixed.svg.png[Mode
+anglefixed.svg,width=32,height=32] |
 
-|LOCUS |47 |/File:Mode_locus_svg.adoc[image:32px-Mode_locus.svg.png[Mode locus.svg,width=32,height=32]] |
+|LOCUS |47 |image:32px-Mode_locus.svg.png[Mode locus.svg,width=32,height=32] |
 
-|MACRO |48 |/File:Mode_tool_svg.adoc[image:32px-Mode_tool.svg.png[Mode tool.svg,width=32,height=32]] |
+|MACRO |48 |image:32px-Mode_tool.svg.png[Mode tool.svg,width=32,height=32] |
 
-|AREA |49 |/File:Mode_area_svg.adoc[image:32px-Mode_area.svg.png[Mode area.svg,width=32,height=32]] |
+|AREA |49 |image:32px-Mode_area.svg.png[Mode area.svg,width=32,height=32] |
 
-|SLOPE |50 |/File:Mode_slope_svg.adoc[image:32px-Mode_slope.svg.png[Mode slope.svg,width=32,height=32]] |
+|SLOPE |50 |image:32px-Mode_slope.svg.png[Mode slope.svg,width=32,height=32] |
 
-|REGULAR_POLYGON |51 |/File:Mode_regularpolygon_svg.adoc[image:32px-Mode_regularpolygon.svg.png[Mode
-regularpolygon.svg,width=32,height=32]] |
+|REGULAR_POLYGON |51 |image:32px-Mode_regularpolygon.svg.png[Mode
+regularpolygon.svg,width=32,height=32] |
 
-|SHOW_HIDE_CHECKBOX |52 |/File:Mode_showcheckbox_svg.adoc[image:32px-Mode_showcheckbox.svg.png[Mode
-showcheckbox.svg,width=32,height=32]] |
+|SHOW_HIDE_CHECKBOX |52 |image:32px-Mode_showcheckbox.svg.png[Mode
+showcheckbox.svg,width=32,height=32] |
 
-|COMPASSES |53 |/File:Mode_compasses_svg.adoc[image:32px-Mode_compasses.svg.png[Mode compasses.svg,width=32,height=32]]
+|COMPASSES |53 |image:32px-Mode_compasses.svg.png[Mode compasses.svg,width=32,height=32]]
 |
 
-|MIRROR_AT_CIRCLE |54 |/File:Mode_mirroratcircle_svg.adoc[image:32px-Mode_mirroratcircle.svg.png[Mode
-mirroratcircle.svg,width=32,height=32]] |
+|MIRROR_AT_CIRCLE |54 |image:32px-Mode_mirroratcircle.svg.png[Mode
+mirroratcircle.svg,width=32,height=32] |
 
-|ELLIPSE_THREE_POINTS |55 |/File:Mode_ellipse3_svg.adoc[image:32px-Mode_ellipse3.svg.png[Mode
-ellipse3.svg,width=32,height=32]] |
+|ELLIPSE_THREE_POINTS |55 |image:32px-Mode_ellipse3.svg.png[Mode
+ellipse3.svg,width=32,height=32] |
 
-|HYPERBOLA_THREE_POINTS |56 |/File:Mode_hyperbola3_svg.adoc[image:32px-Mode_hyperbola3.svg.png[Mode
-hyperbola3.svg,width=32,height=32]] |
+|HYPERBOLA_THREE_POINTS |56 |image:32px-Mode_hyperbola3.svg.png[Mode
+hyperbola3.svg,width=32,height=32] |
 
-|PARABOLA |57 |/File:Mode_parabola_svg.adoc[image:32px-Mode_parabola.svg.png[Mode parabola.svg,width=32,height=32]] |
+|PARABOLA |57 |image:32px-Mode_parabola.svg.png[Mode parabola.svg,width=32,height=32] |
 
-|FITLINE |58 |/File:Mode_fitline_svg.adoc[image:32px-Mode_fitline.svg.png[Mode fitline.svg,width=32,height=32]] |
+|FITLINE |58 |image:32px-Mode_fitline.svg.png[Mode fitline.svg,width=32,height=32] |
 
-|RECORD_TO_SPREADSHEET |59 |/File:Mode_recordtospreadsheet_svg.adoc[image:32px-Mode_recordtospreadsheet.svg.png[Mode
-recordtospreadsheet.svg,width=32,height=32]] |
+|RECORD_TO_SPREADSHEET |59 |image:32px-Mode_recordtospreadsheet.svg.png[Mode
+recordtospreadsheet.svg,width=32,height=32] |
 
-|BUTTON_ACTION |60 |/File:Mode_buttonaction_svg.adoc[image:32px-Mode_buttonaction.svg.png[Mode
-buttonaction.svg,width=32,height=32]] |
+|BUTTON_ACTION |60 |image:32px-Mode_buttonaction.svg.png[Mode
+buttonaction.svg,width=32,height=32] |
 
-|TEXTFIELD_ACTION |61 |/File:Mode_textfieldaction_svg.adoc[image:32px-Mode_textfieldaction.svg.png[Mode
-textfieldaction.svg,width=32,height=32]] |
+|TEXTFIELD_ACTION |61 |image:32px-Mode_textfieldaction.svg.png[Mode
+textfieldaction.svg,width=32,height=32] |
 
-|PEN |62 |/File:Mode_pen_svg.adoc[image:32px-Mode_pen.svg.png[Mode pen.svg,width=32,height=32]] |
+|PEN |62 |image:32px-Mode_pen.svg.png[Mode pen.svg,width=32,height=32] |
 
-|Rigid Polygon |64 |/File:Mode_rigidpolygon_svg.adoc[image:32px-Mode_rigidpolygon.svg.png[Mode
-rigidpolygon.svg,width=32,height=32]] |
+|Rigid Polygon |64 |image:32px-Mode_rigidpolygon.svg.png[Mode
+rigidpolygon.svg,width=32,height=32] |
 
-|Polyline |65 |/File:Mode_polyline_svg.adoc[image:32px-Mode_polyline.svg.png[Mode polyline.svg,width=32,height=32]] |
+|Polyline |65 |image:32px-Mode_polyline.svg.png[Mode polyline.svg,width=32,height=32] |
 
 |Probability Calculator |66
-|/File:Mode_probabilitycalculator_svg.adoc[image:32px-Mode_probabilitycalculator.svg.png[Mode
-probabilitycalculator.svg,width=32,height=32]] |
+|image:32px-Mode_probabilitycalculator.svg.png[Mode
+probabilitycalculator.svg,width=32,height=32] |
 
-|Attach / Detach |67 |/File:Mode_attachdetachpoint_svg.adoc[image:32px-Mode_attachdetachpoint.svg.png[Mode
-attachdetachpoint.svg,width=32,height=32]] |
+|Attach / Detach |67 |image:32px-Mode_attachdetachpoint.svg.png[Mode
+attachdetachpoint.svg,width=32,height=32] |
 
-|Function Inspector |68 |/File:Mode_functioninspector_svg.adoc[image:32px-Mode_functioninspector.svg.png[Mode
-functioninspector.svg,width=32,height=32]] |
+|Function Inspector |68 |image:32px-Mode_functioninspector.svg.png[Mode
+functioninspector.svg,width=32,height=32] |
 
-|Intersect Two Surfaces |69 |32px]] |
+|Intersect Two Surfaces |69 |32px] |
 
-|Vector Polygon |70 |/File:Mode_vectorpolygon_svg.adoc[image:32px-Mode_vectorpolygon.svg.png[Mode
-vectorpolygon.svg,width=32,height=32]] |
+|Vector Polygon |70 |image:32px-Mode_vectorpolygon.svg.png[Mode
+vectorpolygon.svg,width=32,height=32] |
 
-|Create List |71 |/File:Mode_createlist_svg.adoc[image:32px-Mode_createlist.svg.png[Mode
-createlist.svg,width=32,height=32]] |
+|Create List |71 |image:32px-Mode_createlist.svg.png[Mode
+createlist.svg,width=32,height=32] |
 
-|Complex Number |72 |/File:Mode_complexnumber_svg.adoc[image:32px-Mode_complexnumber.svg.png[Mode
-complexnumber.svg,width=32,height=32]] |
+|Complex Number |72 |image:32px-Mode_complexnumber.svg.png[Mode
+complexnumber.svg,width=32,height=32] |
 
-|Freehand Mode |73 |/File:Mode_freehandshape_svg.adoc[image:32px-Mode_freehandshape.svg.png[Mode
-freehandshape.svg,width=32,height=32]] |
+|Freehand Mode |73 |image:32px-Mode_freehandshape.svg.png[Mode
+freehandshape.svg,width=32,height=32] |
 
 |Freehand Function |74 | |
 
@@ -198,33 +199,33 @@ freehandshape.svg,width=32,height=32]] |
 
 |Select Objects |77 | |
 
-|Point on object |501 |/File:Mode_pointonobject_svg.adoc[image:32px-Mode_pointonobject.svg.png[Mode
-pointonobject.svg,width=32,height=32]] |
+|Point on object |501 |image:32px-Mode_pointonobject.svg.png[Mode
+pointonobject.svg,width=32,height=32] |
 
-|MODE_SPREADSHEET_CREATE_LIST |2001 |/File:Mode_createlist_svg.adoc[image:32px-Mode_createlist.svg.png[Mode
-createlist.svg,width=32,height=32]] |
+|MODE_SPREADSHEET_CREATE_LIST |2001 |image:32px-Mode_createlist.svg.png[Mode
+createlist.svg,width=32,height=32] |
 
-|MODE_SPREADSHEET_CREATE_MATRIX |2002 |/File:Mode_creatematrix_svg.adoc[image:32px-Mode_creatematrix.svg.png[Mode
-creatematrix.svg,width=32,height=32]] |
+|MODE_SPREADSHEET_CREATE_MATRIX |2002 |image:32px-Mode_creatematrix.svg.png[Mode
+creatematrix.svg,width=32,height=32] |
 
 |MODE_SPREADSHEET_CREATE_LISTOFPOINTS |2003
-|/File:Mode_createlistofpoints_svg.adoc[image:32px-Mode_createlistofpoints.svg.png[Mode
-createlistofpoints.svg,width=32,height=32]] |
+|image:32px-Mode_createlistofpoints.svg.png[Mode
+createlistofpoints.svg,width=32,height=32] |
 
-|MODE_SPREADSHEET_CREATE_TABLETEXT |2004 |/File:Mode_createtable_svg.adoc[image:32px-Mode_createtable.svg.png[Mode
-createtable.svg,width=32,height=32]] |
+|MODE_SPREADSHEET_CREATE_TABLETEXT |2004 |image:32px-Mode_createtable.svg.png[Mode
+createtable.svg,width=32,height=32] |
 
-|MODE_SPREADSHEET_CREATE_POLYLINE |2005 |/File:Mode_createpolyline_svg.adoc[image:32px-Mode_createpolyline.svg.png[Mode
-createpolyline.svg,width=32,height=32]] |
+|MODE_SPREADSHEET_CREATE_POLYLINE |2005 |image:32px-Mode_createpolyline.svg.png[Mode
+createpolyline.svg,width=32,height=32] |
 
-|MODE_SPREADSHEET_ONEVARSTATS |2020 |/File:Mode_onevarstats_svg.adoc[image:32px-Mode_onevarstats.svg.png[Mode
-onevarstats.svg,width=32,height=32]] |
+|MODE_SPREADSHEET_ONEVARSTATS |2020 |image:32px-Mode_onevarstats.svg.png[Mode
+onevarstats.svg,width=32,height=32] |
 
-|MODE_SPREADSHEET_TWOVARSTATS |2021 |/File:Mode_twovarstats_svg.adoc[image:32px-Mode_twovarstats.svg.png[Mode
-twovarstats.svg,width=32,height=32]] |
+|MODE_SPREADSHEET_TWOVARSTATS |2021 |image:32px-Mode_twovarstats.svg.png[Mode
+twovarstats.svg,width=32,height=32] |
 
-|MODE_SPREADSHEET_MULTIVARSTATS |2022 |/File:Mode_multivarstats_svg.adoc[image:32px-Mode_multivarstats.svg.png[Mode
-multivarstats.svg,width=32,height=32]] |
+|MODE_SPREADSHEET_MULTIVARSTATS |2022 |image:32px-Mode_multivarstats.svg.png[Mode
+multivarstats.svg,width=32,height=32] |
 
 |MODE_SPREADSHEET_SORT |2030 | |
 
@@ -232,91 +233,91 @@ multivarstats.svg,width=32,height=32]] |
 
 |MODE_SPREADSHEET_SORT_ZA |2032 | |
 
-|MODE_SPREADSHEET_SUM |2040 |/File:Mode_sumcells_svg.adoc[image:32px-Mode_sumcells.svg.png[Mode
-sumcells.svg,width=32,height=32]] |
+|MODE_SPREADSHEET_SUM |2040 |image:32px-Mode_sumcells.svg.png[Mode
+sumcells.svg,width=32,height=32] |
 
-|MODE_SPREADSHEET_AVERAGE |2041 |/File:Mode_meancells_svg.adoc[image:32px-Mode_meancells.svg.png[Mode
-meancells.svg,width=32,height=32]] |
+|MODE_SPREADSHEET_AVERAGE |2041 |image:32px-Mode_meancells.svg.png[Mode
+meancells.svg,width=32,height=32] |
 
-|MODE_SPREADSHEET_COUNT |2042 |/File:Mode_countcells_svg.adoc[image:32px-Mode_countcells.svg.png[Mode
-countcells.svg,width=32,height=32]] |
+|MODE_SPREADSHEET_COUNT |2042 |image:32px-Mode_countcells.svg.png[Mode
+countcells.svg,width=32,height=32] |
 
-|MODE_SPREADSHEET_MIN |2043 |/File:Mode_mincells_svg.adoc[image:32px-Mode_mincells.svg.png[Mode
-mincells.svg,width=32,height=32]] |
+|MODE_SPREADSHEET_MIN |2043 |image:32px-Mode_mincells.svg.png[Mode
+mincells.svg,width=32,height=32] |
 
-|MODE_SPREADSHEET_MAX |2044 |/File:Mode_maxcells_svg.adoc[image:32px-Mode_maxcells.svg.png[Mode
-maxcells.svg,width=32,height=32]] |
+|MODE_SPREADSHEET_MAX |2044 |image:32px-Mode_maxcells.svg.png[Mode
+maxcells.svg,width=32,height=32] |
 |===
 
 == [#3D_Tools]#3D Tools#
 
 [cols=",,,",]
 |===
-|VIEW_IN_FRONT_OF |502 |/File:Mode_viewinfrontof_svg.adoc[image:32px-Mode_viewinfrontof.svg.png[Mode
-viewinfrontof.svg,width=32,height=32]] |
+|VIEW_IN_FRONT_OF |502 |image:32px-Mode_viewinfrontof.svg.png[Mode
+viewinfrontof.svg,width=32,height=32] |
 
-|PLANE_THREE_POINTS |510 |/File:Mode_planethreepoint_svg.adoc[image:32px-Mode_planethreepoint.svg.png[Mode
-planethreepoint.svg,width=32,height=32]] |
+|PLANE_THREE_POINTS |510 |image:32px-Mode_planethreepoint.svg.png[Mode
+planethreepoint.svg,width=32,height=32] |
 
-|PLANE_POINT_LINE |511 |/File:Mode_plane_svg.adoc[image:32px-Mode_plane.svg.png[Mode plane.svg,width=32,height=32]] |
+|PLANE_POINT_LINE |511 |image:32px-Mode_plane.svg.png[Mode plane.svg,width=32,height=32] |
 
-|ORTHOGONAL_PLANE |512 |/File:Mode_orthogonalplane_svg.adoc[image:32px-Mode_orthogonalplane.svg.png[Mode
-orthogonalplane.svg,width=32,height=32]] |
+|ORTHOGONAL_PLANE |512 |image:32px-Mode_orthogonalplane.svg.png[Mode
+orthogonalplane.svg,width=32,height=32] |
 
-|PARALLEL_PLANE |513 |/File:Mode_parallelplane_svg.adoc[image:32px-Mode_parallelplane.svg.png[Mode
-parallelplane.svg,width=32,height=32]] |
+|PARALLEL_PLANE |513 |image:32px-Mode_parallelplane.svg.png[Mode
+parallelplane.svg,width=32,height=32] |
 
-|Perpendicular line (3D) |514 |/File:Mode_orthogonalthreed_svg.adoc[image:32px-Mode_orthogonalthreed.svg.png[Mode
-orthogonalthreed.svg,width=32,height=32]] |
+|Perpendicular line (3D) |514 |image:32px-Mode_orthogonalthreed.svg.png[Mode
+orthogonalthreed.svg,width=32,height=32] |
 
-|SPHERE_POINT_RADIUS |520 |/File:Mode_spherepointradius_svg.adoc[image:32px-Mode_spherepointradius.svg.png[Mode
-spherepointradius.svg,width=32,height=32]] |
+|SPHERE_POINT_RADIUS |520 |image:32px-Mode_spherepointradius.svg.png[Mode
+spherepointradius.svg,width=32,height=32] |
 
-|SPHERE_TWO_POINTS |521 |/File:Mode_sphere2_svg.adoc[image:32px-Mode_sphere2.svg.png[Mode
-sphere2.svg,width=32,height=32]] |
+|SPHERE_TWO_POINTS |521 |image:32px-Mode_sphere2.svg.png[Mode
+sphere2.svg,width=32,height=32] |
 
-|Cone given by two points and radius |522 |/File:Mode_cone_svg.adoc[image:32px-Mode_cone.svg.png[Mode
-cone.svg,width=32,height=32]] |
+|Cone given by two points and radius |522 |image:32px-Mode_cone.svg.png[Mode
+cone.svg,width=32,height=32] |
 
-|Cylinder given by two points and radius |523 |/File:Mode_cylinder_svg.adoc[image:32px-Mode_cylinder.svg.png[Mode
-cylinder.svg,width=32,height=32]] |
+|Cylinder given by two points and radius |523 |image:32px-Mode_cylinder.svg.png[Mode
+cylinder.svg,width=32,height=32] |
 
-|Prism |531 |/File:Mode_prism_svg.adoc[image:32px-Mode_prism.svg.png[Mode prism.svg,width=32,height=32]] |
+|Prism |531 |image:32px-Mode_prism.svg.png[Mode prism.svg,width=32,height=32] |
 
-|Extrude to Prism or Cylinder |532 |/File:Mode_extrusion_svg.adoc[image:32px-Mode_extrusion.svg.png[Mode
-extrusion.svg,width=32,height=32]] |
+|Extrude to Prism or Cylinder |532 |image:32px-Mode_extrusion.svg.png[Mode
+extrusion.svg,width=32,height=32] |
 
-|Pyramid |533 |/File:Mode_pyramid_svg.adoc[image:32px-Mode_pyramid.svg.png[Mode pyramid.svg,width=32,height=32]] |
+|Pyramid |533 |image:32px-Mode_pyramid.svg.png[Mode pyramid.svg,width=32,height=32] |
 
-|Extrude to Pyramid or Cone |534 |/File:Mode_conify_svg.adoc[image:32px-Mode_conify.svg.png[Mode
-conify.svg,width=32,height=32]] |
+|Extrude to Pyramid or Cone |534 |image:32px-Mode_conify.svg.png[Mode
+conify.svg,width=32,height=32] |
 
-|Net |535 |/File:Mode_net_svg.adoc[image:32px-Mode_net.svg.png[Mode net.svg,width=32,height=32]] |
+|Net |535 |image:32px-Mode_net.svg.png[Mode net.svg,width=32,height=32] |
 
-|Cube |536 |/File:Mode_cube_svg.adoc[image:32px-Mode_cube.svg.png[Mode cube.svg,width=32,height=32]] |
+|Cube |536 |image:32px-Mode_cube.svg.png[Mode cube.svg,width=32,height=32] |
 
-|Tetrahedron |537 |/File:Mode_tetrahedron_svg.adoc[image:32px-Mode_tetrahedron.svg.png[Mode
-tetrahedron.svg,width=32,height=32]] |
+|Tetrahedron |537 |image:32px-Mode_tetrahedron.svg.png[Mode
+tetrahedron.svg,width=32,height=32] |
 
 |Surface of Revolution |538 | |
 
-|Rotate View |540 |/File:Mode_rotateview_svg.adoc[image:32px-Mode_rotateview.svg.png[Mode
-rotateview.svg,width=32,height=32]] |
+|Rotate View |540 |image:32px-Mode_rotateview.svg.png[Mode
+rotateview.svg,width=32,height=32] |
 
 |Circle Point Radius Direction |550
-|/File:Mode_circlepointradiusdirection_svg.adoc[image:32px-Mode_circlepointradiusdirection.svg.png[Mode
-circlepointradiusdirection.svg,width=32,height=32]] |
+|image:32px-Mode_circlepointradiusdirection.svg.png[Mode
+circlepointradiusdirection.svg,width=32,height=32] |
 
-|Circle Axis Point |551 |/File:Mode_circleaxispoint_svg.adoc[image:32px-Mode_circleaxispoint.svg.png[Mode
-circleaxispoint.svg,width=32,height=32]] |
+|Circle Axis Point |551 |image:32px-Mode_circleaxispoint.svg.png[Mode
+circleaxispoint.svg,width=32,height=32] |
 
-|Volume |560 |/File:Mode_volume_svg.adoc[image:32px-Mode_volume.svg.png[Mode volume.svg,width=32,height=32]] |
+|Volume |560 |image:32px-Mode_volume.svg.png[Mode volume.svg,width=32,height=32] |
 
-|Rotate around Line |570 |/File:Mode_rotatearoundline_svg.adoc[image:32px-Mode_rotatearoundline.svg.png[Mode
-rotatearoundline.svg,width=32,height=32]] |
+|Rotate around Line |570 |image:32px-Mode_rotatearoundline.svg.png[Mode
+rotatearoundline.svg,width=32,height=32] |
 
-|Mirror at Plane |571 |/File:Mode_mirroratplane_svg.adoc[image:32px-Mode_mirroratplane.svg.png[Mode
-mirroratplane.svg,width=32,height=32]] |
+|Mirror at Plane |571 |image:32px-Mode_mirroratplane.svg.png[Mode
+mirroratplane.svg,width=32,height=32] |
 |===
 
 == [#User_defined]#User defined#
