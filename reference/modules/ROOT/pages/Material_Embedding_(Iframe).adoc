@@ -1,0 +1,42 @@
+= Reference:Material Embedding (Iframe)
+
+This article describes how to easily embed GeoGebra materials in your website.
+
+[NOTE]
+====
+
+In case you need extra customization, JavaScript API or offline support, please see
+xref:GeoGebra_Apps_Embedding.adoc[Math Apps Embedding].
+
+====
+
+To get the iframe code for a material, open the material, click the
+image:16px-Menu-file-share.svg.png[Menu-file-share.svg,width=16,height=16] Share icon and then select Embed. You will
+get a code similar to this:
+
+....
+<iframe scrolling="no"
+src="https://www.geogebra.org/material/iframe/id/23587/width/1600/height/715/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/false"
+width="1600px"
+height="715px"
+style="border:0px;" allowfullscreen>
+</iframe>
+....
+
+The language of the GeoGebra user interface (toolbar, menu, ...) is set to the browser's language.
+
+[cols=",,",options="header",]
+|===
+|Description |Code |Example
+|Enable Right Click, Zooming and Keyboard Editing |rc |/rc/true
+|Show Input Bar |ai |/ai/true
+|Enable Shift-Drag & Zoom |sdz |/sdz/true
+|Show Menu Bar |smb |/smb/true
+|Show Toolbar |stb |/stb/true
+|Show Toolbar Help |stbh |/stbh/true
+|Allow label dragging |ld |/ld/true
+|Show reset icon (top-right) |sri |/sri/true
+|Show play button that starts the construction |ctl |/ctl/true
+|Show full-screen button. Make sure you also add *allowfullscreen* to the iframe tag |sfsb |/sfsb/true
+|Show zoom buttons |szb |/szb/true
+|===
