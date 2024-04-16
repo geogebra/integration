@@ -32,8 +32,9 @@ function addDrawer(){
 	'<li> <a href="example-assess.html">Environment Integration</a></li></ul>'+
 	'<h4>Documentation</h4>'+
 	'<ul><li> <a href="basic-embedding-options.html">Embedding Options</a></li>'+
-	'<li><a href="https://www.geogebra.org/manual/en/Reference:Math_Apps_Embedding" target="_blank">Math Apps Embedding&nbsp;&nbsp;<span class="material-icons inline">arrow_downward</span></a></li>'+
-	'<li><a href="https://wiki.geogebra.org/en/Reference:GeoGebra_Apps_API" target="_blank">GeoGebra Apps API&nbsp;&nbsp;<span class="material-icons inline">arrow_downward</span></a></li>'+
+	'<li><a href="https://geogebra.github.io/docs/reference/en/GeoGebra_Apps_Embedding/" target="_blank">Math Apps Embedding&nbsp;&nbsp;<span class="material-icons inline">arrow_downward</span></a></li>'+
+	'<li><a href="https://geogebra.github.io/docs/reference/en/GeoGebra_App_Parameters/" target="_blank">App Parameters&nbsp;&nbsp;<span class="material-icons inline">arrow_downward</span></a></li>'+
+	'<li><a href="https://geogebra.github.io/docs/reference/en/GeoGebra_Apps_API/" target="_blank">GeoGebra Apps API&nbsp;&nbsp;<span class="material-icons inline">arrow_downward</span></a></li>'+
 	'<li><a href="https://wiki.geogebra.org/en/Reference:Material_Embedding_(Iframe)" target="_blank">Iframe Embedding&nbsp;&nbsp;<span class="material-icons inline">arrow_downward</span></a></li>';
 
 
@@ -79,15 +80,19 @@ function loadNav(){
 	}
 }
 
-function insertStyle(url){
+function insertHeaderLink(url, type, rel){
 	var styleEl = document.createElement('link');
 	styleEl.setAttribute("href",url);
-	styleEl.setAttribute("type","text/css");
-	styleEl.setAttribute("rel","stylesheet");
+	styleEl.setAttribute("type",type);
+	styleEl.setAttribute("rel",rel);
 	document.getElementsByTagName("head")[0].appendChild(styleEl);
 }
 
-insertStyle("navigation.css");
+insertHeaderLink("navigation.css","text/css","stylesheet" );
+insertHeaderLink("https://www.geogebra.org/apps/icons/geogebra.ico","image/x-icon","shortcut icon" );
+insertHeaderLink("https://www.geogebra.org/apps/icons/geogebra.ico","image/x-icon","icon" );
+
+
 
 
     if (window.addEventListener){
