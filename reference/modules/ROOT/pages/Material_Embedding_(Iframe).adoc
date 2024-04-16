@@ -1,5 +1,6 @@
-= Reference:Material Embedding (Iframe)
+= Material Embedding (Iframe)
 
+ifdef::env-github[:imagesdir: /reference/modules/ROOT/assets/images]
 This article describes how to easily embed GeoGebra materials in your website.
 
 [NOTE]
