@@ -15,21 +15,21 @@ max-width:100%;
 <body class="">
 <div class="contentBox" id="contentBox">
  <h1>Apps Integration</h1>
-	
-		<p><br><a class="appBtn app-icon-graphing" id="app_graphing" href="example-graphing.html">Graphing</a>
+    
+        <p><br><a class="appBtn app-icon-graphing" id="app_graphing" href="example-graphing.html">Graphing</a>
         <a class="appBtn app-icon-geometry" id="app_geometry" href="example-geometry.html">Geometry</a>
-		<a class="appBtn app-icon-scientific" id="app_scientific" href="example-scientific.html">Scientific</a>
-		<a class="appBtn app-icon-cas" id="app_cas" href="example-cas.html">CAS</a>
-		<a class="appBtn app-icon-3d" id="app_3d" href="example-3d.html">3D</a>
-		<a class="appBtn app-icon-classic" id="app_classic" href="example-tools.html">Classic</a>
-		  <br><br>
-		<a class="appBtn noimage active" id="app_editor" href="example-editor.html">Equation Editor</a></p>
-		
-		<h5>Equation Editor</h5>
+        <a class="appBtn app-icon-scientific" id="app_scientific" href="example-scientific.html">Scientific</a>
+        <a class="appBtn app-icon-cas" id="app_cas" href="example-cas.html">CAS</a>
+        <a class="appBtn app-icon-3d" id="app_3d" href="example-3d.html">3D</a>
+        <a class="appBtn app-icon-classic" id="app_classic" href="example-tools.html">Classic</a>
+          <br><br>
+        <a class="appBtn noimage active" id="app_editor" href="example-editor.html">Equation Editor</a></p>
+        
+        <h5>Equation Editor</h5>
         <p class="text">GeoGebra Equation Editor can be embedded as a stand-alone app.<br>
-        For details about customization please refer to <a  class="inlineLink" target="_blank" href="https://wiki.geogebra.org/en/Reference:Applet_Parameters">Documentation</a>.<br>
-		</p>
-		
+        For details about customization please refer to <a  class="inlineLink" target="_blank" href="https://geogebra.github.io/docs/reference/en/GeoGebra_App_Parameters/">Documentation</a>.<br>
+        </p>
+        
 <p>Enter a formula:</p>
 <div id="ggbApplet" class="wrap" style="padding-bottom: 0px; transition: padding-bottom 0.2s linear 0s;">
 <div class="applet_scaler ggbTransform" style="position: relative; display: block; transform: none; transform-origin: 0% 0%;"><article class="notranslate" data-param-id="ggbApplet" data-param-usebrowserforjs="false" data-param-app="false" data-param-appname="evaluator" data-param-scalecontainerclass="wrap" data-param-fontsize="32" data-param-rounding="6" data-param-language="en" data-param-keyboardtype="scientific" data-param-preventfocus="false" data-param-disableautoscale="false" tabindex="0" id="ggbApplet0" data-scalex="1" data-scaley="1" aria-label="Evaluator" style="border-width: 0px; border-style: solid; border-image: initial; display: inline-block; outline-style: none;"><div class="GeoGebraFrame applet-unfocused jsloaded" style="border-width: 1px; border-style: solid;"><div data-test="mathFieldEditor" class="evaluatorEditor" style="height: 101px; vertical-align: top;"><canvas height="101" width="149" tabindex="0" style="height: 101px; width: 149px;"></canvas><div class="textAreaClip" style="z-index: -32000; clip: rect(1em, 1em, 1em, 1em); width: 1px; height: 1px; position: relative; top: -100%;"><textarea id="hiddenCopyPasteLatexArea0" role="application" data-test="mathFieldTextArea" style="opacity: 0; width: 1px; padding: 0px; border: 0px; min-height: 0px; height: 1px;"></textarea></div></div><div class="kbButtonSpace"></div><div aria-hidden="true" class="DockGlassPane" style="position: relative; overflow: hidden; display: none; z-index: 5000;"><div aria-hidden="true" style="border-width: 4px; border-style: solid; border-color: gray; display: none;"></div></div></div><span class="geogebraweb-dummy-invisible" tabindex="10000"></span><div id="screenReader1" tabindex="-1" role="status" aria-live="polite" aria-atomic="true" aria-relevant="additions text" style="top: -1000px; position: absolute;"></div></article></div><div class="GeoGebraFrame" id="ggbAppletkeyboard"></div></div>
@@ -41,8 +41,8 @@ max-width:100%;
 var codebase;
 var urlParams = new URLSearchParams(window.location.search);
 if (urlParams.has('cb')) {
-	codebase = urlParams.get('cb');
-	codebase = "https://apps-builds.s3-eu-central-1.amazonaws.com/geogebra/branches/" + codebase + "/web3d/";
+    codebase = urlParams.get('cb');
+    codebase = "https://apps-builds.s3-eu-central-1.amazonaws.com/geogebra/branches/" + codebase + "/web3d/";
 }
 
         var eventglob
@@ -69,7 +69,7 @@ if (urlParams.has('cb')) {
 
         }
     </script>
-	
+    
 
 <script>
 
@@ -92,28 +92,28 @@ var parameters = {
 
 // called after the editor is fully loaded
 "appletOnLoad":function(api){   
-		editorAPI = api;          
-		api.registerClientListener(listener);
-		
-		// initial state
-		var state = [];
-		state[0] = "editorKeyTyped";
-		state.content = "sqrt(x/(2+x))";
-		state.latex = "\\sqrt{{\\frac{x}{2+x}}}";
-		state.eval = "sqrt(x / (2 + x))";
+        editorAPI = api;          
+        api.registerClientListener(listener);
+        
+        // initial state
+        var state = [];
+        state[0] = "editorKeyTyped";
+        state.content = "sqrt(x/(2+x))";
+        state.latex = "\\sqrt{{\\frac{x}{2+x}}}";
+        state.eval = "sqrt(x / (2 + x))";
 
-		editorAPI.setEditorState({"content":state.content});
-		
-		// update other text fields
-		listener(state);
-	}
+        editorAPI.setEditorState({"content":state.content});
+        
+        // update other text fields
+        listener(state);
+    }
 
 };
 
 var applet = new GGBApplet(parameters);
 if (codebase) {
-	console.log("using codebase " + codebase);
-	applet.setHTML5Codebase(codebase);
+    console.log("using codebase " + codebase);
+    applet.setHTML5Codebase(codebase);
 }
 window.onload = function() {applet.inject('ggbApplet')};
 
@@ -140,10 +140,10 @@ editorAPI.setEditorState({"latex":content});
   <textarea class="inputfield" onkeyup="keyPressed()" id="flat" name="flat" cols="50" rows="1"></textarea>
   
     <br>You can copy LaTeX from here:<br>
-	<textarea class="inputfield" onkeyup="keyPressedLaTeX()" id="latex" name="latex" cols="50" rows="1"></textarea>
-	
+    <textarea class="inputfield" onkeyup="keyPressedLaTeX()" id="latex" name="latex" cols="50" rows="1"></textarea>
+    
     <br><br>Technical info:<br>
-	<textarea class="inputfield"  id="textarea1" name="textarea1" cols="50" rows="3"></textarea>
+    <textarea class="inputfield"  id="textarea1" name="textarea1" cols="50" rows="3"></textarea>
     <br><button class="appBtn noimage" type="button" onclick="printState()">Print state to console</button><br>
 </p>
 

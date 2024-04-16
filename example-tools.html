@@ -4,40 +4,40 @@
 <head>
         <title>Apps Integration</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<script src="navigation.js"></script>
+        <script src="navigation.js"></script>
 </head>
 
 <body>
 <div class="contentBox" id="contentBox">
         <h1>Apps Integration</h1>
-		<p><br><a class="appBtn app-icon-graphing" href="example-graphing.html">Graphing</a>
+        <p><br><a class="appBtn app-icon-graphing" href="example-graphing.html">Graphing</a>
         <a class="appBtn app-icon-geometry" href="example-geometry.html">Geometry</a>
-		<a class="appBtn app-icon-scientific" id="app_scientific" href="example-scientific.html">Scientific</a>
-		<a class="appBtn app-icon-cas" id="app_cas" href="example-cas.html">CAS</a>
-		<a class="appBtn app-icon-3d" id="app_3d" href="example-3d.html">3D</a>
+        <a class="appBtn app-icon-scientific" id="app_scientific" href="example-scientific.html">Scientific</a>
+        <a class="appBtn app-icon-cas" id="app_cas" href="example-cas.html">CAS</a>
+        <a class="appBtn app-icon-3d" id="app_3d" href="example-3d.html">3D</a>
         <a class="appBtn app-icon-classic active" id="app_classic" href="example-tools.html">Classic</a>
-		  <br><br>
-		<a class="appBtn noimage" id="app_editor" href="example-editor.html">Equation Editor</a></p>
-		
-		<h5>GeoGebra Classic</h5>
+          <br><br>
+        <a class="appBtn noimage" id="app_editor" href="example-editor.html">Equation Editor</a></p>
+        
+        <h5>GeoGebra Classic</h5>
        <p class="text">GeoGebra Classic can be embedded as an app. Preloading a resource is optional. <br>
-        For details about customization please refer to <a  class="inlineLink" href="https://wiki.geogebra.org/en/Reference:Applet_Parameters">Documentation</a>.<br>
-		For details about the app have a look at <a class="inlineLink" target="_blank" href="https://www.geogebra.org/m/XUv5mXTm">Learn GeoGebra Classic</a>.</p>		
+        For details about customization please refer to <a  class="inlineLink" href="https://geogebra.github.io/docs/reference/en/GeoGebra_App_Parameters/">Documentation</a>.<br>
+        For details about the app have a look at <a class="inlineLink" target="_blank" href="https://www.geogebra.org/m/XUv5mXTm">Learn GeoGebra Classic</a>.</p>        
       <br>
         <script type="text/javascript" src="https://www.geogebra.org/apps/deployggb.js"></script>
         <script type="text/javascript">
-				
-				function perspective(p,id){
-					ggbApplet.setPerspective(p);
-					var i;
-					for(i=1;i<7;i++){
-						if(i==id){
-						document.getElementById(i).classList.add('active');
-						} else {
-						document.getElementById(i).classList.remove('active');
-							}
-					}
-				}
+                
+                function perspective(p,id){
+                    ggbApplet.setPerspective(p);
+                    var i;
+                    for(i=1;i<7;i++){
+                        if(i==id){
+                        document.getElementById(i).classList.add('active');
+                        } else {
+                        document.getElementById(i).classList.remove('active');
+                            }
+                    }
+                }
                 var parameters = {
                         "id":"ggbApplet",
                         "width":800,
@@ -65,16 +65,16 @@
 
         </script>
       <p class="text">  GeoGebra Classic provides several perspectives, you can chose which one to use at start and change it later via API. </p>
-		<p> <a class="appBtn app-icon-graphing narrow active" id="1" onclick="perspective('AG','1')">Graphing</a>
-		 <a class="appBtn app-icon-geometry narrow"  id="2" onclick="perspective('2','2')">Geometry</a>
-		 <a class="appBtn app-icon-spreadsheet narrow"  id="3" onclick="perspective('3','3')">Spreadsheet</a>
-		 <a class="appBtn app-icon-cas narrow"  id="4" onclick="perspective('4','4')">CAS</a>
-		 <a class="appBtn app-icon-3d narrow"  id="5" onclick="perspective('5','5')">3D Geometry</a>
-		 <a class="appBtn app-icon-probability narrow"  id="6" onclick="perspective('6','6')">Probability</a></p>
+        <p> <a class="appBtn app-icon-graphing narrow active" id="1" onclick="perspective('AG','1')">Graphing</a>
+         <a class="appBtn app-icon-geometry narrow"  id="2" onclick="perspective('2','2')">Geometry</a>
+         <a class="appBtn app-icon-spreadsheet narrow"  id="3" onclick="perspective('3','3')">Spreadsheet</a>
+         <a class="appBtn app-icon-cas narrow"  id="4" onclick="perspective('4','4')">CAS</a>
+         <a class="appBtn app-icon-3d narrow"  id="5" onclick="perspective('5','5')">3D Geometry</a>
+         <a class="appBtn app-icon-probability narrow"  id="6" onclick="perspective('6','6')">Probability</a></p>
 
 
        <p> <div id="applet_container"></div></p>
-		</div>
+        </div>
 </body>
 
 </html>
