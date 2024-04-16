@@ -23,7 +23,8 @@ function addDrawer(){
 	    
 	'<h4>Calculators</h4>'+
 	'<ul><li> <a href="example-graphing.html">Apps Integration</a></li>'+
-	'<li> <a href="example-popup.html">Apps in Popups</a></li></ul>'+
+	'<li> <a href="example-popup.html">Apps in Popups</a></li>'+
+	'<li> <a href="example-customized-calculators.html">Customized Apps</a></li></ul>'+
 	'<h4> Integrations (API)</h4>'+
     '<ul><li> <a href="example-api-save-state.html">Saving & Loading</a></li>'+
     '<li> <a href="example-api.html">Buttons & Inputs</a></li>'+
