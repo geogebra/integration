@@ -55,19 +55,17 @@ https://www.geogebra.org/m/sehv2qc9
 The following examples and their html source code show how to use GeoGebra apps either embedded in your page or in popup
 dialogs:
 
-* http://dev.geogebra.org/examples/html/example-graphing.html[Graphing Calculator embedded]
-* http://dev.geogebra.org/examples/html/example-geometry.html[Geometry app embedded]
-* http://dev.geogebra.org/examples/html/example-popup-graphing.html[Graphing Calculator popup]
-* http://dev.geogebra.org/examples/html/example-popup-geometry.html[Geometry app popup]
+* https://geogebra.github.io/integration/example-graphing.html[GeoGebra Calculators embedded]
+* https://geogebra.github.io/integration/example-popup.html[GeoGebra Calculators popup]
 
 == [#GeoGebra_Apps_API]#GeoGebra Apps API#
 
 The following examples show how you can interact with embedded apps through the
 xref:GeoGebra_Apps_API.adoc[GeoGebra Apps API]:
 
-* http://dev.geogebra.org/examples/html/example-api-multiple.html[Showing & hiding objects with buttons]
-* http://dev.geogebra.org/examples/html/example-api-save-state.html[Saving & loading state]
-* http://dev.geogebra.org/examples/html/example-api-listeners.html[Listening to update, add, remove events]
+* https://geogebra.github.io/integration/example-api.html[Showing & hiding objects with buttons]
+* https://geogebra.github.io/integration/example-api-save-state.html[Saving & loading state]
+* https://geogebra.github.io/integration/example-api-listeners.html[Listening to update, add, remove events]
 
 == [#Offline_and_Self-Hosted_Solution]#Offline and Self-Hosted Solution#
 
