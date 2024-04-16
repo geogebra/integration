@@ -9,9 +9,9 @@ xref:GeoGebra_Apps_Embedding.adoc[GeoGebra Apps Embedding] on how to embed our a
 
 In these examples you can see the GeoGebra Apps API in action:
 
-* http://dev.geogebra.org/examples/html/example-api-multiple.html[Showing & hiding objects with buttons]
-* http://dev.geogebra.org/examples/html/example-api-save-state.html[Saving & loading state]
-* http://dev.geogebra.org/examples/html/example-api-listeners.html[Listening to update, add, remove events]
+* https://geogebra.github.io/integration/example-api.html[Showing & hiding objects with buttons]
+* https://geogebra.github.io/integration/example-api-save-state.html[Saving & loading state]
+* https://geogebra.github.io/integration/example-api-listeners.html[Listening to update, add, remove events]
 
 [NOTE]
 ====
