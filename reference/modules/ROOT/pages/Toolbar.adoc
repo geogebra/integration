@@ -1,5 +1,6 @@
 = Reference:Toolbar
 
+ifdef::env-github[:imagesdir: /reference/modules/ROOT/assets/images]
 [cols=",,,",]
 |===
 |Name |ID |Icon |
