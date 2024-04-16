@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Customized GeoGebra Calculators</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+	<link rel="shortcut icon" href="https://www.geogebra.org/apps/icons/geogebra.ico" type="image/x-icon">
+	<link rel="icon" href="https://www.geogebra.org/apps/icons/geogebra.ico" type="image/x-icon">
+	<script src="navigation.js"></script>
+	<link href="navigation.css" type="text/css" rel="stylesheet">
+	<style>
+		
+
+		label {
+			min-width: 235px;
+			display: inline-block;
+			font-size: 90%;
+		}
+
+		.settingsButton {
+			float: right;
+			position: relative;
+			top: -36px;
+			z-index: 1001;
+			width: 135px;
+		}
+
+		#settings {
+			position: absolute;
+			right: 24px;
+			top: 79px;
+			padding: 0px 8px 16px 8px;
+			z-index: 1000;
+			
+			background-color: rgba(255, 255, 255, 0.9);
+			box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 1px 10px 0 rgba(0,0,0,.12), 0 4px 5px 0 rgba(0,0,0,.14);
+			border-radius: 8px;
+		}
+
+		#settings input, select {
+			margin-bottom: 0;
+			width: 77px;
+			padding: 4px 8px 4px;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, .6);
+    border-radius: 4px;
+		}
+
+		#settings select {
+			width: 95px;
+		}
+
+
+		#settings option:hover{
+			background-color: #008475;
+		}
+		
+		#settings input:focus, select:focus{
+	border: 2px solid #008475;
+	outline: none;
+	padding: 3px 7px 3px;
+}
+
+#settings input[type="checkbox"]{
+	height: 18px;
+}
+#settings input[type="checkbox"]:checked{
+	accent-color: #008475;
+}
+
+		#scaleContainer {
+		
+			padding-top: 24px;
+			padding-bottom: 24px;
+		}
+
+		#keyboardParent {
+			position: absolute;
+			top: 1200px;
+			left: 200px;
+			width: 80%;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+		const paramLabels = {
+			"appName": "Choose a Calculator ", 
+			"width": "Calculator width ",
+			"height": "Calculator height ",
+			
+			"showMenuBar": "Show Main Menu ",
+			"enableFileFeatures": "Allow Saving and Loading Files ",
+			"showToolBar": "Show Toolbar ",
+			"customToolBar": "Custom Toolbar ",
+			"showToolBarHelp": "Show Tools Help ",
+			"showAlgebraInput": "Show Algebra Input ",
+			"allowStyleBar": "Show Style Bar ",
+			"enableUndoRedo": "Allow Undo / Redo ",
+			"enableRightClick": "Allow Right-Click ",
+			
+			"enableLabelDrags": "Allow Dragging of Labels ",
+			"enableShiftDragZoom": "Allow Move and Zoom of Canvas ",
+			"showZoomButtons": "Show Zoom Buttons ",
+			"showFullscreenButton": "Show Fullscreen Button ",
+
+			"borderColor": "Border Color of Calculator ",
+			"borderRadius": "Border Radius of Calculator ",
+			"detachKeyboard": "Detach Keyboard ",
+			"showKeyboardOnFocus": "Show Keyboard on Focus ",
+			"tubeID": "Load a File with ID "
+		};
+
+		const params = {
+			"appName": ["select","classic", "graphing", "geometry", "3d", "scientific", "suite", "notes"],
+			
+			// SIZE & SCALING
+            "width": ["text", 800],
+			"height": ["text", 600],
+
+			"showMenuBar": "boolean",
+            "enableFileFeatures": ["boolean", true], 
+            "showToolBar": "boolean",
+            "customToolBar": "text",
+            "showToolBarHelp": ["boolean", true],
+
+			"showAlgebraInput": "boolean",
+			"allowStyleBar": "boolean",
+			"showFullscreenButton": "boolean",
+			"showZoomButtons": "boolean",
+			"enableShiftDragZoom": ["boolean", true],
+            "enableUndoRedo": ["boolean", true],
+			"enableRightClick": ["boolean", true],          
+			"enableLabelDrags": ["boolean", true],
+			
+            
+			// LOOK & FEEL
+			"borderColor": ["text", "#D3D3D3"],
+			"borderRadius": ["number", 8],
+
+			"detachKeyboard": ["select", "auto", "true", "false"],
+      "showKeyboardOnFocus": ["select", "auto", "true", "false"],
+
+             // LOAD CONTENT
+			 "tubeID": "text"
+		};
+
+		function decode(el, param) {
+			var fallback = false;
+			if (typeof params[param] == "object") {
+				fallback = params[param][1];
+			}
+			if (el.type === "checkbox") {
+				return el.checked === fallback ? null : (el.checked + "");
+			}
+			return el.value.length && el.value !== fallback ? el.value : null;
+		}
+
+		function onParamChange(param, val, article) {
+			if (param === "scaleContainerClass") {
+				document.getElementById("scaleContainer").className += " " + val;
+				document.getElementById("resizer").style.visibility = val ? "visible" : "hidden";
+				var style = document.getElementById("scaleContainer").style;
+				style.width = style.width || "800px";
+				style.height = style.height || "600px";
+			}
+			if (val) {
+				article.setAttribute("data-param-" + param, val);
+			} else {
+				article.removeAttribute("data-param-" + param);
+			}
+		}
+
+		function updateParams(article) {
+			var url = location.protocol + "//" + location.host + location.pathname + "?";
+			var reloadNeeded = false;
+			for (param in params) {
+				var val = decode(document.getElementById("set" + param), param);
+				onParamChange(param, val, article);
+				if (val === "true") {
+					url += param + "&";
+				} else if (val) {
+					url += param + "=" + encodeURIComponent(val) + "&";
+				}
+				if (param === "module" && val && !window[val]) {
+					reloadNeeded = true;
+				}
+			}
+			if (reloadNeeded) {
+				location.href = url;
+			} else {
+				history.pushState("", "", url);
+			}
+			renderGGBElement(article);
+		}
+
+		window.addEventListener("load", function () {
+		
+
+			var article = document.createElement("div");
+
+			for (param in params) {
+				type = typeof params[param] == "object" ? params[param][0]
+					: params[param];
+				var input = document.createElement(type === "select" ? "select"
+					: "input");
+				if (type === "select") {
+					for (var opt = 1; opt < params[param].length; opt++) {
+						var optVal = params[param][opt];
+						var optTag = document.createElement("option");
+						optTag.innerText = optVal;
+						optTag.value = optVal;
+						input.appendChild(optTag);
+					}
+				}
+				label = document.createElement("label");
+				
+				label.innerText = paramLabels[param];
+
+				val = typeof params[param] == "object" ? params[param][1] : null;
+				input.type = type.replace("boolean", "checkbox");
+				if (type === "boolean") {
+					input.checked = !!val;
+				} else {
+					input.value = val;
+				}
+				if (val !== null) {
+					article.setAttribute("data-param-" + param, val);
+				}
+				input.id = input.name = "set" + param;
+				input.addEventListener("change", function () {
+					updateParams(article);
+				});
+				label.setAttribute("for", "set" + param);
+				field = document.createElement("div");
+				field.setAttribute("data-for", param.toLowerCase());
+				field.appendChild(label);
+				field.appendChild(input);
+				document.getElementById("settings").appendChild(field);
+			}
+
+			article.className = "geogebraweb";
+			document.getElementById("parent").appendChild(article);
+			settings = location.search.substring(1).split("&");
+			var module = "web3d";
+
+			for (i in settings) {
+				var parts = settings[i].split("=");
+				if (params[parts[0]]) {
+					var val = decodeURIComponent(parts[1] || "true");
+					if (parts[0] === "module") {
+						module = val;
+					} else {
+						onParamChange(parts[0], val, article);
+					}
+					const input = document.getElementById("set" + parts[0]);
+					if (input.type === 'checkbox') {
+						input.checked = val === "true";
+					} else {
+						input.value = val;
+					}
+				}
+			}
+
+			var w3d = document.createElement("script");
+			w3d.src = "https://www.geogebra.org/apps/latest/" +module + "/" + module + ".nocache.js";
+			document.body.appendChild(w3d);
+			
+			document.getElementById("hide").addEventListener("click", function(e) {
+				const style = document.getElementById("settings").style;
+				style.display = style.display == "none" ? "" : "none";
+				if(style.display == "none"){
+					document.getElementById("hide").innerHTML = "Show Settings";
+				} else {
+					document.getElementById("hide").innerHTML = "Hide Settings";
+				}
+			});
+
+		});
+	</script>
+</head>
+<body>
+<div class="contentBox" id="contentBox">
+<h1>Customized Calculators</h1>
+
+<button id="hide" class="appBtn noimage settingsButton">Hide Settings</button>
+
+
+<div id="settings" class="text"></div>
+<div id="scaleContainer">
+	<div>
+		<div id="parent"></div>
+	</div>
+	
+</div>
+<div id="infoBox">
+	
+		<h5>Custom Toolbar</h5>
+		<p class="text">Create a custom toolbar by entering a sequence of tool numbers.<br>
+			 Try entering this example: 0 1 2 10 16 <br>
+		<a class="inlineLink" href="https://wiki.geogebra.org/en/Reference:Toolbar">List of Tool Numbers</a>
+	</p>
+	<h5>Load a File with ID</h5>
+	<p class="text">All Calculators can be pre-populated with content. <br>
+		Try entering this example: actap33e
+
+	</p>
+</div>
+<div id="keyboardParent"></div>
+</div>
+</body>
+</html>
