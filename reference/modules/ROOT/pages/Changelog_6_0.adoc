@@ -9,7 +9,7 @@ _often_ get an earlier release)
 * Bugfix: `SetValue()` for polygons, segments etc should only copy the value
 
 == 6.0.838.0 (16th April 2024 build)
-* Beta distribution added to probability calculator. Also corresponding command `BetaDist()`
+* Beta distribution added to probability calculator. Also corresponding commands `BetaDist()` and `InverseBeta()`
 * CAS fix for eg `Sum(Sequence((Element(Hcode, 1,jj)<>Element(HamCode, 1,jj))*1,jj,1,n)) wrong`
 * LaTeX: fix spacing for accented letters eg `í`
 * new parameter `data-param-detachedKeyboardParent`
