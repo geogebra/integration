@@ -1,4 +1,4 @@
-= Reference:File Format
+= File Format
 
 :toc:
 
@@ -19,7 +19,7 @@ The `++.ggb++` file is the standard way to save GeoGebra worksheets. As stated a
 
 This is the file in which all the information about the construction is stored, the information is stored in
 http://en.wikipedia.org/wiki/Xml[XML]. For more information about the contents and structure of this file see the
-/Reference:Xml.adoc[XML reference].
+xref:XML.adoc[XML reference].
 
 ==== geogebra_thumbnail.png
 
@@ -50,7 +50,7 @@ the following files:
 
 This http://en.wikipedia.org/wiki/Xml[XML] stores the main information about the tool. As custom tools are also stored
 in the normal `++.ggb++` files the structure of the entries in this files are also explained in the
-/Reference:Xml.adoc[XML reference].
+xref:XML.adoc[XML reference].
 
 ==== images
 
@@ -65,7 +65,7 @@ be modified by GeoGebra at the moment, like the definition of a custom tool, or 
 experiment you should take some tips for your journey:
 
 . Backup your files. It's almost certain that you will break your files sometime if you're modifying the XML definition.
-. Read the /Reference:Xml.adoc[XML reference] to understand what you are doing.
+. Read the xref:XML.adoc[XML reference] to understand what you are doing.
 . Be aware that the changes you've made may be lost if you re-save your file within GeoGebra. While it might be possible
 that GeoGebra understands something unusual while loading it might not save it at all or save it somehow anormal which
 corrupts the file.

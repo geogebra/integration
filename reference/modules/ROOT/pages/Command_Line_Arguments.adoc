@@ -1,4 +1,4 @@
-= Reference:Command Line Arguments
+= Command Line Arguments
 
 In order to start GeoGebra from the command line you have to first install *GeoGebra Classic 5* using the
 http://www.geogebra.org/download[offline installers]

@@ -1,4 +1,4 @@
-= Reference:XML
+= XML
 
 The GeoGebra XML format has two variants: one for xref:File_Format.adoc[Geogebra Worksheet (.ggb)] files and other
 for xref:File_Format.adoc[GeoGebra Tool (.ggt)] files. These are defined by XML Schema http://geogebra.org/ggb.xsd
