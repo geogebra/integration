@@ -1,6 +1,8 @@
 * Online Apps
 ** xref:GeoGebra_Apps_Embedding.adoc[Apps Embedding]
+** xref:Material_Embedding_(Iframe).adoc[Embedding as Iframe]
 ** xref:GeoGebra_App_Parameters.adoc[Apps Parameters]
+*** xref:Toolbar.adoc[Toolbar Definition]
 ** xref:GeoGebra_Apps_API.adoc[Apps API]
 
 * Desktop Apps

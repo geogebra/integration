@@ -1,6 +1,10 @@
 = Toolbar
 
 ifdef::env-github[:imagesdir: /reference/modules/ROOT/assets/images]
+
+Following table shows which tool numbers can be used in the definition of a custom toolbar.
+See `customToolbar` xref:GeoGebra_App_Parameters.adoc[app parameter].
+
 [cols=",,",]
 |===
 |Name |ID |Icon 
