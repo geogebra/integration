@@ -2,7 +2,7 @@
 
 [NOTE]
 ====
-|Please note that all our installers are subject to the https://www.geogebra.org/license[GeoGebra non-commercial
+Please note that all our installers are subject to the https://www.geogebra.org/license[GeoGebra non-commercial
 license]. If you plan to install GeoGebra on multiple devices you may be interested in
 xref:GeoGebra_Mass_Installation.adoc[GeoGebra Mass Installation]
 ====
