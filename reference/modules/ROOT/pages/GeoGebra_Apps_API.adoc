@@ -410,74 +410,74 @@ example])
 [width="100%",cols="34%,^33%,33%",options="header",]
 |===
 |Method Signature |Since |Description
-|void registerAddListener(String JSFunctionName) |3.0 a|
+|void registerAddListener(JSFunction function) |3.0 a|
 Registers a JavaScript function as an add listener for the applet's construction. Whenever a new object is created in
-the GeoGebraApplet's construction, the JavaScript function JSFunctionName is called using the name of the newly created
+the GeoGebraApplet's construction, the JavaScript function is called using the name of the newly created
 object as its single argument.
 
 Example: First, register a listening JavaScript function:
 
-ggbApplet.registerAddListener("myAddListenerFunction");
+ggbApplet.registerAddListener(myAddListenerFunction);
 
 When an object "A" is created, the GeoGebra Applet will call the Javascript function
 
 myAddListenerFunction("A");
 
-|void unregisterAddListener(String JSFunctionName) |3.0 |Removes a previously registered add listener, see
+|void unregisterAddListener(JSFunction function) |3.0 |Removes a previously registered add listener, see
 registerAddListener()
 
-|void registerRemoveListener(String JSFunctionName) |3.0 a|
+|void registerRemoveListener(JSFunction function) |3.0 a|
 Registers a JavaScript function as a remove listener for the applet's construction. Whenever an object is deleted from
-the GeoGebraApplet's construction, the JavaScript function JSFunctionName is called using the name of the deleted object
+the GeoGebraApplet's construction, the JavaScript function is called using the name of the deleted object
 as its single argument. Note: when a construction is cleared, remove is not called for every single object, see
 registerClearListener().
 
 Example: First, register a listening JavaScript function:
 
-ggbApplet.registerRemoveListener("myRemoveListenerFunction");
+ggbApplet.registerRemoveListener(myRemoveListenerFunction);
 
 When the object "A" is deleted, the GeoGebra Applet will call the Javascript function
 
 myRemoveListenerFunction("A");
 
-|void unregisterRemoveListener(String JSFunctionName) |3.0 |Removes a previously registered remove listener, see
+|void unregisterRemoveListener(JSFunction function) |3.0 |Removes a previously registered remove listener, see
 registerRemoveListener()
 
-|void registerUpdateListener(String JSFunctionName) |3.0 a|
+|void registerUpdateListener(JSFunction function) |3.0 a|
 Registers a JavaScript function as a update listener for the applet's construction. Whenever any object is updated in
-the GeoGebraApplet's construction, the JavaScript function JSFunctionName is called using the name of the updated object
+the GeoGebraApplet's construction, the JavaScript function is called using the name of the updated object
 as its single argument. Note: when you only want to listen for the updates of a single object use
 registerObjectUpdateListener() instead.
 
 Example: First, register a listening JavaScript function:
 
-ggbApplet.registerUpdateListener("myUpdateListenerFunction");
+ggbApplet.registerUpdateListener(myUpdateListenerFunction);
 
 When the object "A" is updated, the GeoGebra Applet will call the Javascript function
 
 myUpdateListenerFunction("A");
 
-|void unregisterUpdateListener(String JSFunctionName) |3.0 |Removes a previously registered update listener, see
+|void unregisterUpdateListener(JSFunction function) |3.0 |Removes a previously registered update listener, see
 registerUpdateListener()
 
-|void registerClickListener(String JSFunctionName) |5.0 |Registers a JavaScript function as a click listener for the
+|void registerClickListener(JSFunction function) |5.0 |Registers a JavaScript function as a click listener for the
 applet's construction. Whenever any object is clicked in the GeoGebraApplet's construction, the JavaScript function
-JSFunctionName is called using the name of the updated object as its single argument. Note: when you only want to listen
+is called using the name of the updated object as its single argument. Note: when you only want to listen
 for the updates of a single object use registerObjectClickListener() instead.
 
-|void unregisterClickListener(String JSFunctionName) |3.0 |Removes a previously registered click listener, see
+|void unregisterClickListener(JSFunction function) |3.0 |Removes a previously registered click listener, see
 registerClickListener()
 
-|void registerObjectUpdateListener(String objName, String JSFunctionName) |3.0 a|
+|void registerObjectUpdateListener(String objName, JSFunction function) |3.0 a|
 Registers a JavaScript function as an update listener for a single object. Whenever the object with the given name is
-updated, the JavaScript function JSFunctionNameis called using the name of the updated object as its single argument. If
+updated, the JavaScript function is called using the name of the updated object as its single argument. If
 objName previously had a mapping JavaScript function, the old value is replaced. Note: all object updated listeners are
 unregistered when their object is removed or the construction is cleared, see registerRemoveListener() and
 registerClearListener().
 
 Example: First, register a listening JavaScript function:
 
-ggbApplet.registerObjectUpdateListener("A", "myAupdateListenerFunction");
+ggbApplet.registerObjectUpdateListener("A", myAupdateListenerFunction);
 
 Whenever the object A is updated, the GeoGebra Applet will call the Javascript function
 
@@ -488,16 +488,16 @@ Note: an object update listener will still work after an object is renamed.
 |void unregisterObjectUpdateListener(String objName) |3.0 |Removes a previously registered object update listener of the
 object with the given name, see registerObjectUpdateListener()
 
-|void registerObjectClickListener(String objName, String JSFunctionName) |5.0 a|
+|void registerObjectClickListener(String objName, JSFunction function) |5.0 a|
 Registers a JavaScript function as a click listener for a single object. Whenever the object with the given name is
-clicked, the JavaScript function JSFunctionNameis called using the name of the updated object as its single argument. If
+clicked, the JavaScript function is called using the name of the updated object as its single argument. If
 objName previously had a mapping JavaScript function, the old value is replaced. Note: all object click listeners are
 unregistered when their object is removed or the construction is cleared, see registerRemoveListener() and
 registerClearListener().
 
 Example: First, register a listening JavaScript function:
 
-ggbApplet.registerObjectClickListener("A", "myAclickListenerFunction");
+ggbApplet.registerObjectClickListener("A", myAclickListenerFunction);
 
 Whenever the object A is clicked, the GeoGebra Applet will call the Javascript function
 
@@ -508,14 +508,14 @@ Note: an object click listener will still work after an object is renamed.
 |void unregisterObjectClickListener(String objName) |5.0 |Removes a previously registered object click listener of the
 object with the given name, see registerObjectClickListener()
 
-|void registerRenameListener(String JSFunctionName) |3.0 a|
+|void registerRenameListener(JSFunction function) |3.0 a|
 Registers a JavaScript function as a rename listener for the applet's construction. Whenever an object is renamed in the
-GeoGebraApplet's construction, the JavaScript function JSFunctionName is called using the old name and the new name of
+GeoGebraApplet's construction, the JavaScript function is called using the old name and the new name of
 the renamed object as its two arguments.
 
 Example: First, register a listening JavaScript function:
 
-ggbApplet.registerRenameListener("myRenameListenerFunction");
+ggbApplet.registerRenameListener(myRenameListenerFunction);
 
 When an object "A" is renamed to "B", the GeoGebra Applet will call the Javascript function
 
@@ -524,31 +524,31 @@ myRenameListenerFunction("A", "B");
 |void unregisterRenameListener(String objName) |3.0 |Removes a previously registered rename listener, see
 registerRenameListener()
 
-|void registerClearListener(String JSFunctionName) |3.0 a|
+|void registerClearListener(JSFunction function) |3.0 a|
 Registers a JavaScript function as a clear listener for the applet's construction. Whenever the construction in the
-GeoGebraApplet is cleared (i.e. all objects are removed), the JavaScript function JSFunctionName is called using no
+GeoGebraApplet is cleared (i.e. all objects are removed), the JavaScript function is called using no
 arguments. Note: all update listeners are unregistered when a construction is cleared. See registerUpdateListener() and
 registerRemoveListener().
 
 Example: First, register a listening JavaScript function:
 
-ggbApplet.registerClearListener("myClearListenerFunction");
+ggbApplet.registerClearListener(myClearListenerFunction);
 
 When the construction is cleared (i.e. after reseting a construction or opening a new construction file), the GeoGebra
 Applet will call the Javascript function
 
 myClearListenerFunction();
 
-|void unregisterClearListener(String JSFunctionName) |3.0 |Removes a previously registered clear listener, see
+|void unregisterClearListener(JSFunction function) |3.0 |Removes a previously registered clear listener, see
 _registerClearListener()_
 
-|void registerStoreUndoListener(String JSFunctionName) |4.4 |Registers a listener that is called (with no arguments)
+|void registerStoreUndoListener(JSFunction function) |4.4 |Registers a listener that is called (with no arguments)
 every time an undo point is created.
 
-|void unregisterStoreUndoListener(String JSFunctionName) |4.4 |Removes previously registered listener for storing undo
+|void unregisterStoreUndoListener(JSFunction function) |4.4 |Removes previously registered listener for storing undo
 points, see registerStoreUndoListener
 
-|void registerClientListener(String JSFunctionName) |5.0 a|
+|void registerClientListener(JSFunction function) |5.0 a|
 Registers a JavaScript function as a generic listener for the applet's construction. The listener receives events as
 JSON objects of the form
 
@@ -556,7 +556,7 @@ JSON objects of the form
 the event (if applicable), `++argument++` provides additional information based on the event type (e.g. the mode number
 for setMode event). Please refer to the list of client events below.
 
-|void unregisterClientListener(String JSFunctionName) |5.0 |Removes previously registered client listener, see
+|void unregisterClientListener(JSFunction function) |5.0 |Removes previously registered client listener, see
 registerClientListener
 |===
 
