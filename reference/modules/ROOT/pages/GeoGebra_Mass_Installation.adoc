@@ -43,7 +43,3 @@ iOS::
 Android::
   Please download one of the APKs from xref:GeoGebra_Installation.adoc[]
 
-== Contact
-
-In case you need any help with the mass installation, please contact us at
-mailto:office@geogebra_org.adoc[office@geogebra.org].
