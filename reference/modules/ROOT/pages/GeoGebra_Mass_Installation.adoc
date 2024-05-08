@@ -18,15 +18,16 @@ https://chrome.google.com/webstore/detail/geogebra/bnbaboaihhkjoaolfnfoablhllahj
 
 To install GeoGebra Desktop on many Windows computers in a network:
 
-* download the .msi installer of https://download.geogebra.org/package/win-msi6[GeoGebra Classic 6] or
+* download the .msi installer of https://download.geogebra.org/package/win-msi6[GeoGebra 6] or
 https://download.geogebra.org/package/win-msi[GeoGebra Classic 5] to a network folder being accessible from all
 workstations, e.g. `\\INSTALL\GeoGebra\`.
+* GeoGebra 6 includes `GeoGebra.exe` (Classic 6), `GeoGebraCalculator.exe` (GeoGebra Calculator Suite), `GeoGebraCAS.exe`, `GeoGebraGeometry.exe` and `GeoGebraGraphing.exe`
 * install GeoGebra silently on each workstation: `msiexec /i \\INSTALL\GeoGebra\GeoGebra-Windows-Installer-6-0-389-0.msi
 ALLUSERS=2 /qn`. You may want to put this command into a batch file to save time for typing. It may also be convenient
 to use remote command execution by using the https://technet.microsoft.com/en-us/sysinternals/bb897553.aspx[PsExec
 utility] to install GeoGebra on all devices.
 
-Note that GeoGebra Classic will be automatically updating minor new versions (e.g. 5.0.3 to 5.0.4) by downloading the
+Note that GeoGebra Classic 5 will be automatically updating minor new versions (e.g. 5.0.3 to 5.0.4) by downloading the
 new version into the user’s *Application Data* folder and then using it after the next restart of the software. So, you
 will only need to do a new installation when you want to switch to a new major version (e.g. from 5.0 to 5.2).
 
