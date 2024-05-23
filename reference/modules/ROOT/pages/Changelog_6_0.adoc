@@ -5,6 +5,12 @@ All releases will include the latest minor bugfixes and translation updates.
 *Releases are not simultaneous on all platforms* and not all platforms will get all versions (online and Classic 5 will
 _often_ get an earlier release)
 
+== 6.0.842.0 (23rd May 2024 build, not released yet)
+* fix for spreadsheet freezing with many fraction calculations
+* improvements for `Intersect(line, spline)`
+* Classic 5: fix for cursor/highlighting in script editor
+* CAS: fix for `Solve(v=(1,2))`
+
 == 6.0.841.0 (6th May 2024 build)
 * Restricted access to `window` and `navigator` objects from JavaScript
 * Classic 6: fix problem switching focus from CAS to AV
