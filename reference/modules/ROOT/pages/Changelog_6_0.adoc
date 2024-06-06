@@ -7,6 +7,7 @@ _often_ get an earlier release)
 
 == 6.0.845.0 (5th June 2024 build, not released yet)
 * Plot ellipses better when zoomed
+* Optimise exact fractions (esp. spreadsheet)
 
 == 6.0.843.0 (23rd May 2024 build)
 * fix for spreadsheet freezing with many fraction calculations
