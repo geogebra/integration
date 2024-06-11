@@ -6,7 +6,8 @@ All releases will include the latest minor bugfixes and translation updates.
 _often_ get an earlier release)
 
 == 6.0.846.0 (11th June 2024 build, not released yet)
-* 
+* *Notes: New toolbox at the side*
+* Fix problem with Undo for `Point(xAxis)`
 
 == 6.0.845.0 (5th June 2024 build)
 * Plot ellipses better when zoomed
