@@ -31,11 +31,11 @@ function addDrawer(){
     '<li> <a href="example-api-sync.html">Communication between Resources</a></li>'+
     '<li> <a href="example-assess.html">Environment Integration</a></li></ul>'+
     '<h4>Documentation</h4>'+
-    '<ul><li> <a href="basic-embedding-options.html">Embedding Options</a></li>'+
+    '<ul><li> <a href="basic-dding-options.html">Embedding Options</a></li>'+
     '<li><a href="https://geogebra.github.io/docs/reference/en/GeoGebra_Apps_Embedding/" target="_blank">Math Apps Embedding&nbsp;&nbsp;<span class="material-icons inline">arrow_downward</span></a></li>'+
     '<li><a href="https://geogebra.github.io/docs/reference/en/GeoGebra_App_Parameters/" target="_blank">App Parameters&nbsp;&nbsp;<span class="material-icons inline">arrow_downward</span></a></li>'+
     '<li><a href="https://geogebra.github.io/docs/reference/en/GeoGebra_Apps_API/" target="_blank">GeoGebra Apps API&nbsp;&nbsp;<span class="material-icons inline">arrow_downward</span></a></li>'+
-    '<li><a href="https://geogebra.github.io/docs/reference/en/Material_Embedding_(Iframe)" target="_blank">Iframe Embedding&nbsp;&nbsp;<span class="material-icons inline">arrow_downward</span></a></li>';
+    '<li><a href="https://geogebra.github.io/docs/reference/en/Material_Embedding_(Iframe)/" target="_blank">Iframe Embedding&nbsp;&nbsp;<span class="material-icons inline">arrow_downward</span></a></li>';
 
     var menuDiv = document.createElement('div');
     menuDiv.id="drawer";
