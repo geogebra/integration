@@ -36,7 +36,7 @@ This file contains global JavaScript definitions used in the file. See xref:en@m
 
 Images used in the construction (included using the GeoGebra
 image:32px-Mode_image.svg.png[Tool Insert
-Image.gif,width=32,height=32]xref:en@manual::/tools/Image_Tool.adoc[Image Tool]) or as icons of custom tools are not stored with
+Image.gif,width=32,height=32]xref:en@manual::/tools/Image.adoc[Image Tool]) or as icons of custom tools are not stored with
 human-readable filenames, but can easily copied and renamed to be extracted out of GeoGebra files. If there are no
 images or custom tools in the `++.ggb++` there will be just the `++geogebra.xml++` and `++geogebra_thumbnail.png++` in
 the `++.ggb++`.
