@@ -1,4 +1,5 @@
 = File Format
+ifdef::env-github[:imagesdir: /reference/modules/ROOT/assets/images]
 
 :toc:
 
