@@ -1,0 +1,22 @@
+= Managed App Config
+
+Managed App Configs enable IT administrators to set up exam mode on iOS devices.
+
+Download our  xref:attachment$appconfig_specfile.xml[specfile] and use
+https://generator.appconfig.jamfresearch.com/generator[Jamf AppConfig Generator] to generate an App Config plist file.
+You can then use this plist file in your preferred MDM solution to configure an exam mode. (e.g. https://developer.jamf.com[Jamf])
+
+== App Config specification
+
+[cols=",,",options="header",]
+|===
+|Key |Description |Default value
+|StudentName |Student Name |cn (complete name)
+|DeviceSerialNumber |Device Serial Number |serialNumber
+|SecretKey |Key that can be used to identify the current exam. |
+|ExamMode |Exam Mode |Generic
+|===
+
+== Resources
+
+https://www.appconfig.org[AppConfig Community]

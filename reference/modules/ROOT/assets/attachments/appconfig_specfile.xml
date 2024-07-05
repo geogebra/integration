@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<managedAppConfiguration>
+  <version>1</version>
+  <bundleId>org.geogebra.calculator.suite</bundleId>
+  <dict>
+    <string keyName="StudentName">
+      <defaultValue>
+        <userVariable value="cn"></userVariable>
+      </defaultValue>
+    </string>
+    <string keyName="DeviceSerialNumber">
+      <defaultValue>
+        <deviceVariable value="serialNumber"></deviceVariable>
+      </defaultValue>
+    </string>
+    <string keyName="SecretKey"></string>
+    <string keyName="ExamMode">
+      <defaultValue>
+        <value>generic</value>
+      </defaultValue>
+      <constraint>
+        <values>
+          <value>generic</value>
+          <value>niedersachsen</value>
+          <value>vlaanderen</value>
+          <value>bayern-cas</value>
+        </values>
+      </constraint>
+    </string>
+  </dict>
+  <presentation defaultLocale="en-US">
+    <field keyName="StudentName" type="input">
+      <label>
+        <language value="en-US">Student Name</language>
+      </label>
+    </field>
+    <field keyName="DeviceSerialNumber" type="input">
+      <label>
+        <language value="en-US">Device Serial Number</language>
+      </label>
+    </field>
+    <field keyName="SecretKey" type="input">
+      <label>
+        <language value="en-US">Secret Key</language>
+      </label>
+      <description>
+        <language value="en-US">Enter a key that can be used to identify the exam.</language>
+      </description>
+    </field>
+    <field keyName="ExamMode" type="select">
+      <label>
+        <language value="en-US">Exam Mode</language>
+      </label>
+      <description>
+        <language value="en-US">Select an exam mode. If unsure, select the default "Generic".</language>
+      </description>
+      <options>
+        <option value="generic">
+          <language value="en-US">Generic</language>
+        </option>
+        <option value="niedersachsen">
+          <language value="de">Niedersachsen Abitur</language>
+        </option>
+        <option value="vlaanderen">
+          <language value="nl">Vlaanderen</language>
+        </option>
+        <option value="bayern-cas">
+          <language value="de">Schulversuch CAS</language>
+        </option>
+      </options>
+    </field>
+  </presentation>
+</managedAppConfiguration>
