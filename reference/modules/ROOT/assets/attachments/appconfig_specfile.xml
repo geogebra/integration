@@ -23,7 +23,7 @@
           <value>generic</value>
           <value>niedersachsen</value>
           <value>vlaanderen</value>
-          <value>bayern-cas</value>
+          <value>bayern_cas</value>
         </values>
       </constraint>
     </string>
@@ -64,7 +64,7 @@
         <option value="vlaanderen">
           <language value="nl">Vlaanderen</language>
         </option>
-        <option value="bayern-cas">
+        <option value="bayern_cas">
           <language value="de">Schulversuch CAS</language>
         </option>
       </options>

@@ -14,7 +14,7 @@ You can then use this plist file in your preferred MDM solution to configure an 
 |StudentName |Student Name |cn (complete name)
 |DeviceSerialNumber |Device Serial Number |serialNumber
 |SecretKey |Key that can be used to identify the current exam. |
-|ExamMode |Exam Mode |Generic
+|ExamMode |Exam Mode |generic
 |===
 
 == Resources
