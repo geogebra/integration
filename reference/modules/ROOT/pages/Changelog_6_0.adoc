@@ -15,6 +15,7 @@ _often_ get an earlier release)
 == 6.0.846.0 (11th June 2024 build)
 * *Notes: New toolbox at the side*
 * Fix problem with Undo for `Point(xAxis)`
+* Giac CAS engine updated (includes fix for eg `Solve((99/50)^x=-2*x+12345)`)
 
 == 6.0.845.0 (5th June 2024 build)
 * Plot ellipses better when zoomed
