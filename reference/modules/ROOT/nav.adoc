@@ -10,6 +10,10 @@
 ** xref:GeoGebra_Mass_Installation.adoc[Mass Installation]
 ** xref:Command_Line_Arguments.adoc[CLI arguments (Classic 5)]
 
+* Mobile Apps
+** iOS
+*** xref:ios/Managed_App_Config.adoc[Managed App Configuration]
+
 * File Format
 ** xref:File_Format.adoc[About .ggb, .ggt, .ggs]
 ** xref:XML.adoc[XML format]
