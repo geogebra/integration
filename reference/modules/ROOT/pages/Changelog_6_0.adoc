@@ -6,7 +6,7 @@ All releases will include the latest minor bugfixes and translation updates.
 _often_ get an earlier release)
 
 == 6.0.850.0 (24th July 2024 build, not released yet)
-* Fix for eg `Solve((sin(x))/(17)=(sin(113))/(24))`
+* Fix for eg `Solve( (sin(x))/(17)=(sin(113))/(24))`
 * bugfix: `ggbOnInit()` sometimes runs twice
 * fix "jumping" in editor when typing `1+2+3`
 * Classic 5: fix swapped grid types
