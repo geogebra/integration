@@ -5,7 +5,16 @@ All releases will include the latest minor bugfixes and translation updates.
 *Releases are not simultaneous on all platforms* and not all platforms will get all versions (online and Classic 5 will
 _often_ get an earlier release)
 
-== 6.0.851.0 (5th Aug 2024 build)
+== 6.0.855.0 (3rd September 2024 build, not released)
+* CAS: fix problem with Solve Tool
+* Probability Calculator: round inputs to discrete distibutions correctly for non-integers
+
+== 6.0.853.0 (20th August 2024 build)
+* fix for display of `17!`
+* Classic 5: make sure tooltips in same language as GUI by default
+* make sure student input always kept in Input Boxes eg `3.00`
+
+== 6.0.851.0 (5th August 2024 build)
 * fix keyboard button size for small screens
 * fix `Slope()` for mixed numbers
 * fix Triangle Center 591 
