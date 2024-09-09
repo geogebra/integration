@@ -5,7 +5,7 @@ All releases will include the latest minor bugfixes and translation updates.
 *Releases are not simultaneous on all platforms* and not all platforms will get all versions (online and Classic 5 will
 _often_ get an earlier release)
 
-== 6.0.855.0 (3rd September 2024 build, not released)
+== 6.0.856.0 (9th September 2024 build, not released)
 * CAS: fix problem with Solve Tool
 * Probability Calculator: round inputs to discrete distibutions correctly for non-integers
 
