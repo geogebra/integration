@@ -13,7 +13,7 @@ _often_ get an earlier release)
 * 3D: fix for Extrude tool dialog
 * fix for onscreen `<Enter>` key in scripting
 * fix for Tools with conditional curves
-* CAS: improvement for surds eg `Factor(4*sqrt(15)*(sqrt(5)+sqrt(6)))` and `Expand(4*sqrt(15)*(sqrt(5)+sqrt(6)))`
+* CAS: improvement for surds eg `Factor(4sqrt(15)(sqrt(5)+sqrt(6)))` and `Expand(4sqrt(15)(sqrt(5)+sqrt(6)))`
 * Classic 6: fix for `<html>` showing in menu header
 
 == 6.0.866.0 (29th October 2024 build)
