@@ -5,7 +5,7 @@ All releases will include the latest minor bugfixes and translation updates.
 *Releases are not simultaneous on all platforms* and not all platforms will get all versions (online and Classic 5 will
 _often_ get an earlier release)
 
-== 6.0.870.0 (3rd December 2024 build, not released yet)
+== 6.0.871.0 (10th December 2024 build, not released yet)
 * Suite: decimals will now be shown automatically as fraction form eg `0.5 = 1/2` instead of as a slider
 * fix problem with distributions changing to `ChiSquared()`
 * CAS: fix numerical values for `Max/Min()`
@@ -13,8 +13,10 @@ _often_ get an earlier release)
 * workaround for Firefox bug with scaling SVGs
 * keep webpage scroll position after exiting full-screen mode
 * CAS: Giac updated, improves eg `Integral(((sin(x)+cos(x))/(sin(x)-cos(x))),x)`
+* fix for `StepGraph()` with empty lists
+* CAS: `Substitute(a+2b+3c, a=A, b=B, c=C)` will work as `Substitute(a+2b+3c, {a=A, b=B, c=C})`
 
-== 6.0.869.0 (26th November 2024 build, not released yet)
+== 6.0.869.0 (26th November 2024 build)
 * Suite: fix for integral becoming a rectangle
 * Notes: new submenu for choosing embedded subapp
 
