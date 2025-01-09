@@ -699,7 +699,7 @@ callback function is specified, it is called after the file is loaded.
 |void debug(String string) |3.2 |Prints the string to the Java Console
 |String getVersion() |5.0 |Returns the version of GeoGebra
 |void remove() |5.0 |Removes the applet and frees up memory
-|void addCustomTool(String icon, String name, String category, Object callback)|5.0 |Adds a custom tool with SVG icon, name and a given action specified by callback to the toolbox of the Notes application under the given category. Only tool categories with a context menu are allowed. If category is left empty, tool will be added under "More" category.
+|void addCustomTool(String icon, String name, String category, function callback)|6.0 (Notes only) |Adds a custom tool with an SVG icon, name and a given action specified by the callback to the toolbox of the Notes application under the given category. Only tool categories with a context menu are allowed. If category is left empty, the tool will be added under the "More" category.
 |===
 
 === [#Obtaining_the_API_Object]#Obtaining the API Object#
