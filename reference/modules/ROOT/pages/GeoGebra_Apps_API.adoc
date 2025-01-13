@@ -403,8 +403,8 @@ viewId. The second argument should be a JSON (object or string) with optional fi
 
 With these methods you can implement Applet to JavaScript communication. For example, these methods can be used to:
 
-* monitor user actions (see http://dev.geogebra.org/examples/html/example8.html[Event listeners example])
-* communicate between two GeoGebra applets (see http://dev.geogebra.org/examples/html/example9.html[two applets
+* monitor user actions (see https://geogebra.github.io/integration/example-api-listeners.html[Event listeners example])
+* communicate between two GeoGebra applets (see https://geogebra.github.io/integration/example-api-sync.html[two applets
 example])
 
 [width="100%",cols="34%,^33%,33%",options="header",]
