@@ -23,21 +23,21 @@ Scientific Calculator "notes" ... GeoGebra Notes
 |material_id |eg `++"RHYH3UQ8"++` a|
 GeoGebra Materials id to load
 
-See first applet here: https://dev.geogebra.org/examples/html/example-multiple.html
+See first applet here: https://geogebra.github.io/integration/index.html
 
 |5.0
 
 |filename |eg `++"myFile.ggb"++` a|
 URL of file to load
 
-See second applet here: https://dev.geogebra.org/examples/html/example-multiple.html
+See second applet here: https://geogebra.github.io/integration/index.html
 
 |4.0
 
 |ggbBase64 |base64 encoded .ggb file a|
 Encoded file to load.
 
-See the applet here: https://dev.geogebra.org/examples/html/example-single.html
+See third applet here: https://geogebra.github.io/integration/index.html
 
 |4.0
 
