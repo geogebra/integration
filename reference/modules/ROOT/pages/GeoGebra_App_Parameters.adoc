@@ -94,7 +94,7 @@ language parameter. |2.5
 
 |id |eg `++applet2++` |This parameter allows you to specify the argument passed to the JavaScript function ggbOnInit(),
 which is called once the applet is fully initialised. This is useful when you have multiple applets on a page - see
-http://dev.geogebra.org/examples/html/example-api-sync.html[this example] (will have no effect in earlier versions) |3.2
+https://geogebra.github.io/integration/example-api-sync.html[this example] (will have no effect in earlier versions) |3.2
 
 |allowStyleBar |`true` or `false` |Determines whether the Style Bar can be shown (or will be shown if just
 Graphics View 1 is showing)*Default:* false |4.0
