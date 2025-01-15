@@ -20,7 +20,7 @@ Arguments in square brackets can be omitted.
 
 ====
 
-== [#Commands_and_Undo-Points]#Commands and Undo-Points#
+== Creating objects
 
 [cols=",^,",options="header",]
 |===
@@ -28,14 +28,15 @@ Arguments in square brackets can be omitted.
 |boolean evalCommand(String cmdString) |3.0 |Evaluates the given string just like it would be evaluated when entered
 into GeoGebra's input bar. Returns whether command evaluation was successful. From GeoGebra 3.2 you can pass multiple
 commands at once by separating them with \n. Note: you must use English commands names
+|boolean evalLaTex(String input)|5.0| Evaluates LaTeX string to a construction element. Basic syntaxes like `x^{2}` or `\frac` are supported.
 
 |String evalCommandGetLabels(String cmdString) |5.0 |Like evalCommand(), but the return value is a String containing a
 comma-separated list of the labels of the created objects eg `++"A,B,C"++`
 
 |String evalCommandCAS(String string) |3.2 |Passes the string to GeoGebra's CAS and returns the result as a String.
+|void insertEmbed(String type, String uri)|6.0 (Notes)| Inserts embedded element with specific type and URI.
+Type and URI are then used to obtain the HTML code for the embed element, see `registerEmbedResolver`
 
-|void setUndoPoint() |3.2 |Sets an undo point. Useful if you want the user to be able to undo that action of evalCommand
-eg if you have made an HTML button to act as a custom tool
 |===
 
 == [#Setting_the_state_of_objects]#Setting the state of objects#
@@ -131,6 +132,7 @@ ggbApplet.writePNGtoFile("myImage.png", 1, false, 72);
 |boolean isMoveable(String objName) |4.0 |checks if *objName* is is moveable
 
 |void showAllObjects() |5.0 |Changes bounds of the Graphics View so that all visible objects are on screen.
+|void registerEmbedResolver(String type, Function callback)| 6.0| Adds a resolving function for specific embedded element type. The function gets an ID of the embed and returns a promise that resolves to a HTML string.
 |===
 
 === [#Automatic_Animation]#Automatic Animation#
@@ -296,6 +298,9 @@ the graphics windows 1 and 2.
 |void setAxesVisible(int viewNumber, boolean xAxis, boolean yAxis, boolean zAxis) |5.0 a|
 Shows or hides the x-, y- and z-axis of the coordinate system in given graphics window.
 
+|void setUndoPoint() |3.2 |Sets an undo point. Useful if you want the user to be able to undo that action of evalCommand
+eg if you have made an HTML button to act as a custom tool
+
 [EXAMPLE]
 ====
 
@@ -351,6 +356,7 @@ whether grid is visible in the first graphics view.
 
 |setCustomToolBar(String toolbar) |5.0 |Sets the layout of the main toolbar, see xref:Toolbar.adoc[toolbar
 reference] for details
+|addCustomTool(String name, String iconDataURL, Function callback, String category)|6.0 (Notes only)|Adds a custom tool with given name and icon (encoded as data URL) to the Notes toolbox. The `callback` function is called when user selects the tool, it may show custom UI and/or use object creation APIs to create new objects. The `category` parameter may be one of `upload`, `link` or `more` and specifies in which category to show the new tool; if omitted, the `more` category is used.
 
 |showMenuBar(boolean show) |HTML5 |Sets visibility of menu bar
 
