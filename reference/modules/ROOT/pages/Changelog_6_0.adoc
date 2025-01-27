@@ -5,7 +5,10 @@ All releases will include the latest minor bugfixes and translation updates.
 *Releases are not simultaneous on all platforms* and not all platforms will get all versions (online and Classic 5 will
 _often_ get an earlier release)
 
-== 6.0.873.1 (16th January 2025 build, not released yet)
+== 6.0.874.0 (28th January 2025 build, not released yet)
+* Android: fix problem with CAS returning 0
+
+== 6.0.873.2 (24th January 2025 build)
 * bugfix: make sure equations are shown in the correct default form (User)
 * CAS: bugfix for `Integral()` when function defined as `y=...`
 * bugfix for `½` in subscript on German keyboards
