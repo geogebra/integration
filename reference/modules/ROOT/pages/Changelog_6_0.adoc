@@ -7,10 +7,11 @@ _often_ get an earlier release)
 
 == 6.0.874.1 (30th January 2025 build, not released yet)
 * Android: fix problem with CAS returning 0
+* CAS: bugfix for `Integral()` when function defined as `y=...`
+* Classic 5: fix for `<Ctrl><Shift>U`
 
 == 6.0.873.2 (24th January 2025 build)
 * bugfix: make sure equations are shown in the correct default form (User)
-* CAS: bugfix for `Integral()` when function defined as `y=...`
 * bugfix for `½` in subscript on German keyboards
 
 == 6.0.871.0 (10th December 2024 build)
