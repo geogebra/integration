@@ -5,7 +5,18 @@ All releases will include the latest minor bugfixes and translation updates.
 *Releases are not simultaneous on all platforms* and not all platforms will get all versions (online and Classic 5 will
 _often_ get an earlier release)
 
-== 6.0.874.1 (30th January 2025 build, not released yet)
+== 6.0.876.0 (??th February 2025 build, not released yet)
+* fix for `Intersect(polynomial,line,a,b)`
+* screenreader fix for `\neq` and `\notin`
+* new syntax `Normal( <Mean>, <Standard Deviation>, <Variable Value u> , <Variable Value v>)`
+
+== 6.0.875.1 (12th February 2025 build, not released yet)
+* make sure `ggbApplet.getValue()` works in CAS
+* CAS: add missing command `Poisson( <Mean>, <Variable Value>, <Boolean Cumulative> )`
+* fix for `FrequencyTable({"a","b","b","n","c","c","c","n"})`
+* filling improvements in SVG and PDF export
+
+== 6.0.874.1 (30th January 2025 build)
 * Android: fix problem with CAS returning 0
 * CAS: bugfix for `Integral()` when function defined as `y=...`
 * Classic 5: fix for `<Ctrl><Shift>U`
