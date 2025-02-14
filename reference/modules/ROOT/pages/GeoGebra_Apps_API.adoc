@@ -356,7 +356,7 @@ whether grid is visible in the first graphics view.
 
 |setCustomToolBar(String toolbar) |5.0 |Sets the layout of the main toolbar, see xref:Toolbar.adoc[toolbar
 reference] for details
-|addCustomTool(String name, String iconDataURL, Function callback, String category)|6.0 (Notes only)|Adds a custom tool with given name and icon (encoded as data URL) to the Notes toolbox. The `callback` function is called when user selects the tool, it may show custom UI and/or use object creation APIs to create new objects. The `category` parameter may be one of `upload`, `link` or `more` and specifies in which category to show the new tool; if omitted, the `more` category is used.
+|addCustomTool(String iconURL, String name, Function callback, String category)|6.0 (Notes only)|Adds a custom tool with given name and icon (https: or data: URL) to the Notes toolbox. The `callback` function is called when user selects the tool, it may show custom UI and/or use object creation APIs to create new objects. The `category` parameter may be one of `upload`, `link` or `more` and specifies in which category to show the new tool; if omitted, the `more` category is used.
 
 |showMenuBar(boolean show) |HTML5 |Sets visibility of menu bar
 
