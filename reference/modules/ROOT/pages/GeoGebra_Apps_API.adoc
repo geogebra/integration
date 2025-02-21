@@ -709,17 +709,16 @@ callback function is specified, it is called after the file is loaded.
 
 === [#Obtaining_the_API_Object]#Obtaining the API Object#
 
-If you are loading GeoGebra using the `++deployggb.js++` script, you can access the api either as an argument of
-`++appletOnLoad++` or via the `++getAppletObject++` method:
+If you are loading GeoGebra using the `++deployggb.js++` script, you can access the api as an argument of
+`++appletOnLoad++`:
 
 ....
 const ggb = new GGBApplet({
-  appletOnLoad(api1) {
-    // api1 provides the applet API
+  appletOnLoad(ggbApi) {
+    // ggbApi provides the applet API
   }
 });
 ggb.inject(document.body);
-const api2 = ggb.getAppletObject(); // api2 is also the API object
 ....
 
 For compatibility reasons the API objects can be also accessed via global variables. The name of the global variable is
