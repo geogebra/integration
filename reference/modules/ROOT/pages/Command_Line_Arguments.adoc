@@ -101,7 +101,7 @@ the resolution with `++--dpi++`**
 allow version check (on/off or true/false for single launch). Note: if this option is not used, then it will check for
 new version, unless system preferences are set to disable it. This preference has to be created on "geogebra" key, with
 name "version_check_allow" (e.g. HKEY_LOCAL_MACHINE/Software/JavaSoft/Prefs/geogebra/version_check_allow in Windows
-registry ; edit the file /Library/Preferences/com.apple.java.util.prefs.plist in mac osx and add string key
+registry; edit the file /Library/Preferences/com.apple.java.util.prefs.plist in mac osx and add string key
 "version_check_allow" in Root > / > geogebra/), and value "false" if, on the computer, no check for new version is
 allowed.
 
