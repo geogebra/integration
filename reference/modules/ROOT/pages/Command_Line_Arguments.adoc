@@ -80,11 +80,11 @@ en, de_AT
 
 |`++--antiAliasing=[true\|false]++` |turn antialiasing on (true) or off (false)
 
-|`++--export=<File>++` |Exports the Graphics View to SVG/PNG/PDF/EMF/EPS as determined by the extension**You can specify
+|`++--export=<File>++` |Exports the Graphics View to SVG/PNG/PDF/EMF/EPS as determined by the extension. **You can specify
 the resolution with `++--dpi++`**
 
 |`++--exportAnimation=<File>++` |Exports the Graphics View to mutiple SVG/PNG/PDF/EMF/EPS files (or one animated GIF) as
-determined by the extension and specified slider**You must specify the slider with `++--slider++` and you can specify
+determined by the extension and specified slider. **You must specify the slider with `++--slider++` and you can specify
 the resolution with `++--dpi++`**
 
 |`++--dpi=<Integer>++` |dots per inch, eg 300 (only used in conjunction with `++--export++`)
