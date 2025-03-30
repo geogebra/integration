@@ -45,6 +45,8 @@ option.
 
 [width="100%",cols="50%,50%",]
 |===
+|Command Line Argument |Explanation
+
 |`++--help++` |print help message
 
 |`++--v++` |print version information, e.g. _GeoGebra 4.0.0.0 20 August 2011 Java 1.6.0_26_
