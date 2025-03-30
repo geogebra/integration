@@ -52,31 +52,31 @@ option.
 |`++--language=ISO_CODE++` |set language using http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes[locale code], e.g.
 en, de_AT
 
-|`++--showAlgebraInput=[true|false]++` |show/hide algebra xref:en@manual::/Input_Bar.adoc[Input Bar]
+|`++--showAlgebraInput=[true\|false]++` |show/hide algebra xref:en@manual::/Input_Bar.adoc[Input Bar]
 
-|`++--showAlgebraInputTop=[true|false]++` |Show algebra input field at top/bottom
+|`++--showAlgebraInputTop=[true\|false]++` |Show algebra input field at top/bottom
 
-|`++--showAlgebraWindow=[true|false]++` |show/hide xref:en@manual::/Algebra_View.adoc[Algebra View]
+|`++--showAlgebraWindow=[true\|false]++` |show/hide xref:en@manual::/Algebra_View.adoc[Algebra View]
 
-|`++--showSpreadsheet=[true|false]++` |show/hide xref:en@manual::/Spreadsheet_View.adoc[Spreadsheet View]
+|`++--showSpreadsheet=[true\|false]++` |show/hide xref:en@manual::/Spreadsheet_View.adoc[Spreadsheet View]
 
-|`++--showCAS=[true|false]++` |show/hide xref:en@manual::/CAS_View.adoc[CAS View]
+|`++--showCAS=[true\|false]++` |show/hide xref:en@manual::/CAS_View.adoc[CAS View]
 
-|`++--showSplash=[true|false]++` |show splash screen on startup
+|`++--showSplash=[true\|false]++` |show splash screen on startup
 
-|`++--enableUndo=[true|false]++` |enable/disable Undo
+|`++--enableUndo=[true\|false]++` |enable/disable Undo
 
 |`++--fontSize=[number]++` |set default font size
 
-|`++--showAxes=[true|false]++` |show/hide coordinate axes
+|`++--showAxes=[true\|false]++` |show/hide coordinate axes
 
-|`++--showGrid=[true|false]++` |show/hide coordinate grid
+|`++--showGrid=[true\|false]++` |show/hide coordinate grid
 
 |`++--settingsFile=FILENAME++` |load/save settings from/in a local file (used by the portable version)
 
 |`++--resetSettings++` |resets settings to defaults
 
-|`++--antiAliasing=[true|false]++` |turn antialiasing on (true) or off (false)
+|`++--antiAliasing=[true\|false]++` |turn antialiasing on (true) or off (false)
 
 |`++--export=<File>++` |Exports the Graphics View to SVG/PNG/PDF/EMF/EPS as determined by the extension**You can specify
 the resolution with `++--dpi++`**
@@ -87,13 +87,13 @@ the resolution with `++--dpi++`**
 
 |`++--dpi=<Integer>++` |dots per inch, eg 300 (only used in conjunction with `++--export++`)
 
-|`++--loop=[true|false]>++` |whether the animated GIF should repeat (only used in conjunction with
+|`++--loop=[true\|false]>++` |whether the animated GIF should repeat (only used in conjunction with
 `++--exportAnimation++`)
 
 |`++--delay=<Integer>++` |delay in ms between frames for the animated GIF (only used in conjunction with
 `++--exportAnimation++`)
 
-|`++--laf=<system|crossplatform>++` |Change the "Look and Feel" of the GUI
+|`++--laf=<system\|crossplatform>++` |Change the "Look and Feel" of the GUI
 
 |`++--versionCheckAllow++` a|
 allow version check (on/off or true/false for single launch). Note: if this option is not used, then it will check for
