@@ -6,7 +6,7 @@ All releases will include the latest minor bugfixes and translation updates.
 _often_ get an earlier release)
 
 == 6.0.882.0 (8th April 2025 build, not released yet)
-* CAS: make sure eg `CAS: (2x-3y+z=-1) ≟ (-2 x + 3y - z = 1) ` gives `true`
+* CAS: make sure eg `CAS: (2x-3y+z=-1) ≟ (-2 x + 3y - z = 1)` gives `true`
 * CAS: fix for eg `Invert(a x + b)`
 
 == 6.0.881.2 (2nd April 2025 build)
