@@ -8,7 +8,7 @@ _often_ get an earlier release)
 == 6.0.882.0 (8th April 2025 build, not released yet)
 * CAS: make sure eg `CAS: (2x-3y+z=-1) ≟ (-2 x + 3y - z = 1)` gives `true`
 * CAS: fix for eg `Invert(a x + b)`
-* bug for Undo with nets and surfaces
+* bugfix for Undo with nets and surfaces
 * fix for filling when exporting to PNG
 
 == 6.0.881.2 (2nd April 2025 build)
