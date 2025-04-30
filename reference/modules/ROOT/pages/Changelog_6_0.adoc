@@ -8,7 +8,8 @@ _often_ get an earlier release)
 == 6.0.885.0 (29th April 2025 build, not released yet)
 * fix problem redefining texts
 
-== 6.0.884.1 (24th April 2025 build, not released yet)
+== 6.0.884.1 (24th April 2025 build)
+* New exam mode: Bayern Grafikrechner
 * fix autocomplete for `BinomialCoefficient()`
 * Fix for `Intersect(a,b)` when a,b are implicit polynomials and b is degenerate
 
