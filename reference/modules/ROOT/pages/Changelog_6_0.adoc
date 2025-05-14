@@ -5,7 +5,12 @@ All releases will include the latest minor bugfixes and translation updates.
 *Releases are not simultaneous on all platforms* and not all platforms will get all versions (online and Classic 5 will
 _often_ get an earlier release)
 
-== 6.0.886.0 (6th May build, not released yet)
+== 6.0.887.0 (13th May build, not released yet)
+* Classic 5: fix bug where `text1` changes to `text1_1`
+* CAS: A1:A6 syntax working
+* Classic: fix for f(complex) in Algebra View when f(x) defined in CAS
+
+== 6.0.886.0 (6th May build)
 * make sure Text as Caption change doesn't trigger update script
 
 == 6.0.885.1 (3rd May build)
