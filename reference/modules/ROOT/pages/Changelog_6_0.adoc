@@ -5,7 +5,13 @@ All releases will include the latest minor bugfixes and translation updates.
 *Releases are not simultaneous on all platforms* and not all platforms will get all versions (online and Classic 5 will
 _often_ get an earlier release)
 
-== 6.0.888.1 (22nd May build, not released yet)
+== 6.0.889.0 (27th May build, not released yet)
+* Classic 5: improvements for File -> Open -> Insert File
+* Axis increments can be set as fractions/decimals more easily
+* CAS: fix for equations like `Determinant(m)=0`
+* fix for `ggbApplet.setSize()`
+
+== 6.0.888.1 (22nd May build)
 * Algebra View: fix for `NSolve()` with fractions
 * Notes: new segment end decorations
 * Notes: fix for PDF export
