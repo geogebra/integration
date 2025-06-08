@@ -5,27 +5,35 @@ All releases will include the latest minor bugfixes and translation updates.
 *Releases are not simultaneous on all platforms* and not all platforms will get all versions (online and Classic 5 will
 _often_ get an earlier release)
 
-== 6.0.889.0 (27th May build, not released yet)
+== 6.0.889.0 (10th June 2025 build, not released yet)
+* CAS: fix for eg `m1=(2 Identity(3)-A)^(2)`
+* CAS `f'(x)=...` recognised as equation not assignment
+* `PlaySound(false)` will now stop .mp3 playback
+* bugfix: make sure toggle button shown for eg `1/sqrt(2)`
+* Notes: lines can be split into two (repeatedly)
+`Corner()` implemented for buttons, input boxes, dropdown lists, checkboxes
+
+== 6.0.889.0 (27th May 2025 build)
 * Classic 5: improvements for File -> Open -> Insert File
 * Axis increments can be set as fractions/decimals more easily
 * CAS: fix for equations like `Determinant(m)=0`
 * fix for `ggbApplet.setSize()`
 
-== 6.0.888.1 (22nd May build)
+== 6.0.888.1 (22nd May 2025 build)
 * Algebra View: fix for `NSolve()` with fractions
 * Notes: new segment end decorations
 * Notes: fix for PDF export
 * CAS: support for 3D lines eg `x=5-y=3+z`
 
-== 6.0.887.0 (13th May build)
+== 6.0.887.0 (13th May 2025 build)
 * Classic 5: fix bug where `text1` changes to `text1_1`
 * CAS: A1:A6 syntax working
 * Classic: fix for f(complex) in Algebra View when f(x) defined in CAS
 
-== 6.0.886.0 (6th May build)
+== 6.0.886.0 (6th May 2025 build)
 * make sure Text as Caption change doesn't trigger update script
 
-== 6.0.885.1 (3rd May build)
+== 6.0.885.1 (3rd May 2025 build)
 * fix problem redefining texts
 
 == 6.0.884.1 (24th April 2025 build)
