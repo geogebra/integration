@@ -403,6 +403,12 @@ viewId. The second argument should be a JSON (object or string) with optional fi
 
 |setAlgebraOptions(Object options) |5.0 (HTML5) |Set the options for the algebra view. The argument should be a JSON
 (object or string) with field `++sortBy++`
+|getViewProperties(int viewID)|6.0|Returns properties of a view as JSON-encoded string.
+The object has several properties: `invXscale` and `invYscale` (number of graphics view units per pixel in x and y directions),
+`xMin` and `yMin` (minimal visible value on x-axis and y-axis respectively),
+`width` and `height` (size of the view in pixels),
+`left` and  `top` (position of the view within the app frame).
+
 |===
 
 == [#Event_listeners]#Event listeners#
