@@ -1,3 +1,4 @@
+
 <?xml version="1.0"?>
 <managedAppConfiguration>
   <version>1</version>
@@ -21,9 +22,14 @@
       <constraint>
         <values>
           <value>generic</value>
+          <value>bayern_gr</value>
+          <value>bayern_cas</value>
+          <value>cvte</value>
+          <value>mms</value>
+          <value>ib</value>
           <value>niedersachsen</value>
           <value>vlaanderen</value>
-          <value>bayern_cas</value>
+          <value>wtr</value>
         </values>
       </constraint>
     </string>
@@ -58,14 +64,29 @@
         <option value="generic">
           <language value="en-US">Generic</language>
         </option>
+        <option value="bayern_gr">
+          <language value="de">Bayern Grafikrechner</language>
+        </option>
+        <option value="bayern_cas">
+          <language value="de">Schulversuch CAS in Prüfungen</language>
+        </option>
+        <option value="cvte">
+          <language value="nl">CvTE goedgekeurde examenstand</language>
+        </option>
+        <option value="mms">
+          <language value="de">Deutschland MMS Abitur</language>
+        </option>
+        <option value="ib">
+          <language value="de">IB Exam</language>
+        </option>
         <option value="niedersachsen">
           <language value="de">Niedersachsen Abitur</language>
         </option>
         <option value="vlaanderen">
           <language value="nl">Vlaanderen</language>
         </option>
-        <option value="bayern_cas">
-          <language value="de">Schulversuch CAS</language>
+        <option value="wtr">
+          <language value="de">Deutschland WTR Abitur</language>
         </option>
       </options>
     </field>
