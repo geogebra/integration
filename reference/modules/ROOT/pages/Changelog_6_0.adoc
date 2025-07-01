@@ -5,7 +5,14 @@ All releases will include the latest minor bugfixes and translation updates.
 *Releases are not simultaneous on all platforms* and not all platforms will get all versions (online and Classic 5 will
 _often_ get an earlier release)
 
-== 6.0.892.0 (17th June 2025 build, not released yet)
+== 6.0.893.0 (1st July June 2025 build, not released yet)
+* Notes: New Curve, Stadium and Parallelogram Tools
+* Giac updated, improves eg `Factor(sqrt(-5*((((sqrt(92*x^(2)-12*x+45)*abs(x)+(-2*√5)*x^(2)+(-3*√5)*x)/(√5)))/(36))))`
+* Geometry: fix for reflex angle showing 180° 
+* 3D: points can be moved outside clipping cuboid
+
+
+== 6.0.892.0 (17th June 2025 build)
 * CAS: fix for eg `m1=(2 Identity(3)-A)^(2)`
 * CAS `f'(x)=...` recognised as equation not assignment
 * `PlaySound(false)` will now stop .mp3 playback
