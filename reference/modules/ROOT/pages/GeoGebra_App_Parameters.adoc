@@ -209,6 +209,10 @@ color |6.0
 
 |disableJavaScript |`true` or `false` |Whether running JavaScript from material files is disabled or not. |6.0
 
-|detachedKeyboardParent |String |When set, keyboard should be attached to the first element in DOM that fits the
+|detachKeyboard |`true`, `false` or `auto` (default) |Whether the keyboard should be detached from the applet.
+When set to `false`, the keyboard is attached directly to the `body` of the document. When set to `auto` (or not set),
+the keyboard is attached to the applet if there are views other than the graphics view and attached to document body otherwise. |6.0
+
+|detachedKeyboardParent |String |When set, the keyboard should be attached to the first element in DOM that fits the
 selector. |6.0
 |===
