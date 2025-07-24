@@ -5,7 +5,18 @@ All releases will include the latest minor bugfixes and translation updates.
 *Releases are not simultaneous on all platforms* and not all platforms will get all versions (online and Classic 5 will
 _often_ get an earlier release)
 
-== 6.0.893.2 (4th July 2025 build, not released yet)
+== 6.0.895.0 (?? August 2025 build, not released yet)
+* `<Ctrl>D` has new accessible option to enter expressions in Linear Notation
+* improved hyperbola plotting
+
+== 6.0.894.2 (23rd July 2025 build, not released yet)
+* fix Arc(semicircle)
+* fix editing output of Distance tool
+* Suite/CAS: make sure `x(A)` loads correctly
+* fix for ` round(2.425,2)`
+* improved error handling for failed redefinition
+
+== 6.0.893.2 (4th July 2025 build)
 * Notes: New Curve, Stadium and Parallelogram Tools
 * Giac updated, improves eg `Factor(sqrt(-5*((((sqrt(92*x^(2)-12*x+45)*abs(x)+(-2*√5)*x^(2)+(-3*√5)*x)/(√5)))/(36))))`
 * Geometry: fix for reflex angle showing 180° 
