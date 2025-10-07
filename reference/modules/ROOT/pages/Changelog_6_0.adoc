@@ -10,6 +10,7 @@ _often_ get an earlier release)
 
 == 6.0.902.0 (30th September 2025 build)
 * *Can be installed as PWA offline app in browsers*
+* Electron updated to `v38.2`
 
 == 6.0.901.1 (24th September 2025 build)
 * CAS: fix for `((nroot(512,3)-3^(2))/(sqrt(2)))`
