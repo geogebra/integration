@@ -5,6 +5,13 @@ All releases will include the latest minor bugfixes and translation updates.
 *Releases are not simultaneous on all platforms* and not all platforms will get all versions (online and Classic 5 will
 _often_ get an earlier release)
 
+== 6.0.904.0 (14th October 2025 build, not released yet)
+* Classic 5: JOGL updated to v2.6
+* `Sequence(Sequence(...` shown as matrix in Algebra View
+* Bugfix: make sure `Point(list of points)` reloaded correctly
+* New command `SetLineOpacity( <Object>, <Number> )`
+* Improved screenreader output for `TableText()`
+
 == 6.0.903.0 (7th October 2025 build, not released yet)
 * fix for eg `(8 sqrt(2))/sqrt(3)`
 
