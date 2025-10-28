@@ -5,12 +5,13 @@ All releases will include the latest minor bugfixes and translation updates.
 *Releases are not simultaneous on all platforms* and not all platforms will get all versions (online and Classic 5 will
 _often_ get an earlier release)
 
-== 6.0.905.0 (21st October 2025 build, not released yet)
+== 6.0.905.0 (28th October 2025 build, not released yet)
 * make sure `$point`, `$vec$` don't leak onto the clipboard when copying a command
 * make sure LaTeX line breaks don't occur in numbers
 * fix for display of `(-4<x≤3) && (-1<x<3)`
+* Classic 5: EPS export removed
 
-== 6.0.904.1 (20th October 2025 build, not released yet)
+== 6.0.904.2 (22nd October 2025 build)
 * Classic 5: JOGL updated to v2.6
 * `Sequence(Sequence(...` shown as matrix in Algebra View
 * Bugfix: make sure `Point(list of points)` reloaded correctly
@@ -18,7 +19,7 @@ _often_ get an earlier release)
 * Improved screenreader output for `TableText()`
 * fix for `Point(polyhedron)`
 
-== 6.0.903.0 (7th October 2025 build, not released yet)
+== 6.0.903.0 (7th October 2025 build)
 * fix for eg `(8 sqrt(2))/sqrt(3)`
 
 == 6.0.902.0 (30th September 2025 build)
