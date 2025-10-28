@@ -326,3 +326,34 @@ mirroratplane.svg,width=32,height=32]
 |User defined 1 |100 001
 |User defined X |100 000+X
 |===
+
+== Toolbar in Notes
+
+For identifying tools in Notes we use the tool names instead of numbers.
+
+* pen.Pen
+* pen.Highlighter
+* pen.Eraser
+* shapes.ShapeRectangle
+* shapes.ShapeSquare
+* shapes.Parallelogram
+* shapes.Stadium
+* shapes.ShapeTriangle
+* shapes.Circle
+* shapes.Ellipse
+* shapes.Pentagon
+* shapes.Line
+* shapes.Curve
+* shapes.ShapeFreeform
+* shapes.MaskTool
+* text.Text
+* text.Equation
+* upload.Image
+* upload.Camera
+* upload.PDF
+* link.Web
+* link.Video
+* link.Audio
+* more.Type.GeoGebra
+* more.Mindmap
+* more.Table
