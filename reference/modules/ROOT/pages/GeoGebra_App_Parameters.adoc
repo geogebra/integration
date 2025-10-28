@@ -78,6 +78,10 @@ values are xref:Toolbar.adoc[Toolbar Mode Values], `++,++` adds a separator with
 menu and `\|\|` adds a separator in the toolbar before starting a new menu. This will override the saved toolbar from
 the .ggb file / base64 string. Custom tools are numbered 100 001, 100 002, etc |2.5
 
+|customToolbox |e.g. `++pen, shapes.line, shapes.square, link++` |Sets the Notes toolbox content using the
+xref:Toolbar.adoc[Notes tools names]. The comma separated list can contain individual tool names or the names
+of categories (part of tool name before the dot). Ordering of tools within the string does not change the order in the UI. |6.0 (Notes)
+
 |showAlgebraInput |`true` or `false` |States whether the algebra input line (with input field, greek letters and
 command list) should be shown in the applet. Default: false |2.5
 
