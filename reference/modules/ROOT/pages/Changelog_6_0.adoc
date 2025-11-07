@@ -7,7 +7,7 @@ _often_ get an earlier release)
 
 == 6.0.906.0 (4th November 2025 build, not released yet)
 * speed up parsing / file loading
-* make sure `f'(x)` returns factored answeer as appropriate
+* make sure `f'(x)` returns factored answer as appropriate
 * new API for custom tools in Notes
 
 == 6.0.905.1 (31st October 2025 build)
@@ -15,6 +15,7 @@ _often_ get an earlier release)
 * make sure LaTeX line breaks don't occur in numbers
 * fix for display of `(-4<x≤3) && (-1<x<3)`
 * Classic 5: EPS export removed
+* "type to rename" option removed
 
 == 6.0.904.2 (22nd October 2025 build)
 * Classic 5: JOGL updated to v2.6
