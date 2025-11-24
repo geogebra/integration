@@ -5,6 +5,10 @@ All releases will include the latest minor bugfixes and translation updates.
 *Releases are not simultaneous on all platforms* and not all platforms will get all versions (online and Classic 5 will
 _often_ get an earlier release)
 
+== 6.0.907.0 (25th November 2025 build, not released yet)
+* macOS: better font for Algebra View
+* "Zoom to Fit" button added in Graphics View
+
 == 6.0.906.2 (11th November 2025 build, not released yet)
 * speed up parsing / file loading
 * make sure `f'(x)` returns factored answer as appropriate
