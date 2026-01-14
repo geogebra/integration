@@ -9,7 +9,7 @@ _often_ get an earlier release)
 * Fix detection of dependent variable in SolveODE
 
 == 6.0.911.3 (8th January 2026 build)
-* Classic 5 installer updated to `v5.4.911.3` / Java 25
+* Classic 5 installer updated to `v5.4.911.3` / Java 25 (Intel macOS no longer supported)
 * Use better font for `∞` in the Algebra View
 * fix for clipped buttons in image export dialog
 * make sure Construction Order preserved in Algebra View
