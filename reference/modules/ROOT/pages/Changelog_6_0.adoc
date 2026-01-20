@@ -5,8 +5,13 @@ All releases will include the latest minor bugfixes and translation updates.
 *Releases are not simultaneous on all platforms* and not all platforms will get all versions (online and Classic 5 will
 _often_ get an earlier release)
 
+== 6.0.915.0 (20th January 2026 build, not released yet)
+* Classic 5: fix opacity slider
+* fix slider drawing & XML logic when min ≥ max
+* fix List Tool with TableView points
+
 == 6.0.913.0 (13th January 2026 build, not released yet)
-* Fix detection of dependent variable in SolveODE
+* Fix detection of dependent variable in `SolveODE()`
 
 == 6.0.911.3 (8th January 2026 build)
 * Classic 5 installer updated to `v5.4.911.3` / Java 25 (Intel macOS no longer supported)
