@@ -7,6 +7,7 @@ _often_ get an earlier release)
 
 == 6.0.915.0 (20th January 2026 build, not released yet)
 * Classic 5: fix opacity slider
+* CAS: Improve inequality auto-simplifying
 * fix slider drawing & XML logic when min ≥ max
 * fix List Tool with TableView points
 
