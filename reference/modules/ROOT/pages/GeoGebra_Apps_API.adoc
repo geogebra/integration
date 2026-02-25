@@ -738,7 +738,7 @@ You can use math-apps module now to inject the applet the ES6 way too
 
 ....
 <script type="module">
-    import {mathApps} from 'https://www.geogebra.org/apps/web3d/web3d.nocache.mjs';
+    import {mathApps} from 'https://www.geogebra.org/apps/latest/web3d/web3d.nocache.mjs';
     mathApps.create({'width':'800', 'height':'600',
         'showAlgebraInput': 'true',
         'material_id':'MJWHp9en'})
