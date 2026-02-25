@@ -5,12 +5,14 @@ All releases will include the latest minor bugfixes and translation updates.
 *Releases are not simultaneous on all platforms* and not all platforms will get all versions (online and Classic 5 will
 _often_ get an earlier release)
 
-== 6.0.917.2 (21st February 2026 build, not released yet)
+== 6.0.918.0 (25th February 2026 build, not released yet)
 * Compile with GWT v2.13.0
 * 3D points get a "halo" when selected with `<Tab>`
 * Classic: fix for Algebra View commands in CAS
 * Box Plots can be dragged vertically
 * CAS: fix for eg `Numeric(4.5,1)`
+* improve intersections for rational functions
+* fix for correlation in Regression dialog
 
 == 6.0.916.2 (17th February 2026 build)
 * fix for `((5 sqrt(2))/(2 sqrt(10)))`
