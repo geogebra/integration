@@ -29,7 +29,7 @@ _often_ get an earlier release)
 * fix slider drawing & XML logic when min ≥ max
 * fix List Tool with TableView points
 
-== 6.0.913.0 (13th January 2026 build, not released yet)
+== 6.0.913.0 (13th January 2026 build)
 * Fix detection of dependent variable in `SolveODE()`
 
 == 6.0.911.3 (8th January 2026 build)
