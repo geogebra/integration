@@ -6,7 +6,7 @@ All releases will include the latest minor bugfixes and translation updates.
 _often_ get an earlier release)
 
 == 6.0.919.0 (3rd March 2026 build, not released yet)
-* 
+* small fixes
 
 == 6.0.918.0 (25th February 2026 build)
 * Compile with GWT v2.13.0
