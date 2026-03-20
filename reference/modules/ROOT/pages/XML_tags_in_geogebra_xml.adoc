@@ -541,7 +541,7 @@ blocked="xs:boolean [0..1]"
 
 === [#Element:_show]#Element: show#
 
-Deprecated since 4.0, use perspectives insted.
+Deprecated since 4.0, use perspectives instead.
 
 XML Instance Representation
 
@@ -575,7 +575,7 @@ height="xref:Common_XML_tags_and_types.adoc[nonNegInt] [1]"
 
 === [#Element:_splitDivider]#Element: splitDivider#
 
-Deprecated since 4.0, use perspectives/perspective/panes insted.
+Deprecated since 4.0, use perspectives/perspective/panes instead.
 
 XML Instance Representation
 
@@ -665,7 +665,7 @@ formatMap="xs:string [0..1]"
 
 === [#Element:_toolbar]#Element: toolbar#
 
-Deprecated since 4.0, use perspectives/perspective/toolbar insted.
+Deprecated since 4.0, use perspectives/perspective/toolbar instead.
 
 XML Instance Representation
 

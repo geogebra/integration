@@ -38,7 +38,7 @@ Mass installations of GeoGebra Classic 6 will not update automatically.
 Please see instructions below for individual platforms.
 
 iOS::
-  you should be able to install the https://itunes.apple.com/us/app/geogebra/id687678494?mt=8[iPad app] on mutliple
+  you should be able to install the https://itunes.apple.com/us/app/geogebra/id687678494?mt=8[iPad app] on multiple
   devices using https://itunes.apple.com/en/app/apple-configurator/id434433123?mt=12[Apple Configurator] or similar
   mobile device management tools.
 Android::
