@@ -28,7 +28,7 @@ Arguments in square brackets can be omitted.
 |boolean evalCommand(String cmdString) |3.0 |Evaluates the given string just like it would be evaluated when entered
 into GeoGebra's input bar. Returns whether command evaluation was successful. From GeoGebra 3.2 you can pass multiple
 commands at once by separating them with \n. Note: you must use English commands names
-|boolean evalLaTex(String input)|5.0| Evaluates LaTeX string to a construction element. Basic syntaxes like `x^{2}` or `\frac` are supported.
+|boolean evalLaTex(String input)|5.0| Evaluates LaTeX string to a construction element. Basic syntaxes like `x^++{2}++` or `\frac` are supported.
 
 |String evalCommandGetLabels(String cmdString) |5.0 |Like evalCommand(), but the return value is a String containing a
 comma-separated list of the labels of the created objects eg `++"A,B,C"++`
@@ -132,7 +132,7 @@ ggbApplet.writePNGtoFile("myImage.png", 1, false, 72);
 |boolean isMoveable(String objName) |4.0 |checks if *objName* is is moveable
 
 |void showAllObjects() |5.0 |Changes bounds of the Graphics View so that all visible objects are on screen.
-|void registerEmbedResolver(String type, Function callback)| 6.0| Adds a resolving function for specific embedded element type. The function gets an ID of the embed and returns a promise that resolves to a HTML string.
+|void registerEmbedResolver(String type, Function callback)| 6.0| Adds a resolving function for specific embedded element type. The function gets an ID of the embed and returns a promise that resolves to an HTML string.
 |===
 
 === [#Automatic_Animation]#Automatic Animation#
@@ -167,10 +167,10 @@ if the object is not a point or a vector.
 if the object is not a point or a vector.
 
 |double getValue(String objName) |3.2 |Returns the double value of the object with the given name (e.g. length of
-segment, area of polygon). Note: returns 1 for a boolean object with value true. Otherwise 0 is returned.
+segment, area of polygon). Note: returns 1 for a boolean object with value true. Otherwise, 0 is returned.
 
 |double getListValue(String objName, Integer index) |5.0 |Returns the double value of the object in the list (with the
-given name) with the given index. Note: returns 1 for a boolean object with value true. Otherwise 0 is returned.
+given name) with the given index. Note: returns 1 for a boolean object with value true. Otherwise, 0 is returned.
 
 |String getColor(String objName) |2.7 |Returns the color of the object with the given name as a hex string, e.g.
 "#FF0000" for red. Note that the hex string always starts with # and contains no lower case letters.
@@ -179,7 +179,7 @@ given name) with the given index. Note: returns 1 for a boolean object with valu
 Graphics View. Returns false if the object does not exist.
 
 |boolean getVisible(String objName, int view) |4.2 |Returns true or false depending on whether the object is visible in
-Graphics View 'view' (1 or 2). Returns false if the object does not exist.
+Graphics View `view` (1 or 2). Returns false if the object does not exist.
 
 |String getValueString(String objName [, boolean useLocalizedInput = true]) |2.7 |Returns the value of the object with
 the given name as a string. If useLocalizedInput is false, returns the command in English, otherwise in current GUI
@@ -200,7 +200,7 @@ language. Note: Localized input uses parentheses, non-localized input uses brack
 LaTeX. For value = false the object is represented as the definition, for value=true the object value is used.
 
 |String getObjectType(String objName) |2.7 |Returns the type of the given object as a string (like "point", "line",
-"circle", etc.).
+or "circle").
 
 |boolean exists(String objName) |2.7 |Returns whether an object with the given name exists in the construction.
 
@@ -259,7 +259,7 @@ string)
 
 |void newConstruction() |2.7 |Removes all construction objects
 
-|void refreshViews() |2.7 |Refreshs all views. Note: this clears all traces in the graphics window.
+|void refreshViews() |2.7 |Refreshes all views. Note: this clears all traces in the graphics window.
 
 |void setOnTheFlyPointCreationActive(boolean flag) |3.2 |Turns on the fly creation of points in graphics view on (true)
 or off (false). Note: this is useful if you don't want tools to have the side effect of creating points. For example,
@@ -274,7 +274,7 @@ view: 1 for graphics, 2 for graphics 2, -1 for 3D.
 mode: 0 for no capturing, 1 for snap to grid, 2 for fixed to grid, 3 for automatic.
 
 |void setRounding(string round) |5.0 |The string consists of a number and flags, "s" flag for significant digits, "d"
-for decimal places (default). JavaScript integers are cast to string automaticlly. Example: "10s", "5", 3
+for decimal places (default). JavaScript integers are cast to string automatically. Example: "10s", "5", 3
 
 |void hideCursorWhenDragging(boolean flag) |3.2 |Hides (true) or shows (false) the mouse cursor (pointer) when dragging
 an object to change the construction.
@@ -298,9 +298,6 @@ the graphics windows 1 and 2.
 |void setAxesVisible(int viewNumber, boolean xAxis, boolean yAxis, boolean zAxis) |5.0 a|
 Shows or hides the x-, y- and z-axis of the coordinate system in given graphics window.
 
-|void setUndoPoint() |3.2 |Sets an undo point. Useful if you want the user to be able to undo that action of evalCommand
-eg if you have made an HTML button to act as a custom tool
-
 [EXAMPLE]
 ====
 
@@ -314,7 +311,7 @@ Set label for the x-, y- and z-axis of the coordinate system in given graphics w
 [EXAMPLE]
 ====
 
-`++ggbApplet.setAxisLabels(3,"larg","long","area")++`
+`++ggbApplet.setAxisLabels(3,"large","long","area")++`
 
 ====
 
@@ -343,10 +340,13 @@ Set units for the x-, y- and z-axis of the coordinate system in given graphics w
 |void setGridVisible(int viewNumber, boolean flag) |5.0 |Shows or hides the coordinate grid in given graphics view
 graphics window.
 
-|getGridVisible(int viewNumber) |5.0 |Returns true if grid is visible in given view. If view number is omited, returns
+|getGridVisible(int viewNumber) |5.0 |Returns true if grid is visible in given view. If view number is omitted, returns
 whether grid is visible in the first graphics view.
 
 |getPerspectiveXML() |5.0 |Returns an XML representation of the current perspective.
+
+|void setUndoPoint() |3.2 |Sets an undo point. Useful if you want the user to be able to undo that action of evalCommand
+eg if you have made an HTML button to act as a custom tool
 
 |undo() |5.0 |Undoes one user action.
 
@@ -431,7 +431,7 @@ Example: First, register a listening JavaScript function:
 
 ggbApplet.registerAddListener(myAddListenerFunction);
 
-When an object "A" is created, the GeoGebra Applet will call the Javascript function
+When an object "A" is created, the GeoGebra Applet will call the JavaScript function
 
 myAddListenerFunction("A");
 
@@ -448,7 +448,7 @@ Example: First, register a listening JavaScript function:
 
 ggbApplet.registerRemoveListener(myRemoveListenerFunction);
 
-When the object "A" is deleted, the GeoGebra Applet will call the Javascript function
+When the object "A" is deleted, the GeoGebra Applet will call the JavaScript function
 
 myRemoveListenerFunction("A");
 
@@ -456,7 +456,7 @@ myRemoveListenerFunction("A");
 registerRemoveListener()
 
 |void registerUpdateListener(JSFunction function) |3.0 a|
-Registers a JavaScript function as a update listener for the applet's construction. Whenever any object is updated in
+Registers a JavaScript function as an update listener for the applet's construction. Whenever any object is updated in
 the GeoGebraApplet's construction, the JavaScript function is called using the name of the updated object
 as its single argument. Note: when you only want to listen for the updates of a single object use
 registerObjectUpdateListener() instead.
@@ -465,7 +465,7 @@ Example: First, register a listening JavaScript function:
 
 ggbApplet.registerUpdateListener(myUpdateListenerFunction);
 
-When the object "A" is updated, the GeoGebra Applet will call the Javascript function
+When the object "A" is updated, the GeoGebra Applet will call the JavaScript function
 
 myUpdateListenerFunction("A");
 
@@ -491,7 +491,7 @@ Example: First, register a listening JavaScript function:
 
 ggbApplet.registerObjectUpdateListener("A", myAupdateListenerFunction);
 
-Whenever the object A is updated, the GeoGebra Applet will call the Javascript function
+Whenever the object A is updated, the GeoGebra Applet will call the JavaScript function
 
 myAupdateListenerFunction();
 
@@ -511,7 +511,7 @@ Example: First, register a listening JavaScript function:
 
 ggbApplet.registerObjectClickListener("A", myAclickListenerFunction);
 
-Whenever the object A is clicked, the GeoGebra Applet will call the Javascript function
+Whenever the object A is clicked, the GeoGebra Applet will call the JavaScript function
 
 myAclickListenerFunction();
 
@@ -529,7 +529,7 @@ Example: First, register a listening JavaScript function:
 
 ggbApplet.registerRenameListener(myRenameListenerFunction);
 
-When an object "A" is renamed to "B", the GeoGebra Applet will call the Javascript function
+When an object "A" is renamed to "B", the GeoGebra Applet will call the JavaScript function
 
 myRenameListenerFunction("A", "B");
 
@@ -546,8 +546,8 @@ Example: First, register a listening JavaScript function:
 
 ggbApplet.registerClearListener(myClearListenerFunction);
 
-When the construction is cleared (i.e. after reseting a construction or opening a new construction file), the GeoGebra
-Applet will call the Javascript function
+When the construction is cleared (i.e. after resetting a construction or opening a new construction file), the GeoGebra
+Applet will call the JavaScript function
 
 myClearListenerFunction();
 
@@ -615,7 +615,7 @@ Evaluator app)
 
 |movedGeos |`++argument++`: object labels |multiple objects move ended
 
-|movingGeos |`++argument++`: object labels |multible objects are being moved
+|movingGeos |`++argument++`: object labels |multiple objects are being moved
 
 |openDialog |`++argument++`: dialog ID |dialog is opened (currently just for export dialog)
 

@@ -68,7 +68,7 @@ experiment you should take some tips for your journey:
 . Backup your files. It's almost certain that you will break your files sometime if you're modifying the XML definition.
 . Read the xref:XML.adoc[XML reference] to understand what you are doing.
 . Be aware that the changes you've made may be lost if you re-save your file within GeoGebra. While it might be possible
-that GeoGebra understands something unusual while loading it might not save it at all or save it somehow anormal which
+that GeoGebra understands something unusual while loading it might not save it at all or save it somehow abnormal which
 corrupts the file.
 . ZIP all required files at the end using the most standard ZIP options (no encryption etc.) and rename your files back
 to `++.ggb++`.

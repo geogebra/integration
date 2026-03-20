@@ -226,7 +226,7 @@ _often_ get an earlier release)
 * API: `ggbApplet.exitFullScreen()` and `ggbApplet.isFullScreenActive()` added
 * bugfix: `SetValue(f, ?)` works for functions
 * iOS 18: fix cursor position for old Input Boxes
-* LaTeX: support for text wraping in tables eg `\begin{array}{lp{200}}a&\text{very long content could break}\\c&d\\\end{array}`
+* LaTeX: support for text wrapping in tables eg `\begin{array}{lp{200}}a&\text{very long content could break}\\c&d\\\end{array}`
 
 == 6.0.864.0 (16th October 2024 build)
 * Suite: *Spreadsheet View added*
@@ -240,7 +240,7 @@ _often_ get an earlier release)
 
 == 6.0.857.0 (10th September 2024 build)
 * CAS: fix problem with Solve Tool
-* Probability Calculator: round inputs to discrete distibutions correctly for non-integers
+* Probability Calculator: round inputs to discrete distributions correctly for non-integers
 
 == 6.0.853.0 (20th August 2024 build)
 * fix for display of `17!`
