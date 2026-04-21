@@ -5,8 +5,21 @@ All releases will include the latest minor bugfixes and translation updates.
 *Releases are not simultaneous on all platforms* and not all platforms will get all versions (online and Classic 5 will
 _often_ get an earlier release)
 
-== 6.0.920.0 (10th March 2026 build, not released yet)
+== 6.0.923.0 (21st April 2026 build, not released yet)
+* Classic 6: now uses fast spreadsheet code
 * Dynamic color implemented in new spreadsheet
+* Classic 5: fix bug where scripting text lost on focus change
+* CAS: fix for eg `Numeric(gamma(1+i))`
+* bugfix: onClick scripts fail in shadow DOM
+* better method used for `HALF_UP` rounding 
+* make sure spreadsheet XML is minimal
+* bugfix: `ClosestPoint()` wrong for hyperbola
+* new option "Simplify Coefficients" to omit zero coefficient terms in a function
+* "Size" option for Pie Charts
+* Classic 5: make sure Settings headings don't get jumbled
+* Smoother export to .STL for `Curve()`
+* Speedup for applets where bounds change
+* bugfix: make sure files load in the correct subapp on Android
 
 == 6.0.919.1 (5th March 2026 build)
 * Classic 5: fix `\fbox{}`
