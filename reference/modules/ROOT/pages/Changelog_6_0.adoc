@@ -21,6 +21,9 @@ _often_ get an earlier release)
 * Speedup for applets where bounds change
 * bugfix: make sure files load in the correct subapp on Android
 
+== 6.0.920.0 (10th March 2026 build)
+* Classic 5: fix opacity slider
+
 == 6.0.919.1 (5th March 2026 build)
 * Classic 5: fix `\fbox{}`
 
