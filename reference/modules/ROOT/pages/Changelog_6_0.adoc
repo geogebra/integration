@@ -24,7 +24,6 @@ _often_ get an earlier release)
 * fix online loading for Electron apps
 * `enableProbability` option added to App Parameters
 * numbers over `9007199254740991` are now printed in standard form
-* screen reader output now translatable
 
 == 6.0.920.0 (10th March 2026 build)
 * Classic 5: fix opacity slider
