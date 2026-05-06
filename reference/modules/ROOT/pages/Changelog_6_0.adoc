@@ -5,7 +5,7 @@ All releases will include the latest minor bugfixes and translation updates.
 *Releases are not simultaneous on all platforms* and not all platforms will get all versions (online and Classic 5 will
 _often_ get an earlier release)
 
-== 6.0.923.0 (21st April 2026 build, not released yet)
+== 6.0.925.1 (5th May 2026 build, not released yet)
 * Classic 6: now uses fast spreadsheet code
 * Dynamic color implemented in new spreadsheet
 * Classic 5: fix bug where scripting text lost on focus change
@@ -20,6 +20,11 @@ _often_ get an earlier release)
 * Smoother export to .STL for `Curve()`
 * Speedup for applets where bounds change
 * bugfix: make sure files load in the correct subapp on Android
+* bugfix: "Dots" grid setting doesn't repsect "Positive direction only"
+* fix online loading for Electron apps
+* `enableProbability` option added to App Parameters
+* numbers over `9007199254740991` are now printed in standard form
+* screen reader output now translatable
 
 == 6.0.920.0 (10th March 2026 build)
 * Classic 5: fix opacity slider
