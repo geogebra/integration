@@ -5,6 +5,17 @@ All releases will include the latest minor bugfixes and translation updates.
 *Releases are not simultaneous on all platforms* and not all platforms will get all versions (online and Classic 5 will
 _often_ get an earlier release)
 
+== 6.0.927.1 (6th July 2026 build)
+* New Settings dialogs
+* New Text Tool dialog
+* New "visual" editor for integrals
+* `sqrt(-2)` now works in Input Boxes linked to complex numbers
+* Classic 5: fix selection in the Algebra View
+* fix for selecting sub-expressions with <Shift>arrows or mouse
+* Localization added for screen reader
+* CAS: added `Midpoint/Center()` command
+* Accessibility improvements for Probability Calculator
+
 == 6.0.925.3 (15th May 2026 build)
 * Classic 6: now uses fast spreadsheet code
 * Dynamic color implemented in new spreadsheet
