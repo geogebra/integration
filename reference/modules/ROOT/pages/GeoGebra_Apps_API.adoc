@@ -34,6 +34,9 @@ commands at once by separating them with \n. Note: you must use English commands
 comma-separated list of the labels of the created objects eg `++"A,B,C"++`
 
 |String evalCommandCAS(String string) |3.2 |Passes the string to GeoGebra's CAS and returns the result as a String.
+
+|String evalLaTeX(String string) |6.0 |Evaluates input as LaTeX. Common LaTeX constructs like `\sqrt{x}` or `\frac{x}{x-1}` are supported.
+
 |void insertEmbed(String type, String uri)|6.0 (Notes)| Inserts embedded element with specific type and URI.
 Type and URI are then used to obtain the HTML code for the embed element, see `registerEmbedResolver`
 
