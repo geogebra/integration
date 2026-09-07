@@ -6,7 +6,10 @@ All releases will include the latest minor bugfixes and translation updates.
 _often_ get an earlier release)
 
 == 6.0.930.1 (3rd September 2026 build)
-* 
+* Improve copy/paste to Excel
+* Algebra View: fixes for output row 
+* Keyboard navigation improvements
+* bugfixes for new Settings
 
 == 6.0.929.3 (19th August 2026 build)
 * 3D: crop extra long text so it displays OK
