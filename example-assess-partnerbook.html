@@ -7,7 +7,7 @@
 <script src="https://www.geogebra.org/apps/deployggb.js"></script>
 <link rel="stylesheet" type="text/css" href="navigation.css">
 
-<!-- this page is used here: https://www.geogebra.org/m/pR5DME5S#material/ufnunqkg
+<!-- this page is used here: https://www.geogebra.org/m/qjmy2akp
 
 -->
 
@@ -40,14 +40,14 @@ function currentMode() {
     return "none";
 }
 
-// "Check Answer" only switches validation on; clicking it again while it is on does nothing.
+// "Check Answer" is an action button: every click (re-)checks the answer.
+// The applet clears the hint/feedback when the input changes, so the student can check again.
 // "Show Solution" toggles: on, or back to "none" if it is already on.
 function toggleButton(value) {
-    var mode = currentMode();
     if (value === "validate") {
-        if (mode !== "validation") setMode("validation");
+        setMode("validation");
     } else {
-        setMode(mode === "solution" ? "none" : "solution");
+        setMode(currentMode() === "solution" ? "none" : "solution");
     }
 }
 
@@ -60,10 +60,10 @@ function setMode(mode) {
     updateButtons();
 }
 
-// Sync both buttons' labels and styles with the current state.
+// Sync the Show Solution button's label and style with the current state.
+// (Check Answer has a fixed label and style.)
 function updateButtons() {
     var mode = currentMode();
-    setButton("validateBtn", mode === "validation", "Check Answer", "Check Answer");
     setButton("showsolutionBtn", mode === "solution", "Hide Solution", "Show Solution");
 }
 
