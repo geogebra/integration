@@ -31,18 +31,28 @@ var exclusivePartner = {
     "showsolution": "validate"
 };
 
+// Note: the GeoGebra API expects 1 (true) / 0 (false) for booleans in setValue,
+// and getValue returns 1 for true, 0 otherwise.
 function toggleButton(value, isReset) {
 
     if (!isReset) {
-        var newState = !ggbApplet.getValue(value);
-        ggbApplet.setValue(value, newState);
-
+        var turnOn = ggbApplet.getValue(value) != 1;
         var partner = exclusivePartner[value];
-        if (newState && partner && ggbApplet.getValue(partner)) {
-            ggbApplet.setValue(partner, false);
-            toggleButton(partner, true); // refresh the partner button's label/style only
+
+        // 1) switch the partner off in the applet FIRST (and update its button)
+        if (turnOn && partner) {
+            ggbApplet.setValue(partner, 0);
+            updateButton(partner);
         }
+
+        // 2) then set the clicked value
+        ggbApplet.setValue(value, turnOn ? 1 : 0);
     }
+    updateButton(value);
+}
+
+// Sync a button's label and style with the current value in the applet.
+function updateButton(value) {
     var btnLabelOn, btnLabelOff, btnID;
 
     switch (value) {
@@ -70,9 +80,9 @@ function resetButtons() {
 }
 
 function loadNewQuestion() {
-    ggbApplet.setValue("validate", false);
-    ggbApplet.setValue("showsolution", false);
-    ggbApplet.setValue("showanswer", false);
+    ggbApplet.setValue("validate", 0);
+    ggbApplet.setValue("showsolution", 0);
+    ggbApplet.setValue("showanswer", 0);
     ggbApplet.evalCommand("UpdateConstruction()");
     resetButtons();
 }
