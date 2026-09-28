@@ -17,7 +17,7 @@
 
 <div id="ggbApplet"> </div>
 	<p>
-	<button class="appBtn noimage fixedSize" id="validateBtn" onclick="toggleButton(`validate`);">Show Validation</button>
+	<button class="appBtn noimage fixedSize" id="validateBtn" onclick="toggleButton(`validate`);">Check Answer</button>
         <button class="appBtn noimage fixedSize" id="showsolutionBtn" onclick="toggleButton(`showsolution`);">Show Solution</button>
         <button class="appBtn noimage fixedSize blue" onclick="loadNewQuestion();">New Question</button>
 	</p>
@@ -58,7 +58,7 @@ function setMode(mode) {
 // Sync both buttons' labels and styles with the current state.
 function updateButtons() {
     var mode = currentMode();
-    setButton("validateBtn", mode === "validation", "Hide Validation", "Show Validation");
+    setButton("validateBtn", mode === "validation", "Check Answer", "Check Answer");
     setButton("showsolutionBtn", mode === "solution", "Hide Solution", "Show Solution");
 }
 
