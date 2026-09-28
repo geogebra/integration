@@ -40,10 +40,15 @@ function currentMode() {
     return "none";
 }
 
-// Clicking a button switches its state on, or back to "none" if it is already on.
+// "Check Answer" only switches validation on; clicking it again while it is on does nothing.
+// "Show Solution" toggles: on, or back to "none" if it is already on.
 function toggleButton(value) {
-    var target = (value === "showsolution") ? "solution" : "validation";
-    setMode(currentMode() === target ? "none" : target);
+    var mode = currentMode();
+    if (value === "validate") {
+        if (mode !== "validation") setMode("validation");
+    } else {
+        setMode(mode === "solution" ? "none" : "solution");
+    }
 }
 
 function setMode(mode) {
