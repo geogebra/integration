@@ -17,69 +17,55 @@
 
 <div id="ggbApplet"> </div>
 	<p>
-	<button class="appBtn noimage fixedSize" id="validateBtn" onclick="toggleButton(`validate`,false);">Show Validation</button>
-        <button class="appBtn noimage fixedSize" id="showsolutionBtn" onclick="toggleButton(`showsolution`,false);">Show Solution</button>
+	<button class="appBtn noimage fixedSize" id="validateBtn" onclick="toggleButton(`validate`);">Show Validation</button>
+        <button class="appBtn noimage fixedSize" id="showsolutionBtn" onclick="toggleButton(`showsolution`);">Show Solution</button>
         <button class="appBtn noimage fixedSize blue" onclick="loadNewQuestion();">New Question</button>
 	</p>
 </div>
 
 <script>
 
-// Values that must be switched off in the applet before a value is switched on.
-// Turning on validation clears both showsolution and showanswer.
-var turnOffWhenOn = {
-    "validate": ["showsolution", "showanswer", "showhint"],
-    "showsolution": ["validate"]
-};
-
+// The page has three states. The buttons and applet values follow from the state:
+//   "none"       -> validate = 0, showsolution = 0
+//   "validation" -> validate = 1, showsolution = 0  (feedback + hint if the answer is wrong)
+//   "solution"   -> validate = 1, showsolution = 1  (feedback, no hint)
+// The hint itself is set by the applet's update script on validate:
+//   If(validate, SetValue(showhint, (not correct) and (not showsolution)))
 // Note: the GeoGebra API expects 1 (true) / 0 (false) for booleans in setValue,
 // and getValue returns 1 for true, 0 otherwise.
-function toggleButton(value, isReset) {
 
-    if (!isReset) {
-        var turnOn = ggbApplet.getValue(value) != 1;
-
-        // 1) switch the conflicting values off in the applet FIRST (and update their buttons)
-        if (turnOn) {
-            (turnOffWhenOn[value] || []).forEach(function (other) {
-                ggbApplet.setValue(other, 0);
-                updateButton(other);
-            });
-        }
-
-        // 2) then set the clicked value
-        ggbApplet.setValue(value, turnOn ? 1 : 0);
-    }
-    updateButton(value);
+function currentMode() {
+    if (ggbApplet.getValue("showsolution") == 1) return "solution";
+    if (ggbApplet.getValue("validate") == 1) return "validation";
+    return "none";
 }
 
-// Sync a button's label and style with the current value in the applet.
-function updateButton(value) {
-    var btnLabelOn, btnLabelOff, btnID;
+// Clicking a button switches its state on, or back to "none" if it is already on.
+function toggleButton(value) {
+    var target = (value === "showsolution") ? "solution" : "validation";
+    setMode(currentMode() === target ? "none" : target);
+}
 
-    switch (value) {
-        case "validate":
-            btnLabelOn = "Hide Validation";
-            btnLabelOff = "Show Validation";
-            btnID = "validateBtn";
-            break;
+function setMode(mode) {
+    // showsolution must be set BEFORE validate, because validate's script reads it.
+    ggbApplet.setValue("showsolution", mode === "solution" ? 1 : 0);
 
-        case "showsolution":
-            btnLabelOn = "Hide Solution";
-            btnLabelOff = "Show Solution";
-            btnID = "showsolutionBtn";
-            break;
-    }
+    // Setting validate triggers its update script, which recomputes showhint.
+    ggbApplet.setValue("validate", mode === "none" ? 0 : 1);
+    updateButtons();
+}
+
+// Sync both buttons' labels and styles with the current state.
+function updateButtons() {
+    var mode = currentMode();
+    setButton("validateBtn", mode === "validation", "Hide Validation", "Show Validation");
+    setButton("showsolutionBtn", mode === "solution", "Hide Solution", "Show Solution");
+}
+
+function setButton(btnID, isOn, labelOn, labelOff) {
     var btn = document.getElementById(btnID);
-    if (!btn) return; // e.g. showanswer has no button on this page
-    ggbApplet.getValue(value) ? btn.innerHTML = btnLabelOn : btn.innerHTML = btnLabelOff;
-    ggbApplet.getValue(value) ? btn.className = "appBtn noimage fixedSize pressed" : btn.className = "appBtn noimage fixedSize";
-}
-
-
-function resetButtons() {
-    toggleButton("validate", true);
-    toggleButton("showsolution", true);
+    btn.innerHTML = isOn ? labelOn : labelOff;
+    btn.className = isOn ? "appBtn noimage fixedSize pressed" : "appBtn noimage fixedSize";
 }
 
 function loadNewQuestion() {
@@ -87,7 +73,7 @@ function loadNewQuestion() {
     ggbApplet.setValue("showsolution", 0);
     ggbApplet.setValue("showanswer", 0);
     ggbApplet.evalCommand("UpdateConstruction()");
-    resetButtons();
+    updateButtons();
 }
 
 
