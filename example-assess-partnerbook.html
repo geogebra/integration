@@ -36,17 +36,17 @@ var exclusivePartner = {
 function toggleButton(value, isReset) {
 
     if (!isReset) {
-        var turnOn = ggbApplet.getValue(value) != 1;
+        var turnOn = ggbApplet.getValue(value) != true;
         var partner = exclusivePartner[value];
 
         // 1) switch the partner off in the applet FIRST (and update its button)
         if (turnOn && partner) {
-            ggbApplet.setValue(partner, 0);
+            ggbApplet.setValue(partner, false);
             updateButton(partner);
         }
 
         // 2) then set the clicked value
-        ggbApplet.setValue(value, turnOn ? 1 : 0);
+        ggbApplet.setValue(value, turnOn ? true : false);
     }
     updateButton(value);
 }
@@ -80,9 +80,9 @@ function resetButtons() {
 }
 
 function loadNewQuestion() {
-    ggbApplet.setValue("validate", 0);
-    ggbApplet.setValue("showsolution", 0);
-    ggbApplet.setValue("showanswer", 0);
+    ggbApplet.setValue("validate", false);
+    ggbApplet.setValue("showsolution", false);
+    ggbApplet.setValue("showanswer", false);
     ggbApplet.evalCommand("UpdateConstruction()");
     resetButtons();
 }
