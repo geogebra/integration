@@ -25,10 +25,11 @@
 
 <script>
 
-// Validation and solution are mutually exclusive: switching one on switches the other off.
-var exclusivePartner = {
-    "validate": "showsolution",
-    "showsolution": "validate"
+// Values that must be switched off in the applet before a value is switched on.
+// Turning on validation clears both showsolution and showanswer.
+var turnOffWhenOn = {
+    "validate": ["showsolution", "showanswer"],
+    "showsolution": ["validate"]
 };
 
 // Note: the GeoGebra API expects 1 (true) / 0 (false) for booleans in setValue,
@@ -36,17 +37,18 @@ var exclusivePartner = {
 function toggleButton(value, isReset) {
 
     if (!isReset) {
-        var turnOn = ggbApplet.getValue(value) != true;
-        var partner = exclusivePartner[value];
+        var turnOn = ggbApplet.getValue(value) != 1;
 
-        // 1) switch the partner off in the applet FIRST (and update its button)
-        if (turnOn && partner) {
-            ggbApplet.setValue(partner, false);
-            updateButton(partner);
+        // 1) switch the conflicting values off in the applet FIRST (and update their buttons)
+        if (turnOn) {
+            (turnOffWhenOn[value] || []).forEach(function (other) {
+                ggbApplet.setValue(other, 0);
+                updateButton(other);
+            });
         }
 
         // 2) then set the clicked value
-        ggbApplet.setValue(value, turnOn ? true : false);
+        ggbApplet.setValue(value, turnOn ? 1 : 0);
     }
     updateButton(value);
 }
@@ -69,6 +71,7 @@ function updateButton(value) {
             break;
     }
     var btn = document.getElementById(btnID);
+    if (!btn) return; // e.g. showanswer has no button on this page
     ggbApplet.getValue(value) ? btn.innerHTML = btnLabelOn : btn.innerHTML = btnLabelOff;
     ggbApplet.getValue(value) ? btn.className = "appBtn noimage fixedSize pressed" : btn.className = "appBtn noimage fixedSize";
 }
@@ -80,9 +83,9 @@ function resetButtons() {
 }
 
 function loadNewQuestion() {
-    ggbApplet.setValue("validate", false);
-    ggbApplet.setValue("showsolution", false);
-    ggbApplet.setValue("showanswer", false);
+    ggbApplet.setValue("validate", 0);
+    ggbApplet.setValue("showsolution", 0);
+    ggbApplet.setValue("showanswer", 0);
     ggbApplet.evalCommand("UpdateConstruction()");
     resetButtons();
 }
