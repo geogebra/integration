@@ -1,1 +1,180 @@
+<!DOCTYPE html>
 
+<html><head>
+<title>Assessment Environment Integration</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<link rel="stylesheet" type="text/css" href="navigation.css">
+
+<!-- this page is used here: https://www.geogebra.org/m/qjmy2akp
+
+-->
+
+</head>
+<body class="">
+<div class="contentBoxSmall" id="contentBox">
+
+<div id="ggbApplet"> </div>
+	<p>
+	<button class="appBtn noimage fixedSize" id="validateBtn" onclick="toggleButton(`validate`,false);">Show Validation</button>
+        <button class="appBtn noimage fixedSize" id="showsolutionBtn" onclick="toggleButton(`showsolution`,false);">Show Solution</button>
+        <button class="appBtn noimage fixedSize blue" onclick="loadNewQuestion();">New Question</button>
+	</p>
+</div>
+
+<script>
+
+// Validation and solution are mutually exclusive: switching one on switches the other off.
+var exclusivePartner = {
+    "validate": "showsolution",
+    "showsolution": "validate"
+};
+
+function toggleButton(value, isReset) {
+
+    if (!isReset) {
+        var newState = !ggbApplet.getValue(value);
+        ggbApplet.setValue(value, newState);
+
+        var partner = exclusivePartner[value];
+        if (newState && partner && ggbApplet.getValue(partner)) {
+            ggbApplet.setValue(partner, false);
+            toggleButton(partner, true); // refresh the partner button's label/style only
+        }
+    }
+    var btnLabelOn, btnLabelOff, btnID;
+
+    switch (value) {
+        case "validate":
+            btnLabelOn = "Hide Validation";
+            btnLabelOff = "Show Validation";
+            btnID = "validateBtn";
+            break;
+
+        case "showsolution":
+            btnLabelOn = "Hide Solution";
+            btnLabelOff = "Show Solution";
+            btnID = "showsolutionBtn";
+            break;
+    }
+    var btn = document.getElementById(btnID);
+    ggbApplet.getValue(value) ? btn.innerHTML = btnLabelOn : btn.innerHTML = btnLabelOff;
+    ggbApplet.getValue(value) ? btn.className = "appBtn noimage fixedSize pressed" : btn.className = "appBtn noimage fixedSize";
+}
+
+
+function resetButtons() {
+    toggleButton("validate", true);
+    toggleButton("showsolution", true);
+}
+
+function loadNewQuestion() {
+    ggbApplet.setValue("validate", false);
+    ggbApplet.setValue("showsolution", false);
+    ggbApplet.setValue("showanswer", false);
+    ggbApplet.evalCommand("UpdateConstruction()");
+    resetButtons();
+}
+
+
+var width = 800, height = 500, id = "vtuggwej", beta = false, seed = 1;
+
+var getVars = [];
+var locvartemp = ( window.location.href.indexOf( "?" ) + 1 ) ? window.location.href.substr( window.location.href.indexOf( "?" ) + 1 ) : "";
+locvartemp=unescape(locvartemp);
+locvartemp = locvartemp.split( "&" );
+for( var x = 0; x < locvartemp.length; x++ ) {
+    var lvTempVar = locvartemp[x].split( "=" );
+    getVars[ unescape( lvTempVar[0] ) ] = unescape( lvTempVar[1] );
+	try {
+	console.log(locvartemp[x]);
+	eval(locvartemp[x]);
+	}
+	catch (err) {
+		console.log(err);
+		// eg cb="deploy50"
+		eval(lvTempVar[0] + "='" + lvTempVar[1] + "'");
+	}
+}
+
+if (id === undefined) {
+	id = prompt("Enter material id eg KdK6yXrU");
+}
+if (width === undefined) {
+	width = prompt("Enter width eg 1050");
+}
+if (height === undefined) {
+	height = prompt("Enter height eg 411");
+}
+
+
+
+function correctListener() {
+console.log("correctListener " + ggbApplet.getValue("correct"));
+document.getElementById("correct").innerHTML="correct = " + ((ggbApplet.getValue("correct")==0)?"false":"true");
+}
+
+
+var parameters = {
+"id": "ggbApplet",
+"width":width || 800,
+"height":height || 500,
+"randomSeed":seed || 1,
+"prerelease":false,
+"showMenuBar":false,
+"showAlgebraInput":false,
+"showToolBar":false,
+"showToolBarHelp":false,
+"showResetIcon":false,
+"errorDialogsActive":false,
+"useBrowserForJS":false,
+"allowStyleBar":false,
+"preventFocus":false,
+"showZoomButtons":false,
+"enableShiftDragZoom":false,
+"capturingThreshold":3,
+// add code here to run when the applet starts
+"appletOnLoad":function(api){
+
+
+api.registerObjectUpdateListener("correct", "correctListener");
+
+
+if (ggbApplet.getObjectType("validate") != "boolean") {
+  document.getElementById("validate").style.display = "none";
+}
+if (ggbApplet.getObjectType("showsolution") != "boolean") {
+  document.getElementById("showsolution").style.display = "none";
+}
+
+
+ },
+"showFullscreenButton":false,
+"scale":1,
+"disableAutoScale":false,
+"allowUpscale":false,
+"clickToLoad":false,
+"appName":"classic",
+"showSuggestionButtons":true,
+"language":"en",
+ "material_id":id || "KdK6yXrU",
+};
+// is3D=is 3D applet using 3D view, AV=Algebra View, SV=Spreadsheet View, CV=CAS View, EV2=Graphics View 2, CP=Construction Protocol, PC=Probability Calculator DA=Data Analysis, FI=Function Inspector, macro=Macros
+var views = {'is3D': 0,'AV': 1,'SV': 0,'CV': 0,'EV2': 0,'CP': 0,'PC': 0,'DA': 0,'FI': 0,'macro': 0};
+var applet = new GGBApplet(parameters, '5.0', views);
+
+// 1 pixel preview + GeoGebra logo
+applet.setPreviewImage("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAADElEQVR4nGP4//8/AAX+Av4N70a4AAAAAElFTkSuQmCC","https://www.geogebra.org/images/GeoGebra_loading.png");
+if (beta) {
+applet.setHTML5Codebase("https://www.geogebra.org/apps/5.0.564.0/web3d/");
+
+
+}
+window.onload = function() {applet.inject('ggbApplet')};
+
+
+</script>
+
+
+</body></html>
