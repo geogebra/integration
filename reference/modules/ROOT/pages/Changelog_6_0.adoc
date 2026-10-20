@@ -7,6 +7,9 @@ _often_ get an earlier release)
 
 == 6.0.934.0 (20th October 2026 build, not released yet)
 * Suite/Graphing: click/drag on a function to show coordinates
+* fix for decimal shown incorrectly as a fraction
+* fix disable label dragging option for 3D View
+* Spreadsheet: fix `1 var stats` button for multiple columns
 
 == 6.0.933.1 (15th October 2026 build)
 * small fixes and improvements
