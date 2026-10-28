@@ -348,6 +348,7 @@ For identifying tools in Notes we use the tool names instead of numbers.
 * shapes.MaskTool
 * text.Text
 * text.Equation
+* stickyNote
 * upload.Image
 * upload.Camera
 * upload.PDF
@@ -357,3 +358,5 @@ For identifying tools in Notes we use the tool names instead of numbers.
 * more.GeoGebra
 * more.Mindmap
 * more.Table
+* ruler
+* spotlight
