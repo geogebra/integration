@@ -219,4 +219,6 @@ the keyboard is attached to the applet if there are views other than the graphic
 
 |detachedKeyboardParent |String |When set, the keyboard should be attached to the first element in DOM that fits the
 selector. |6.0
+|featureSet |One of "classic", "graphing", "geometry", "suite", "bayern_gr", "bayern_cas", "cvte", "ib", "mms", "niedersachsen", "vlaanderen", "wtr" |Restricts available features to be compatible with specific exam requirements. The values that correspond to app names enable all features of given app. Remaining values correspond to Realschulerechner (Bavaria, Germany), CAS (Bavaria), CVTE (Netherlands), International Baccalaureate, MMS (Germany),  Niedersachsen graduation exam (Germany), Vlaanderen exam (Belgium) and WTR (Germany) respectively  |6.0
+|showExamHeader |`true` or `false` | Whether a header with an exam timer should be shown | 6.0
 |===
